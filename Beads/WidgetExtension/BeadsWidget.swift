@@ -89,17 +89,23 @@ struct BeadsWidgetView: View {
     private var circularView: some View {
         ZStack {
             AccessoryWidgetBackground()
+            VStack(spacing: 0) {
+                Text("\(entry.streak)")
+                    .font(.headline)
+                Text("days")
+                    .font(.system(size: 9))
+            }
             if entry.hasCompletedToday {
-                Image(systemName: "checkmark.circle.fill")
-                    .font(.title2)
-                    .widgetAccentable()
-            } else {
-                VStack(spacing: 0) {
-                    Text("\(entry.streak)")
-                        .font(.headline)
-                    Text("days")
-                        .font(.system(size: 9))
+                VStack {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 11))
+                            .widgetAccentable()
+                    }
+                    Spacer()
                 }
+                .padding(4)
             }
         }
     }
