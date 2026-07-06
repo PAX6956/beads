@@ -11,6 +11,9 @@ struct RootView: View {
 
             JournalView()
                 .tabItem { Label("Journal", systemImage: "book") }
+
+            SettingsView()
+                .tabItem { Label("Settings", systemImage: "gearshape") }
         }
     }
 }

@@ -48,4 +48,35 @@ actor CloudSyncService {
     func save(_ entry: JournalEntry) async throws {
         _ = try await database.save(entry.asRecord())
     }
+
+    func deleteAllPracticeEntries() async throws {
+        try await deleteAllRecords(ofType: CloudRecordType.practiceEntry)
+    }
+
+    func deleteAllJournalEntries() async throws {
+        try await deleteAllRecords(ofType: CloudRecordType.journalEntry)
+    }
+
+    private func deleteAllRecords(ofType recordType: String) async throws {
+        let query = CKQuery(recordType: recordType, predicate: NSPredicate(value: true))
+        let (matchResults, _) = try await database.records(matching: query, desiredKeys: [])
+        let ids = matchResults.compactMap { id, result -> CKRecord.ID? in
+            guard case .success = result else { return nil }
+            return id
+        }
+        guard !ids.isEmpty else { return }
+
+        let operation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: ids)
+        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
+            operation.modifyRecordsResultBlock = { result in
+                switch result {
+                case .success:
+                    continuation.resume()
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                }
+            }
+            database.add(operation)
+        }
+    }
 }

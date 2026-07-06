@@ -4,22 +4,46 @@
     "A short reflection (optional)" : {
 
     },
+    "All your data has been deleted." : {
+
+    },
     "Anxious" : {
 
     },
     "Beads" : {
 
     },
+    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card." : {
+
+    },
     "Calm" : {
 
     },
+    "Cancel" : {
+
+    },
     "Close" : {
+
+    },
+    "Delete all my data" : {
+
+    },
+    "Delete all your data? This can't be undone." : {
+
+    },
+    "Delete Everything" : {
+
+    },
+    "Deleting…" : {
 
     },
     "Done" : {
 
     },
     "Done for today" : {
+
+    },
+    "Export my data" : {
 
     },
     "Entries you save from Today will show up here — visible only to you." : {
@@ -52,10 +76,16 @@
     "Ripple Card" : {
 
     },
+    "OK" : {
+
+    },
     "Save" : {
 
     },
     "See today's quote and mark your practice without opening the app." : {
+
+    },
+    "Settings" : {
 
     },
     "Share" : {

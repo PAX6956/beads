@@ -111,6 +111,27 @@ final class PracticeStore: ObservableObject {
         pushToCloud(entry)
     }
 
+    func exportDataFile() -> URL? {
+        DataExporter.export(practiceEntries: practiceEntries, journalEntries: journalEntries)
+    }
+
+    /// Clears local storage, cancels notifications, and best-effort deletes the
+    /// CloudKit copy. If CloudKit deletion fails (offline, etc.) the local wipe
+    /// still goes through — the stale remote records get cleaned up the next
+    /// time this runs successfully, since local is empty and nothing re-pushes them.
+    func deleteAllData() async {
+        practiceEntries = []
+        journalEntries = []
+        SharedStorage.savePracticeEntries([])
+        SharedStorage.saveJournalEntries([])
+        NotificationScheduler.cancelAll()
+
+        if await cloudSync.accountStatus() == .available {
+            try? await cloudSync.deleteAllPracticeEntries()
+            try? await cloudSync.deleteAllJournalEntries()
+        }
+    }
+
     /// Fire-and-forget: the local write already happened, so a failed or slow
     /// push just means this device's copy is momentarily ahead of iCloud.
     private func pushToCloud(_ entry: PracticeEntry) {

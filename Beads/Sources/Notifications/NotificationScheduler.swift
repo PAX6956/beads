@@ -43,6 +43,11 @@ enum NotificationScheduler {
         center.removePendingNotificationRequests(withIdentifiers: [reminderIdentifier(for: date)])
     }
 
+    /// Call when the user deletes all their data — nothing left to remind them about.
+    static func cancelAll() {
+        center.removeAllPendingNotificationRequests()
+    }
+
     private static func scheduleQuoteNotification(for date: Date, item: ContentItem, calendar: Calendar) {
         let content = UNMutableNotificationContent()
         content.title = "Today's practice"
