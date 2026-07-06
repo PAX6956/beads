@@ -73,10 +73,8 @@ struct BeadsWidgetView: View {
 }
 
 struct BeadsWidget: Widget {
-    static let kind = "BeadsWidget"
-
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: Self.kind, provider: BeadsWidgetProvider()) { entry in
+        StaticConfiguration(kind: WidgetKind.beadsWidget, provider: BeadsWidgetProvider()) { entry in
             BeadsWidgetView(entry: entry)
         }
         .configurationDisplayName("Today's Practice")

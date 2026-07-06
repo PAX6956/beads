@@ -26,18 +26,21 @@
 		67EC426097CEE21AF5B817D3 /* TakeAMomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C38A4DEEA7C37140D33CB /* TakeAMomentView.swift */; };
 		7692250C32655979A1A666BB /* JournalEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */; };
 		89365D7F5994F02E24A179A1 /* MarkPracticeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */; };
+		893FDABDE7A0AF030187B112 /* MarkPracticeAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE88A8120DEB2C5184D1A5D3 /* MarkPracticeAppIntent.swift */; };
 		8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726037A2CCC684FCC972B4A8 /* TodayView.swift */; };
 		9609ED8354F8B68C4B5800BD /* DataExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C144B14F477F40800394608 /* DataExporter.swift */; };
 		9B717D8D0AFFC55500E1395D /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760F4ACC67AB26B7152213F /* JournalEntry.swift */; };
 		9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36226408D1E2BE2756C90E67 /* BeadsApp.swift */; };
 		9E027084A7EF13C852AEA0E6 /* MakeUpPracticeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D6819EA996FDB56EF81C1E /* MakeUpPracticeSheet.swift */; };
 		A5ACED7A86C7ED75556948AA /* seed_practices.json in Resources */ = {isa = PBXBuildFile; fileRef = FA525BD62D3CA2B4745E01DE /* seed_practices.json */; };
+		BE6FDBF4E50828B547B9CD9D /* WidgetKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF8D08A15192CECAB65CB7 /* WidgetKind.swift */; };
 		C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */; };
 		C8FFEAEDE9A3FB2893F57E2F /* ShareCardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */; };
 		C9E9646EDD8C7EBE2E54A08E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */; };
 		CD420CD182DD0CE7415E2CAB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DB22B80E75AA0E56E42D12 /* SettingsView.swift */; };
 		CDE5E3E7357446AB35EDDAA5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */; };
 		CE29B018158A2D4484A99559 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */; };
+		D7A4834FDE8CBA908AC06DA0 /* WidgetKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF8D08A15192CECAB65CB7 /* WidgetKind.swift */; };
 		D995C9756ECC1DB30391A7CC /* PracticeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */; };
 		E38420F97F28B732C4DA0FD4 /* PracticeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */; };
 		E4250F0C6997F3FC2FE9811D /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4A07D1261A1F346AB8819 /* SharedStorage.swift */; };
@@ -89,6 +92,7 @@
 		6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeEntry.swift; sourceTree = "<group>"; };
 		726037A2CCC684FCC972B4A8 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		8FC293FFB8808AC68A45501A /* PracticeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeStore.swift; sourceTree = "<group>"; };
+		99AF8D08A15192CECAB65CB7 /* WidgetKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKind.swift; sourceTree = "<group>"; };
 		B1EBC43281E94DE2A0E685C0 /* Beads.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Beads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D6D2EB861A07B207B14B1 /* HistoryCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCalendarView.swift; sourceTree = "<group>"; };
 		B8D6819EA996FDB56EF81C1E /* MakeUpPracticeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUpPracticeSheet.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		E63BC7176DB1CD403C8FF6CA /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPracticeIntent.swift; sourceTree = "<group>"; };
 		EAF15C95AD3F868CBFDCEB93 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		EE88A8120DEB2C5184D1A5D3 /* MarkPracticeAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPracticeAppIntent.swift; sourceTree = "<group>"; };
 		F2A3F17A809DE0B075A33D97 /* BeadsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsWidget.swift; sourceTree = "<group>"; };
 		F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsProgressView.swift; sourceTree = "<group>"; };
 		FA525BD62D3CA2B4745E01DE /* seed_practices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seed_practices.json; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 				4E93A924D25E7D1663ECE189 /* Assets.xcassets */,
 				A3A2670964103F8E67381B99 /* App */,
 				B3B5BDA77BD458D9FC019F4F /* CloudKit */,
+				71D14130C7E2F6A617A8E354 /* Intents */,
 				DA237FFCEC20D16242DAD30F /* Models */,
 				B54F5D55411C8242A3AB2359 /* Notifications */,
 				8ECAE11DE261E363FF1DC7CA /* Shared */,
@@ -153,12 +159,21 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
+		71D14130C7E2F6A617A8E354 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				EE88A8120DEB2C5184D1A5D3 /* MarkPracticeAppIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
 		8ECAE11DE261E363FF1DC7CA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				1C144B14F477F40800394608 /* DataExporter.swift */,
 				C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */,
 				60E4A07D1261A1F346AB8819 /* SharedStorage.swift */,
+				99AF8D08A15192CECAB65CB7 /* WidgetKind.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -359,6 +374,7 @@
 				40687F9B76CE9573DE087CEC /* Mood.swift in Sources */,
 				E38420F97F28B732C4DA0FD4 /* PracticeEntry.swift in Sources */,
 				6208DD480035049FDD2B2E8D /* SharedStorage.swift in Sources */,
+				BE6FDBF4E50828B547B9CD9D /* WidgetKind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +392,7 @@
 				20AC8C8D5409C39CC1C5D085 /* JournalEntry.swift in Sources */,
 				5FD11FB93974A8E86C64A7AE /* JournalView.swift in Sources */,
 				9E027084A7EF13C852AEA0E6 /* MakeUpPracticeSheet.swift in Sources */,
+				893FDABDE7A0AF030187B112 /* MarkPracticeAppIntent.swift in Sources */,
 				498A66BEF60852864D2BE48B /* Mood.swift in Sources */,
 				6292480D711E5FA991AFB9A7 /* NotificationScheduler.swift in Sources */,
 				2C640E0533208C35FA7282DD /* PracticeEntry+CloudKit.swift in Sources */,
@@ -389,6 +406,7 @@
 				E4250F0C6997F3FC2FE9811D /* SharedStorage.swift in Sources */,
 				67EC426097CEE21AF5B817D3 /* TakeAMomentView.swift in Sources */,
 				8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */,
+				D7A4834FDE8CBA908AC06DA0 /* WidgetKind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

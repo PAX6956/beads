@@ -11,7 +11,7 @@ struct MarkPracticeIntent: AppIntent {
 
     func perform() async throws -> some IntentResult {
         SharedStorage.markTodayComplete()
-        WidgetCenter.shared.reloadTimelines(ofKind: BeadsWidget.kind)
+        WidgetCenter.shared.reloadTimelines(ofKind: WidgetKind.beadsWidget)
         return .result()
     }
 }
