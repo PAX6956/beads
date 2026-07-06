@@ -37,6 +37,8 @@ targets:
         com.apple.developer.icloud-services:
           - CloudKit
         com.apple.developer.icloud-container-environment: Development
+        com.apple.security.application-groups:
+          - group.com.beadsapp.beads
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.beadsapp.beads
@@ -46,3 +48,35 @@ targets:
         SWIFT_VERSION: "5.0"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: BeadsWidgetExtension
+        embed: true
+
+  BeadsWidgetExtension:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Beads/WidgetExtension
+      - path: Beads/Sources/Models
+      - path: Beads/Sources/Shared
+      - path: Beads/Content
+        buildPhase: resources
+    info:
+      path: Generated/BeadsWidgetExtension-Info.plist
+      properties:
+        CFBundleDisplayName: Beads Widget
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Beads/WidgetExtension/BeadsWidgetExtension.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.beadsapp.beads
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.beadsapp.beads.BeadsWidget
+        DEVELOPMENT_TEAM: P472QJPHV5
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"

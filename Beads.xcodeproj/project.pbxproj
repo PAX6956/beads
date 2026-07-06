@@ -8,34 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		0A136826FBB021B7DD5BFD69 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF15C95AD3F868CBFDCEB93 /* ShareCardView.swift */; };
+		0D84618A53B85D6A58B1849F /* BeadsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A00EC7F4F957D47E68DF11 /* BeadsWidgetBundle.swift */; };
 		164588818D3A7695DA899620 /* PracticeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC293FFB8808AC68A45501A /* PracticeStore.swift */; };
 		1BA21018BED4C7451754C7A2 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15501694577ACD8D789461EF /* CloudSyncService.swift */; };
 		20AC8C8D5409C39CC1C5D085 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760F4ACC67AB26B7152213F /* JournalEntry.swift */; };
 		2C640E0533208C35FA7282DD /* PracticeEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */; };
 		2F1728E0FF8CD97CA0C4F5C9 /* seed_practices.json in Resources */ = {isa = PBXBuildFile; fileRef = FA525BD62D3CA2B4745E01DE /* seed_practices.json */; };
+		40687F9B76CE9573DE087CEC /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA534FCD2B47998E200F09D /* Mood.swift */; };
+		483EAEB1844FBAF22C3F8136 /* BeadsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4EEE7753A4F59746AC37AB08 /* BeadsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		498A66BEF60852864D2BE48B /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA534FCD2B47998E200F09D /* Mood.swift */; };
 		4A52EB1D763E155D5851E19F /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */; };
 		5FD11FB93974A8E86C64A7AE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8198F46797D2C58BAB1B01B /* JournalView.swift */; };
+		6208DD480035049FDD2B2E8D /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4A07D1261A1F346AB8819 /* SharedStorage.swift */; };
 		7692250C32655979A1A666BB /* JournalEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */; };
+		89365D7F5994F02E24A179A1 /* MarkPracticeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */; };
 		8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726037A2CCC684FCC972B4A8 /* TodayView.swift */; };
+		9B717D8D0AFFC55500E1395D /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760F4ACC67AB26B7152213F /* JournalEntry.swift */; };
 		9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36226408D1E2BE2756C90E67 /* BeadsApp.swift */; };
+		A5ACED7A86C7ED75556948AA /* seed_practices.json in Resources */ = {isa = PBXBuildFile; fileRef = FA525BD62D3CA2B4745E01DE /* seed_practices.json */; };
 		C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */; };
 		C8FFEAEDE9A3FB2893F57E2F /* ShareCardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */; };
+		CE29B018158A2D4484A99559 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */; };
 		D995C9756ECC1DB30391A7CC /* PracticeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */; };
+		E38420F97F28B732C4DA0FD4 /* PracticeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */; };
+		E4250F0C6997F3FC2FE9811D /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4A07D1261A1F346AB8819 /* SharedStorage.swift */; };
+		E820A90AD1E08CA65E16FF69 /* BeadsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3F17A809DE0B075A33D97 /* BeadsWidget.swift */; };
 		EB23DD50C9CA8635D9189B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E93A924D25E7D1663ECE189 /* Assets.xcassets */; };
 		FC930CCCF5FAF5A733448123 /* ShareCardSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057C27830636231EB48EA37 /* ShareCardSheet.swift */; };
 		FF963502567CA4DA7E7AD1D0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185043DB4207ADFE1B004F2F /* RootView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		96C49F5B8A2B02690310525C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5C8CB66D4D6468C4A976453 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49082E41A0A0AD3347F29FD0;
+			remoteInfo = BeadsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1EE8124B26C6C057D7CAECE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				483EAEB1844FBAF22C3F8136 /* BeadsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		15501694577ACD8D789461EF /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
 		16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PracticeEntry+CloudKit.swift"; sourceTree = "<group>"; };
 		185043DB4207ADFE1B004F2F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2FCCA6F5667EA92D1A97DF95 /* BeadsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeadsWidgetExtension.entitlements; sourceTree = "<group>"; };
 		36226408D1E2BE2756C90E67 /* BeadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsApp.swift; sourceTree = "<group>"; };
 		3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardTemplate.swift; sourceTree = "<group>"; };
 		4DA534FCD2B47998E200F09D /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		4E93A924D25E7D1663ECE189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EEE7753A4F59746AC37AB08 /* BeadsWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = BeadsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5057C27830636231EB48EA37 /* ShareCardSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardSheet.swift; sourceTree = "<group>"; };
+		60E4A07D1261A1F346AB8819 /* SharedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStorage.swift; sourceTree = "<group>"; };
 		6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CloudKit.swift"; sourceTree = "<group>"; };
 		6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeEntry.swift; sourceTree = "<group>"; };
 		726037A2CCC684FCC972B4A8 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
@@ -44,7 +82,10 @@
 		C8198F46797D2C58BAB1B01B /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItem.swift; sourceTree = "<group>"; };
 		D760F4ACC67AB26B7152213F /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		E1A00EC7F4F957D47E68DF11 /* BeadsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsWidgetBundle.swift; sourceTree = "<group>"; };
+		E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPracticeIntent.swift; sourceTree = "<group>"; };
 		EAF15C95AD3F868CBFDCEB93 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		F2A3F17A809DE0B075A33D97 /* BeadsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsWidget.swift; sourceTree = "<group>"; };
 		F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsProgressView.swift; sourceTree = "<group>"; };
 		FA525BD62D3CA2B4745E01DE /* seed_practices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seed_practices.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +98,7 @@
 				A3A2670964103F8E67381B99 /* App */,
 				B3B5BDA77BD458D9FC019F4F /* CloudKit */,
 				DA237FFCEC20D16242DAD30F /* Models */,
+				8ECAE11DE261E363FF1DC7CA /* Shared */,
 				A5CE0ED732F6EC2A43A7995E /* Sharing */,
 				F70FEB5CB5E372066892091D /* Store */,
 				592DBDDA8BB0C4A55271E1BB /* Views */,
@@ -88,6 +130,14 @@
 				FA525BD62D3CA2B4745E01DE /* seed_practices.json */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		8ECAE11DE261E363FF1DC7CA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				60E4A07D1261A1F346AB8819 /* SharedStorage.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		A3A2670964103F8E67381B99 /* App */ = {
@@ -123,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				B1EBC43281E94DE2A0E685C0 /* Beads.app */,
+				4EEE7753A4F59746AC37AB08 /* BeadsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +183,7 @@
 			children = (
 				5DC5CD8E66F2E16A98BDA5B9 /* Content */,
 				48F949542162F3559EE302E5 /* Sources */,
+				F9FC72114299C632E7C1DDA5 /* WidgetExtension */,
 			);
 			path = Beads;
 			sourceTree = "<group>";
@@ -155,6 +207,17 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		F9FC72114299C632E7C1DDA5 /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F2A3F17A809DE0B075A33D97 /* BeadsWidget.swift */,
+				E1A00EC7F4F957D47E68DF11 /* BeadsWidgetBundle.swift */,
+				2FCCA6F5667EA92D1A97DF95 /* BeadsWidgetExtension.entitlements */,
+				E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,15 +227,33 @@
 			buildPhases = (
 				FA7889BC0CD3BBE2E3B96B54 /* Sources */,
 				0F8BC8A74F36F98B5696BC80 /* Resources */,
+				C1EE8124B26C6C057D7CAECE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD5869B2C823F5A68725D794 /* PBXTargetDependency */,
 			);
 			name = Beads;
 			productName = Beads;
 			productReference = B1EBC43281E94DE2A0E685C0 /* Beads.app */;
 			productType = "com.apple.product-type.application";
+		};
+		49082E41A0A0AD3347F29FD0 /* BeadsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8725DB50B83E81495147DE73 /* Build configuration list for PBXNativeTarget "BeadsWidgetExtension" */;
+			buildPhases = (
+				276CA3099F3378003E00CEA2 /* Sources */,
+				4CFB4DC88BA11EB72794A033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeadsWidgetExtension;
+			productName = BeadsWidgetExtension;
+			productReference = 4EEE7753A4F59746AC37AB08 /* BeadsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -184,6 +265,10 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					36CFD962E750DE23863F9BBC = {
+						DevelopmentTeam = P472QJPHV5;
+						ProvisioningStyle = Automatic;
+					};
+					49082E41A0A0AD3347F29FD0 = {
 						DevelopmentTeam = P472QJPHV5;
 						ProvisioningStyle = Automatic;
 					};
@@ -202,6 +287,7 @@
 			projectRoot = "";
 			targets = (
 				36CFD962E750DE23863F9BBC /* Beads */,
+				49082E41A0A0AD3347F29FD0 /* BeadsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -216,9 +302,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CFB4DC88BA11EB72794A033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ACED7A86C7ED75556948AA /* seed_practices.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		276CA3099F3378003E00CEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E820A90AD1E08CA65E16FF69 /* BeadsWidget.swift in Sources */,
+				0D84618A53B85D6A58B1849F /* BeadsWidgetBundle.swift in Sources */,
+				CE29B018158A2D4484A99559 /* ContentItem.swift in Sources */,
+				9B717D8D0AFFC55500E1395D /* JournalEntry.swift in Sources */,
+				89365D7F5994F02E24A179A1 /* MarkPracticeIntent.swift in Sources */,
+				40687F9B76CE9573DE087CEC /* Mood.swift in Sources */,
+				E38420F97F28B732C4DA0FD4 /* PracticeEntry.swift in Sources */,
+				6208DD480035049FDD2B2E8D /* SharedStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA7889BC0CD3BBE2E3B96B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,11 +347,20 @@
 				FC930CCCF5FAF5A733448123 /* ShareCardSheet.swift in Sources */,
 				C8FFEAEDE9A3FB2893F57E2F /* ShareCardTemplate.swift in Sources */,
 				0A136826FBB021B7DD5BFD69 /* ShareCardView.swift in Sources */,
+				E4250F0C6997F3FC2FE9811D /* SharedStorage.swift in Sources */,
 				8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD5869B2C823F5A68725D794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49082E41A0A0AD3347F29FD0 /* BeadsWidgetExtension */;
+			targetProxy = 96C49F5B8A2B02690310525C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01B56F7023FCC03C3D8D83DC /* Release */ = {
@@ -364,6 +482,46 @@
 			};
 			name = Debug;
 		};
+		9A3A9B319B0EAEB81892B529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Beads/WidgetExtension/BeadsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P472QJPHV5;
+				INFOPLIST_FILE = "Generated/BeadsWidgetExtension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.beadsapp.beads.BeadsWidget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9DA9EEB8FF66FA5D89777268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Beads/WidgetExtension/BeadsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P472QJPHV5;
+				INFOPLIST_FILE = "Generated/BeadsWidgetExtension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.beadsapp.beads.BeadsWidget;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		B8131C17C1B2F038533E4848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +569,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8725DB50B83E81495147DE73 /* Build configuration list for PBXNativeTarget "BeadsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3A9B319B0EAEB81892B529 /* Debug */,
+				9DA9EEB8FF66FA5D89777268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		A33825246DC270E96531144C /* Build configuration list for PBXProject "Beads" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

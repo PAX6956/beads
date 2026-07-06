@@ -2,37 +2,58 @@ import Foundation
 import Combine
 import CloudKit
 
-/// The local JSON cache is the source of truth for the UI (instant, works offline).
-/// CloudKit is a best-effort background sync layer on top of it: writes are pushed
-/// after they land locally, and on launch we merge in anything written from the
-/// user's other devices. If iCloud isn't signed in, the app just runs local-only.
+/// The shared App Group storage (see SharedStorage) is the source of truth for
+/// the UI (instant, works offline, and is the same file the widget's tap-to-
+/// complete intent writes to). CloudKit is a best-effort background sync layer
+/// on top of it: writes are pushed after they land locally, and on launch we
+/// merge in anything written from the user's other devices — or from the
+/// widget, which writes locally but can't reach CloudKit itself.
 @MainActor
 final class PracticeStore: ObservableObject {
     @Published private(set) var practiceEntries: [PracticeEntry] = []
     @Published private(set) var journalEntries: [JournalEntry] = []
 
-    private let practiceFileURL: URL
-    private let journalFileURL: URL
     private let cloudSync = CloudSyncService()
 
-    init(directory: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]) {
-        practiceFileURL = directory.appendingPathComponent("practice_entries.json")
-        journalFileURL = directory.appendingPathComponent("journal_entries.json")
-        practiceEntries = Self.load(from: practiceFileURL) ?? []
-        journalEntries = Self.load(from: journalFileURL) ?? []
+    init() {
+        practiceEntries = SharedStorage.loadPracticeEntries()
+        journalEntries = SharedStorage.loadJournalEntries()
         Task { await syncWithCloud() }
     }
 
+    /// Call when the app returns to the foreground so a completion recorded by
+    /// the widget while the app wasn't running shows up immediately.
+    func refreshFromDisk() {
+        practiceEntries = SharedStorage.loadPracticeEntries()
+        journalEntries = SharedStorage.loadJournalEntries()
+    }
+
     /// Pulls down anything saved from other devices and merges it into the local
-    /// cache by id. Safe to call repeatedly; does nothing if iCloud isn't available.
+    /// cache by id, then pushes anything local CloudKit doesn't have yet (that
+    /// includes entries the widget wrote directly to shared storage). Safe to
+    /// call repeatedly; does nothing if iCloud isn't available.
     func syncWithCloud() async {
         guard await cloudSync.accountStatus() == .available else { return }
 
         if let remotePractice = try? await cloudSync.fetchPracticeEntries() {
             mergePracticeEntries(remotePractice)
+            await pushMissing(practiceEntries, remoteIds: Set(remotePractice.map(\.id)))
         }
         if let remoteJournal = try? await cloudSync.fetchJournalEntries() {
             mergeJournalEntries(remoteJournal)
+            await pushMissing(journalEntries, remoteIds: Set(remoteJournal.map(\.id)))
+        }
+    }
+
+    private func pushMissing(_ local: [PracticeEntry], remoteIds: Set<UUID>) async {
+        for entry in local where !remoteIds.contains(entry.id) {
+            try? await cloudSync.save(entry)
+        }
+    }
+
+    private func pushMissing(_ local: [JournalEntry], remoteIds: Set<UUID>) async {
+        for entry in local where !remoteIds.contains(entry.id) {
+            try? await cloudSync.save(entry)
         }
     }
 
@@ -40,14 +61,14 @@ final class PracticeStore: ObservableObject {
         var byId = Dictionary(uniqueKeysWithValues: practiceEntries.map { ($0.id, $0) })
         for entry in remote { byId[entry.id] = entry }
         practiceEntries = byId.values.sorted { $0.date < $1.date }
-        persist(practiceEntries, to: practiceFileURL)
+        SharedStorage.savePracticeEntries(practiceEntries)
     }
 
     private func mergeJournalEntries(_ remote: [JournalEntry]) {
         var byId = Dictionary(uniqueKeysWithValues: journalEntries.map { ($0.id, $0) })
         for entry in remote { byId[entry.id] = entry }
         journalEntries = byId.values.sorted { $0.date > $1.date }
-        persist(journalEntries, to: journalFileURL)
+        SharedStorage.saveJournalEntries(journalEntries)
     }
 
     var currentStreak: Int {
@@ -67,10 +88,8 @@ final class PracticeStore: ObservableObject {
     }
 
     func markTodayComplete() {
-        guard !hasCompletedToday() else { return }
-        let entry = PracticeEntry(date: Date())
+        guard let entry = SharedStorage.markTodayComplete() else { return }
         practiceEntries.append(entry)
-        persist(practiceEntries, to: practiceFileURL)
         pushToCloud(entry)
     }
 
@@ -80,14 +99,14 @@ final class PracticeStore: ObservableObject {
         guard let daysAgo = calendar.dateComponents([.day], from: date, to: Date()).day, daysAgo <= 3, daysAgo > 0 else { return }
         let entry = PracticeEntry(date: date, wasMakeUp: true)
         practiceEntries.append(entry)
-        persist(practiceEntries, to: practiceFileURL)
+        SharedStorage.savePracticeEntries(practiceEntries)
         pushToCloud(entry)
     }
 
     func addJournalEntry(text: String, moods: [Mood]) {
         let entry = JournalEntry(text: text, moods: moods)
         journalEntries.insert(entry, at: 0)
-        persist(journalEntries, to: journalFileURL)
+        SharedStorage.saveJournalEntries(journalEntries)
         pushToCloud(entry)
     }
 
@@ -99,15 +118,5 @@ final class PracticeStore: ObservableObject {
 
     private func pushToCloud(_ entry: JournalEntry) {
         Task { try? await cloudSync.save(entry) }
-    }
-
-    private func persist<T: Encodable>(_ value: T, to url: URL) {
-        guard let data = try? JSONEncoder().encode(value) else { return }
-        try? data.write(to: url, options: .atomic)
-    }
-
-    private static func load<T: Decodable>(from url: URL) -> T? {
-        guard let data = try? Data(contentsOf: url) else { return nil }
-        return try? JSONDecoder().decode(T.self, from: data)
     }
 }
