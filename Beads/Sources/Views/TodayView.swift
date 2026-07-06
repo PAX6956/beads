@@ -1,4 +1,7 @@
 import SwiftUI
+#if DEBUG
+import UserNotifications
+#endif
 
 struct TodayView: View {
     @EnvironmentObject private var store: PracticeStore
@@ -7,6 +10,9 @@ struct TodayView: View {
     @State private var selectedMoods: Set<Mood> = []
     @State private var isShowingShareCard = false
     @FocusState private var isJournalFieldFocused: Bool
+    #if DEBUG
+    @State private var pendingNotificationsSummary: String = "Loading…"
+    #endif
 
     private var todayItem: ContentItem? {
         ContentLibrary.todayItem(from: library)
@@ -22,6 +28,13 @@ struct TodayView: View {
                     practiceButton
                     Divider()
                     quickJournalSection
+                    #if DEBUG
+                    Divider()
+                    Text(pendingNotificationsSummary)
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                        .task { pendingNotificationsSummary = await Self.debugNotificationSummary() }
+                    #endif
                 }
                 .padding()
             }
@@ -114,6 +127,20 @@ struct TodayView: View {
             }
         }
     }
+
+    #if DEBUG
+    private static func debugNotificationSummary() async -> String {
+        let requests = await UNUserNotificationCenter.current().pendingNotificationRequests()
+        guard !requests.isEmpty else { return "[Debug] 0 notifications scheduled" }
+        let nextDates = requests.compactMap { request -> Date? in
+            (request.trigger as? UNCalendarNotificationTrigger)?.nextTriggerDate()
+        }.sorted()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, HH:mm"
+        let nextThree = nextDates.prefix(3).map { formatter.string(from: $0) }.joined(separator: " · ")
+        return "[Debug] \(requests.count) scheduled — next: \(nextThree)"
+    }
+    #endif
 
     private func toggle(_ mood: Mood) {
         if selectedMoods.contains(mood) {
