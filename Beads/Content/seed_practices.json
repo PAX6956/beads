@@ -92,7 +92,7 @@
   },
   {
     "id": 14,
-    "quote": "Knowing others is wisdom; knowing yourself is enlightenment.",
+    "quote": "Knowing others is wisdom; knowing yourself is clarity.",
     "sourceNote": "Inspired by Laozi, reframed",
     "microAction": "Ask yourself once today: 'What do I actually need right now?'",
     "tags": ["growth"]
@@ -278,5 +278,775 @@
     "sourceNote": "Inspired by modern mindfulness teaching",
     "microAction": "Look in the mirror once today and silently say one true, kind thing to yourself.",
     "tags": ["gratitude", "calm"]
+  },
+  {
+    "id": 41,
+    "quote": "What looks empty, like a valley, often holds the most.",
+    "sourceNote": "Inspired by the Tao Te Ching",
+    "microAction": "Notice one place today where softness gets more done than force.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 42,
+    "quote": "Muddy water, let stand, becomes clear.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "If a decision feels unclear today, wait one hour before making it.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 43,
+    "quote": "The usefulness of a cup is in its emptiness.",
+    "sourceNote": "Inspired by the Tao Te Ching",
+    "microAction": "Leave one task undone on purpose today, just to notice how it feels.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 44,
+    "quote": "What you control is smaller than you think, and freer than you think.",
+    "sourceNote": "Inspired by Stoic philosophy",
+    "microAction": "Write down one thing today that is entirely yours to decide, and decide it well.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 45,
+    "quote": "It is not events that disturb us, but our judgments about them.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Next time you feel annoyed today, ask: is this the event, or my story about it?",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 46,
+    "quote": "No one steps in the same river twice, for the water has moved on, and so have you.",
+    "sourceNote": "Inspired by Heraclitus",
+    "microAction": "Notice one way you've changed this year that you haven't given yourself credit for.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 47,
+    "quote": "Begin again, as many times as you need to.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "If your attention wanders today, just notice, and gently come back — no scorekeeping.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 48,
+    "quote": "A thought is not a fact, even when it's loud.",
+    "sourceNote": "Inspired by modern mindfulness psychology",
+    "microAction": "Catch one loud thought today and ask, quietly, 'is this true, or just familiar?'",
+    "tags": ["stress", "anxious"]
+  },
+  {
+    "id": 49,
+    "quote": "The tighter the fist, the less it can hold.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one thing you're holding onto too tightly today, and loosen your grip a little.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 50,
+    "quote": "Winter is not a failure of summer.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "If you're in a slow season right now, let it be a season instead of a verdict.",
+    "tags": ["low", "growth"]
+  },
+  {
+    "id": 51,
+    "quote": "Small deeds done are better than great deeds planned.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Pick the smallest version of today's most important task, and just do that part.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 52,
+    "quote": "The bow that is always bent will eventually break.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take one real break today — not a scrolling break, an actual one.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 53,
+    "quote": "Listening is a form of hospitality.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "In one conversation today, ask a question and then say nothing until they finish answering.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 54,
+    "quote": "You cannot pour from an empty cup, and pretending otherwise doesn't refill it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one small thing today that refills you, not just one that's productive.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 55,
+    "quote": "The path is made by walking, not by knowing the whole way first.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Start the thing you've been overthinking, before you feel fully ready.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 56,
+    "quote": "Nothing is permanent except the fact that nothing is permanent.",
+    "sourceNote": "Inspired by Buddhist-adjacent philosophy, reframed",
+    "microAction": "Notice one difficult feeling today and remind yourself: this, too, is moving through.",
+    "tags": ["low", "stress"]
+  },
+  {
+    "id": 57,
+    "quote": "A good traveler has no fixed plans and is not intent on arriving.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Let one plan today change without treating it as a problem.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 58,
+    "quote": "Say what you mean plainly; the plain thing is usually the kind thing too.",
+    "sourceNote": "Inspired by Taoist simplicity",
+    "microAction": "In one message today, cut it down to half the words.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 59,
+    "quote": "The tree does not compete with the tree next to it. It simply grows toward the light.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Unfollow, mute, or simply look away from one comparison trigger today.",
+    "tags": ["growth", "stress"]
+  },
+  {
+    "id": 60,
+    "quote": "Even a small star gives its own light.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one small good thing today without mentioning it to anyone.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 61,
+    "quote": "The quiet work is still work.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Give yourself credit today for one thing that was hard but invisible to everyone else.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 62,
+    "quote": "A held breath is not the same as calm.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Notice if you're holding your breath right now. If so, let it go, slowly.",
+    "tags": ["calm", "stress"]
+  },
+  {
+    "id": 63,
+    "quote": "The master doesn't try to be great; that's how greatness happens.",
+    "sourceNote": "Inspired by the Tao Te Ching",
+    "microAction": "Do one task today just because it needs doing, not because anyone will notice.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 64,
+    "quote": "Worry is a misuse of imagination.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take one worry today and imagine, in detail, it going fine instead.",
+    "tags": ["anxious", "stress"]
+  },
+  {
+    "id": 65,
+    "quote": "You don't have to see the whole staircase, just the next step.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Name the very next step of something big, and only think about that one.",
+    "tags": ["growth", "anxious"]
+  },
+  {
+    "id": 66,
+    "quote": "The wave doesn't need to become the ocean; it already is the ocean, moving.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Notice one moment today where you feel separate from everything, and just breathe there.",
+    "tags": ["calm", "low"]
+  },
+  {
+    "id": 67,
+    "quote": "A student asked, 'What is the way?' The teacher said, 'Have you eaten? Then wash your bowl.'",
+    "sourceNote": "Inspired by a classical Zen koan",
+    "microAction": "Do one ordinary chore today with your full attention, start to finish.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 68,
+    "quote": "Not every ship needs to reach every shore.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let go of one goal today that was never really yours to begin with.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 69,
+    "quote": "Kind words cost nothing and are worth everything.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Say one genuine compliment out loud to someone today.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 70,
+    "quote": "You are not behind. There is no schedule everyone else is on.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Cross out one 'should have by now' from your internal list today.",
+    "tags": ["growth", "stress"]
+  },
+  {
+    "id": 71,
+    "quote": "The archer who misses the mark looks inward, not at the target.",
+    "sourceNote": "Inspired by classical philosophy",
+    "microAction": "After one mistake today, ask what it taught you instead of what it says about you.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 72,
+    "quote": "Rain falls on the just and unjust alike; stop taking the weather personally.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Name one bad thing that happened today that truly had nothing to do with you.",
+    "tags": ["stress", "low"]
+  },
+  {
+    "id": 73,
+    "quote": "The quietest room in the house is still part of the house.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Spend 2 minutes today in total silence, phone in another room.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 74,
+    "quote": "A candle flame doesn't fight the wind; it simply goes out and is relit.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "If you 'fail' at something today, just start again — no drama required.",
+    "tags": ["growth", "low"]
+  },
+  {
+    "id": 75,
+    "quote": "The cracked bowl lets the light in, and holds soup just fine.",
+    "sourceNote": "Inspired by the kintsugi tradition",
+    "microAction": "Show one imperfect piece of work to someone today instead of waiting for perfect.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 76,
+    "quote": "There is no wrong way to breathe. Just breathe.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Take five slow breaths right now, counting only the exhale.",
+    "tags": ["calm", "anxious"]
+  },
+  {
+    "id": 77,
+    "quote": "The mountain doesn't move for the wind, yet nothing lives more peacefully.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "In a heated moment today, imagine yourself as the mountain, not the wind.",
+    "tags": ["calm", "stress"]
+  },
+  {
+    "id": 78,
+    "quote": "A full inbox is not the same as a full life.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Close your email for one hour today and do something that isn't a task.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 79,
+    "quote": "The tea tastes different when you're not rushing to finish it.",
+    "sourceNote": "Inspired by Japanese tea ceremony philosophy",
+    "microAction": "Drink one cup of something today with no phone, no screen, just the cup.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 80,
+    "quote": "Grief and gratitude can sit at the same table.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "If you're sad about something today, let yourself also notice one small good thing nearby.",
+    "tags": ["low", "gratitude"]
+  },
+  {
+    "id": 81,
+    "quote": "You water what you want to grow.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Spend 5 minutes today on something that quietly matters to your future, not just today's fire.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 82,
+    "quote": "The wind doesn't apologize for blowing.",
+    "sourceNote": "Inspired by Taoist imagery",
+    "microAction": "Stop apologizing today for one thing that isn't actually your fault.",
+    "tags": ["growth", "stress"]
+  },
+  {
+    "id": 83,
+    "quote": "A single spark can outlast the match that struck it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one small act of encouragement today for someone who might need it more than they show.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 84,
+    "quote": "The bamboo forest bends together in the storm.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Ask one person for help today instead of carrying it alone.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 85,
+    "quote": "There is a season for rest, and it is not a moral failing.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Rest for 10 minutes today without earning it first.",
+    "tags": ["calm", "stress"]
+  },
+  {
+    "id": 86,
+    "quote": "The quiet mind hears what the busy mind misses.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "Sit somewhere new today for 3 minutes and just notice what you'd normally rush past.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 87,
+    "quote": "You can't control the tide, only when you go swimming.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Name one uncontrollable thing today, and one controllable choice you still have inside it.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 88,
+    "quote": "The teacher opens the door; you walk through it yourself.",
+    "sourceNote": "Inspired by Confucian philosophy",
+    "microAction": "Take one piece of advice you've been given and actually try it today.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 89,
+    "quote": "A jar half full of stones still has room for sand.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Fit one small joy into today's schedule before it fills up with obligations.",
+    "tags": ["gratitude", "calm"]
+  },
+  {
+    "id": 90,
+    "quote": "What is easy to postpone is easy to abandon.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do the thing you were going to postpone today, just for five minutes.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 91,
+    "quote": "The river does not hurry, and still it reaches the sea.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Slow down your pace on purpose during one errand today.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 92,
+    "quote": "Anger points at something true, even when it shouts.",
+    "sourceNote": "Inspired by modern mindfulness psychology",
+    "microAction": "If you feel angry today, ask what need is underneath it before reacting.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 93,
+    "quote": "The forest doesn't explain itself to the axe.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Skip explaining or justifying one decision today — let it just be your decision.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 94,
+    "quote": "Joy shared is doubled; joy hidden slowly fades.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Tell someone about one good thing that happened today, however small.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 95,
+    "quote": "A locked door and a closed heart open the same way — slowly, and from the inside.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let your guard down slightly in one low-stakes conversation today.",
+    "tags": ["growth", "low"]
+  },
+  {
+    "id": 96,
+    "quote": "The seed does not know it will be a tree, and grows anyway.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take one step today toward something whose outcome you can't yet see.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 97,
+    "quote": "A calm voice can walk into a storm and not get wet.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Lower your voice, not your point, in one disagreement today.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 98,
+    "quote": "The night is long only to those who cannot sleep.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Put your phone outside the bedroom once tonight.",
+    "tags": ["calm", "stress"]
+  },
+  {
+    "id": 99,
+    "quote": "What you feed grows; what you starve fades.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Spend today's spare attention on a good habit instead of a nagging worry.",
+    "tags": ["growth", "anxious"]
+  },
+  {
+    "id": 100,
+    "quote": "One hundred days of practice is still just one day, repeated with care.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Don't think about day 100 today. Just do today's practice.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 101,
+    "quote": "The lantern doesn't light the whole road, only the next few steps — and that's enough.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Plan only tomorrow's first task tonight, not the whole week.",
+    "tags": ["anxious", "calm"]
+  },
+  {
+    "id": 102,
+    "quote": "A house is built one brick at a time, and no one brick gets the credit.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Acknowledge one 'boring' task today as part of something you're actually building.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 103,
+    "quote": "The fish doesn't notice the water until it's gone.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Name one thing you have today that you'd miss badly if it were gone.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 104,
+    "quote": "You can't hurry a sunrise, and you don't need to.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one thing today take exactly as long as it takes.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 105,
+    "quote": "The mask gets heavier the longer you wear it.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Be one degree more honest than usual in one conversation today.",
+    "tags": ["growth", "low"]
+  },
+  {
+    "id": 106,
+    "quote": "Even the ocean was once just rain, one drop at a time.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Don't dismiss one small effort today as not enough — it's part of something larger.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 107,
+    "quote": "A path walked in doubt still leads somewhere.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take the next step on something today even while still unsure.",
+    "tags": ["growth", "anxious"]
+  },
+  {
+    "id": 108,
+    "quote": "The scar is proof the wound closed.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one old hurt today that you've actually moved past, and give yourself credit.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 109,
+    "quote": "The quiet guest still deserves a seat at the table.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Make space for the quieter voice in one meeting or conversation today.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 110,
+    "quote": "A garden grown too fast has shallow roots.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Resist the urge to rush one thing today that actually needs time.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 111,
+    "quote": "Even stone is shaped by water that never stopped being gentle.",
+    "sourceNote": "Inspired by Taoist imagery",
+    "microAction": "Choose the gentle version of one hard conversation today.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 112,
+    "quote": "The bird doesn't sing because it has an answer; it sings because it has a song.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one creative thing today with no goal except doing it.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 113,
+    "quote": "Nobody drowns from falling in water; they drown from staying there.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one mistake today and let yourself simply move on from it.",
+    "tags": ["growth", "low"]
+  },
+  {
+    "id": 114,
+    "quote": "The full moon took the whole month to get there.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Check in on a slow goal today without expecting it to be finished.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 115,
+    "quote": "You can hold two truths at once: this is hard, and I am capable.",
+    "sourceNote": "Inspired by modern mindfulness psychology",
+    "microAction": "Say both halves of that sentence out loud once today.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 116,
+    "quote": "A well doesn't run dry from one bucket too many; it runs dry from never being refilled.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Refill your own energy today before someone else asks for more of it.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 117,
+    "quote": "The quiet corner of the room still belongs to the room.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "If you feel invisible today, do one thing that only you would notice, for you.",
+    "tags": ["low", "gratitude"]
+  },
+  {
+    "id": 118,
+    "quote": "A knot untied gently comes apart easier than one pulled at.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Approach one tangled problem today slowly, instead of forcing it.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 119,
+    "quote": "The old tree still gives shade, whether or not anyone thanks it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one kind thing today for someone who will probably never say thank you.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 120,
+    "quote": "A candle shared with another still burns just as bright.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Teach or show someone one small thing you know today.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 121,
+    "quote": "The tide always comes back, even after it seems entirely gone.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "If motivation feels absent today, do a small version of the task anyway — it tends to return once you start.",
+    "tags": ["low", "growth"]
+  },
+  {
+    "id": 122,
+    "quote": "You are the sky; the mood is just weather passing through.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Name today's mood like weather — 'a little stormy' — and let it pass without judgment.",
+    "tags": ["low", "calm"]
+  },
+  {
+    "id": 123,
+    "quote": "The strongest branches grew through wind, not despite it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Look for one strength today that a hard time actually gave you.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 124,
+    "quote": "A door closed softly can still be opened again.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "End one disagreement today gently, even if it isn't fully resolved.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 125,
+    "quote": "The smallest lantern still counts as light.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Don't dismiss a small win today just because it isn't a big one.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 126,
+    "quote": "Even the tallest bamboo started out hollow and light.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let yourself be a beginner at one thing today without apologizing for it.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 127,
+    "quote": "The quiet path and the busy road can lead to the same door.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take the slower, quieter option today when it's available.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 128,
+    "quote": "A cup of tea shared says more than a long apology.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Offer a small, ordinary kindness today instead of a big gesture.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 129,
+    "quote": "The field left fallow this year is not a field wasted.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one part of your life rest this season without calling it failure.",
+    "tags": ["low", "calm"]
+  },
+  {
+    "id": 130,
+    "quote": "A single candle can relight a hundred others without losing its own flame.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Encourage someone today without worrying it will cost you anything.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 131,
+    "quote": "The mountain looks different depending on where you're standing.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Try seeing today's problem from one other person's point of view.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 132,
+    "quote": "Sand held loosely stays in the hand; sand gripped tightly slips away.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Loosen your grip today on one outcome you can't fully control.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 133,
+    "quote": "The best time to plant a tree was years ago; the second best time is today.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Start the thing you've been delaying, even a small piece of it, today.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 134,
+    "quote": "A room feels bigger once you stop filling every corner.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Leave one part of today's schedule intentionally empty.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 135,
+    "quote": "The quiet friend who stays is worth more than the loud one who visits once.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Reach out today to someone steady, just to say hello.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 136,
+    "quote": "Even a cracked mirror still shows the truth.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Accept one imperfect truth about today without trying to fix it right away.",
+    "tags": ["growth", "low"]
+  },
+  {
+    "id": 137,
+    "quote": "The snow doesn't fall faster because you're impatient for spring.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one thing today you're rushing that simply needs its own time.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 138,
+    "quote": "A quiet apology is still an apology.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "If you owe someone an apology, offer it today, simply and without excuses.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 139,
+    "quote": "The smallest root still holds the largest tree in place.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Name one small daily habit today that's quietly holding up something bigger.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 140,
+    "quote": "A calm sea and a skilled sailor rarely make a good story, but they make a good life.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one ordinary, uneventful moment today be enough, without needing more.",
+    "tags": ["calm", "gratitude"]
+  },
+  {
+    "id": 141,
+    "quote": "The reflection in still water is clear; the reflection in a storm is not.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Wait for a calmer moment today before responding to something that upset you.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 142,
+    "quote": "A single stitch, repeated, becomes a whole garment.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Repeat one small good habit today, even if yesterday you skipped it.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 143,
+    "quote": "The old road is still a road, even when the map calls it slow.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Choose the more meaningful option today over the merely efficient one.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 144,
+    "quote": "A single kind word can outlast a hundred harsh ones.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Choose your words once today as if they'll be remembered for years.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 145,
+    "quote": "The lamp doesn't need to understand the dark to shine into it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Show up for someone today even if you don't have the right words.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 146,
+    "quote": "A field of one flower is still a garden.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one small joy today be enough, without needing a whole bouquet of good things.",
+    "tags": ["gratitude", "calm"]
+  },
+  {
+    "id": 147,
+    "quote": "The heaviest stone is lighter once someone helps you carry it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let someone help you with one thing today instead of insisting on doing it alone.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 148,
+    "quote": "A quiet season is not the same as a wasted one.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "If things feel slow today, look for one quiet form of progress you might be missing.",
+    "tags": ["low", "growth"]
+  },
+  {
+    "id": 149,
+    "quote": "The bell doesn't ring until it's struck, and the striking isn't violence — it's purpose.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Let one challenge today reveal something in you, instead of just wearing you down.",
+    "tags": ["growth", "stress"]
+  },
+  {
+    "id": 150,
+    "quote": "Coming home to yourself doesn't require a journey, only a pause.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Pause once today, hand on your chest, and just notice you're here.",
+    "tags": ["calm", "gratitude"]
   }
 ]
