@@ -5,6 +5,7 @@ struct TodayView: View {
     @State private var library: [ContentItem] = ContentLibrary.loadSeed()
     @State private var journalText: String = ""
     @State private var selectedMoods: Set<Mood> = []
+    @State private var isShowingShareCard = false
 
     private var todayItem: ContentItem? {
         ContentLibrary.todayItem(from: library)
@@ -24,6 +25,11 @@ struct TodayView: View {
                 .padding()
             }
             .navigationTitle("Today")
+            .sheet(isPresented: $isShowingShareCard) {
+                if let item = todayItem {
+                    ShareCardSheet(text: item.quote)
+                }
+            }
         }
     }
 
@@ -36,6 +42,13 @@ struct TodayView: View {
                 .foregroundStyle(.secondary)
             Text(item.microAction)
                 .font(.body)
+            Button {
+                isShowingShareCard = true
+            } label: {
+                Label("Share", systemImage: "square.and.arrow.up")
+                    .font(.caption.weight(.semibold))
+            }
+            .padding(.top, 4)
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)

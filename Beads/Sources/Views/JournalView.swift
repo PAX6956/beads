@@ -2,6 +2,7 @@ import SwiftUI
 
 struct JournalView: View {
     @EnvironmentObject private var store: PracticeStore
+    @State private var entryToShare: JournalEntry?
 
     private var groupedByMonth: [(String, [JournalEntry])] {
         let formatter = DateFormatter()
@@ -30,6 +31,9 @@ struct JournalView: View {
                 }
             }
             .navigationTitle("Journal")
+            .sheet(item: $entryToShare) { entry in
+                ShareCardSheet(text: entry.text)
+            }
         }
     }
 
@@ -63,6 +67,12 @@ struct JournalView: View {
             if !entry.text.isEmpty {
                 Text(entry.text)
                     .font(.body)
+                Button {
+                    entryToShare = entry
+                } label: {
+                    Label("Share", systemImage: "square.and.arrow.up")
+                        .font(.caption.weight(.semibold))
+                }
             }
         }
         .padding(.vertical, 4)
