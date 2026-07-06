@@ -5,8 +5,8 @@ struct ShareCardSheet: View {
 
     @Environment(\.dismiss) private var dismiss
     @State private var selectedTemplate: ShareCardTemplate = .inkWash
-    @State private var renderedImage: UIImage?
-    @State private var isShowingActivitySheet = false
+    @State private var shareURL: URL?
+    @State private var previewImage: Image?
 
     var body: some View {
         NavigationStack {
@@ -17,15 +17,7 @@ struct ShareCardSheet: View {
 
                 templatePicker
 
-                Button {
-                    share()
-                } label: {
-                    Label("Share", systemImage: "square.and.arrow.up")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                }
-                .buttonStyle(.borderedProminent)
-                .padding(.horizontal)
+                shareButton
 
                 Spacer()
             }
@@ -36,11 +28,26 @@ struct ShareCardSheet: View {
                     Button("Close") { dismiss() }
                 }
             }
-            .sheet(isPresented: $isShowingActivitySheet) {
-                if let renderedImage {
-                    ActivityShareSheet(items: [renderedImage])
-                }
+            .task(id: selectedTemplate) {
+                renderToTempFile()
             }
+        }
+    }
+
+    @ViewBuilder
+    private var shareButton: some View {
+        if let shareURL {
+            ShareLink(item: shareURL, preview: SharePreview(text, image: previewImage ?? Image(systemName: "photo"))) {
+                Label("Share", systemImage: "square.and.arrow.up")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(.horizontal)
+        } else {
+            ProgressView()
+                .frame(maxWidth: .infinity)
+                .padding()
         }
     }
 
@@ -63,9 +70,20 @@ struct ShareCardSheet: View {
         }
     }
 
-    private func share() {
-        renderedImage = ShareCardRenderer.renderImage(text: text, template: selectedTemplate)
-        isShowingActivitySheet = renderedImage != nil
+    private func renderToTempFile() {
+        shareURL = nil
+        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate) else { return }
+        previewImage = Image(uiImage: image)
+        guard let data = image.pngData() else { return }
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent(UUID().uuidString)
+            .appendingPathExtension("png")
+        do {
+            try data.write(to: url)
+            shareURL = url
+        } catch {
+            shareURL = nil
+        }
     }
 }
 

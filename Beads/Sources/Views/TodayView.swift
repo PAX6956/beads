@@ -6,6 +6,7 @@ struct TodayView: View {
     @State private var journalText: String = ""
     @State private var selectedMoods: Set<Mood> = []
     @State private var isShowingShareCard = false
+    @FocusState private var isJournalFieldFocused: Bool
 
     private var todayItem: ContentItem? {
         ContentLibrary.todayItem(from: library)
@@ -24,7 +25,14 @@ struct TodayView: View {
                 }
                 .padding()
             }
+            .scrollDismissesKeyboard(.interactively)
             .navigationTitle("Today")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") { isJournalFieldFocused = false }
+                }
+            }
             .sheet(isPresented: $isShowingShareCard) {
                 if let item = todayItem {
                     ShareCardSheet(text: item.quote)
@@ -75,6 +83,7 @@ struct TodayView: View {
             moodPicker
             TextField("A short reflection (optional)", text: $journalText, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
+                .focused($isJournalFieldFocused)
                 .onChange(of: journalText) { newValue in
                     if newValue.count > JournalEntry.maxTextLength {
                         journalText = String(newValue.prefix(JournalEntry.maxTextLength))
@@ -84,6 +93,7 @@ struct TodayView: View {
                 store.addJournalEntry(text: journalText, moods: Array(selectedMoods))
                 journalText = ""
                 selectedMoods = []
+                isJournalFieldFocused = false
             }
             .disabled(journalText.isEmpty && selectedMoods.isEmpty)
         }

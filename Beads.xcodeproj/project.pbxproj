@@ -18,7 +18,6 @@
 		5FD11FB93974A8E86C64A7AE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8198F46797D2C58BAB1B01B /* JournalView.swift */; };
 		7692250C32655979A1A666BB /* JournalEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */; };
 		8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726037A2CCC684FCC972B4A8 /* TodayView.swift */; };
-		9A42C69EDA9B7A7FD9656812 /* ActivityShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C4F745299E223641DB17D /* ActivityShareSheet.swift */; };
 		9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36226408D1E2BE2756C90E67 /* BeadsApp.swift */; };
 		C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */; };
 		C8FFEAEDE9A3FB2893F57E2F /* ShareCardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */; };
@@ -32,7 +31,6 @@
 		15501694577ACD8D789461EF /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
 		16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PracticeEntry+CloudKit.swift"; sourceTree = "<group>"; };
 		185043DB4207ADFE1B004F2F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		346C4F745299E223641DB17D /* ActivityShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShareSheet.swift; sourceTree = "<group>"; };
 		36226408D1E2BE2756C90E67 /* BeadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsApp.swift; sourceTree = "<group>"; };
 		3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardTemplate.swift; sourceTree = "<group>"; };
 		4DA534FCD2B47998E200F09D /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		A5CE0ED732F6EC2A43A7995E /* Sharing */ = {
 			isa = PBXGroup;
 			children = (
-				346C4F745299E223641DB17D /* ActivityShareSheet.swift */,
 				5057C27830636231EB48EA37 /* ShareCardSheet.swift */,
 				3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */,
 				EAF15C95AD3F868CBFDCEB93 /* ShareCardView.swift */,
@@ -226,7 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A42C69EDA9B7A7FD9656812 /* ActivityShareSheet.swift in Sources */,
 				9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */,
 				C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */,
 				1BA21018BED4C7451754C7A2 /* CloudSyncService.swift in Sources */,
