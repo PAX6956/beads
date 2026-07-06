@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "quote": "You can't stop the waves, but you can learn to surf.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Before your first meeting today, take three quiet breaths and notice what you're feeling.",
+    "tags": ["calm", "stress"]
+  },
+  {
+    "id": 2,
+    "quote": "Water benefits all things without contending with them.",
+    "sourceNote": "Inspired by the Tao Te Ching",
+    "microAction": "The next time someone disagrees with you, pause before responding.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 3,
+    "quote": "Difficulty itself can be the doorway to clarity.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Write down one annoying thing that happened today, and one thing it taught you.",
+    "tags": ["growth", "stress"]
+  },
+  {
+    "id": 4,
+    "quote": "The obstacle you're avoiding is often the exact path forward.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Name one task you've been putting off. Spend just two minutes starting it.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 5,
+    "quote": "A journey of a thousand miles begins with a single step.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Pick the smallest possible first step toward something you want to change, and take it today.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 6,
+    "quote": "The mind is like water — when agitated, it's hard to see; when calm, everything becomes clear.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "Sit quietly for 60 seconds before opening your first email today.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 7,
+    "quote": "What you resist tends to persist.",
+    "sourceNote": "Inspired by modern mindfulness psychology",
+    "microAction": "Notice one feeling you've been pushing away today. Just name it, without trying to fix it.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 8,
+    "quote": "The quieter you become, the more you can hear.",
+    "sourceNote": "Inspired by Taoist wisdom",
+    "microAction": "Eat one meal today without your phone nearby.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 9,
+    "quote": "A tree that bends in the storm survives; one that stands rigid breaks.",
+    "sourceNote": "Inspired by classical Taoist parable",
+    "microAction": "When plans change today, notice your first reaction before you react.",
+    "tags": ["growth", "stress"]
+  },
+  {
+    "id": 10,
+    "quote": "You do not have to control your thoughts. You just have to stop letting them control you.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Next time a worry loops in your head, silently say 'thinking' and let it pass.",
+    "tags": ["stress"]
+  },
+  {
+    "id": 11,
+    "quote": "Empty your cup so that it may be filled.",
+    "sourceNote": "Inspired by a classical Zen story",
+    "microAction": "In your next conversation, try listening fully before forming your reply.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 12,
+    "quote": "Nature does not hurry, yet everything is accomplished.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Do one task today 20% slower than you normally would, on purpose.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 13,
+    "quote": "The wound is the place where the light enters you.",
+    "sourceNote": "Inspired by classical poetic wisdom",
+    "microAction": "Think of a hard moment from this year. Name one strength it gave you.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 14,
+    "quote": "Knowing others is wisdom; knowing yourself is enlightenment.",
+    "sourceNote": "Inspired by Laozi, reframed",
+    "microAction": "Ask yourself once today: 'What do I actually need right now?'",
+    "tags": ["growth"]
+  },
+  {
+    "id": 15,
+    "quote": "The best way to spend today is to be fully here for it.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Pick one ordinary moment today — a walk, a coffee — and give it your full attention.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 16,
+    "quote": "A calm sea never made a skilled sailor.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one challenge today and silently thank it for the practice it's giving you.",
+    "tags": ["growth", "gratitude"]
+  },
+  {
+    "id": 17,
+    "quote": "When you let go of what you cannot control, you find what you can.",
+    "sourceNote": "Inspired by Taoist and Stoic thought",
+    "microAction": "Name one thing outside your control today, and consciously set it down.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 18,
+    "quote": "Gratitude turns what we have into enough.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Before bed tonight, name one small thing that went well today.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 19,
+    "quote": "The soft overcomes the hard; the slow overcomes the fast.",
+    "sourceNote": "Inspired by the Tao Te Ching",
+    "microAction": "In a disagreement today, try responding gently instead of firmly.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 20,
+    "quote": "You are not your thoughts. You are the one who notices them.",
+    "sourceNote": "Inspired by modern mindfulness psychology",
+    "microAction": "When a stressful thought arises today, mentally take one step back from it.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 21,
+    "quote": "Every ending carries the seed of a new beginning.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Think of something that recently ended. Name one door it opened.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 22,
+    "quote": "Stillness is not the absence of motion, but the absence of struggle.",
+    "sourceNote": "Inspired by Zen teaching",
+    "microAction": "Take one task today and do it without rushing toward the finish.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 23,
+    "quote": "What you pay attention to grows.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Spend 30 seconds today noticing something beautiful and ordinary — light, a sound, a face.",
+    "tags": ["gratitude", "calm"]
+  },
+  {
+    "id": 24,
+    "quote": "The bamboo that bends is stronger than the oak that resists.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Where today can you bend a little instead of insisting on being right?",
+    "tags": ["growth"]
+  },
+  {
+    "id": 25,
+    "quote": "Not knowing is the most intimate.",
+    "sourceNote": "Inspired by a classical Zen koan",
+    "microAction": "Sit with one question today without rushing to answer it.",
+    "tags": ["growth", "calm"]
+  },
+  {
+    "id": 26,
+    "quote": "Anger is a stone thrown into still water — the ripples take time to settle.",
+    "sourceNote": "Inspired by classical Zen imagery",
+    "microAction": "Next time you feel irritated, wait 10 seconds before you speak.",
+    "tags": ["stress"]
+  },
+  {
+    "id": 27,
+    "quote": "Simplicity is the return to the root.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Remove one unnecessary thing from your to-do list today.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 28,
+    "quote": "The one who conquers themselves is the strongest.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Notice one small urge today (checking your phone, snapping back) and choose not to act on it.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 29,
+    "quote": "Even the darkest night will end, and the sun will rise.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "If today feels heavy, name one small thing you're looking forward to tomorrow.",
+    "tags": ["low", "growth"]
+  },
+  {
+    "id": 30,
+    "quote": "A candle loses nothing by lighting another candle.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Offer one small piece of encouragement to someone today, without expecting anything back.",
+    "tags": ["gratitude"]
+  },
+  {
+    "id": 31,
+    "quote": "The quality of your attention determines the quality of your day.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Choose one activity today to do with your phone in another room.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 32,
+    "quote": "Rest is not idleness — it is the ground where growth happens.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Give yourself 10 minutes today to do absolutely nothing, on purpose.",
+    "tags": ["calm", "stress"]
+  },
+  {
+    "id": 33,
+    "quote": "The river cuts through rock not by force, but by persistence.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take one tiny step today on something that feels too big to finish.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 34,
+    "quote": "Comparison is the thief of your own quiet joy.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Notice one moment today when you compare yourself to someone else. Just notice it, gently.",
+    "tags": ["stress", "growth"]
+  },
+  {
+    "id": 35,
+    "quote": "The tighter the grip, the harder it is to hold anything at all.",
+    "sourceNote": "Inspired by Taoist imagery",
+    "microAction": "Notice one thing you're gripping too tightly today — a plan, an outcome — and loosen your hold slightly.",
+    "tags": ["stress", "calm"]
+  },
+  {
+    "id": 36,
+    "quote": "A mind that is too full has no room left to receive.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "Leave 5 minutes of unscheduled space somewhere in today's calendar.",
+    "tags": ["calm"]
+  },
+  {
+    "id": 37,
+    "quote": "Kindness returns to the one who gives it, even when unseen.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one small kind thing today that no one will ever know about.",
+    "tags": ["gratitude", "growth"]
+  },
+  {
+    "id": 38,
+    "quote": "Change is not something to survive — it is something to move with.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Name one change happening in your life right now, and one way you could move with it instead of against it.",
+    "tags": ["growth"]
+  },
+  {
+    "id": 39,
+    "quote": "The quiet moment before you speak is where wisdom lives.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "In your next conversation, leave one full breath of silence before you reply.",
+    "tags": ["calm", "growth"]
+  },
+  {
+    "id": 40,
+    "quote": "You are already whole. Today is simply for remembering it.",
+    "sourceNote": "Inspired by modern mindfulness teaching",
+    "microAction": "Look in the mirror once today and silently say one true, kind thing to yourself.",
+    "tags": ["gratitude", "calm"]
+  }
+]

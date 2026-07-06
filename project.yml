@@ -1,0 +1,48 @@
+name: Beads
+options:
+  bundleIdPrefix: com.beadsapp
+  deploymentTarget:
+    iOS: "16.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  Beads:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: Beads/Sources
+      - path: Beads/Content
+        buildPhase: resources
+    info:
+      path: Generated/Beads-Info.plist
+      properties:
+        CFBundleDisplayName: Beads
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        ITSAppUsesNonExemptEncryption: false
+    entitlements:
+      path: Beads/Beads.entitlements
+      properties:
+        com.apple.developer.applesignin:
+          - Default
+        com.apple.developer.icloud-container-identifiers:
+          - iCloud.com.beadsapp.beads
+        com.apple.developer.icloud-services:
+          - CloudKit
+        com.apple.developer.icloud-container-environment: Development
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.beadsapp.beads
+        DEVELOPMENT_TEAM: P472QJPHV5
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
