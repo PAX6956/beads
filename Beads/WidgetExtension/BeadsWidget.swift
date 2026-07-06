@@ -39,9 +39,24 @@ struct BeadsWidgetProvider: TimelineProvider {
 }
 
 struct BeadsWidgetView: View {
+    @Environment(\.widgetFamily) private var family
     let entry: BeadsWidgetEntry
 
     var body: some View {
+        switch family {
+        case .accessoryCircular:
+            circularView
+                .containerBackground(for: .widget) { Color.clear }
+        case .accessoryRectangular:
+            rectangularView
+                .containerBackground(for: .widget) { Color.clear }
+        default:
+            homeScreenView
+                .containerBackground(for: .widget) { Color(.systemBackground) }
+        }
+    }
+
+    private var homeScreenView: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(entry.quote)
                 .font(.caption.weight(.medium))
@@ -66,8 +81,44 @@ struct BeadsWidgetView: View {
             }
         }
         .padding()
-        .containerBackground(for: .widget) {
-            Color(.systemBackground)
+    }
+
+    /// Lock screen circular family — the system renders this in a vibrant,
+    /// tinted/monochrome mode, so explicit colors mostly get overridden;
+    /// keep it to shapes and text.
+    private var circularView: some View {
+        ZStack {
+            AccessoryWidgetBackground()
+            if entry.hasCompletedToday {
+                Image(systemName: "checkmark.circle.fill")
+                    .font(.title2)
+                    .widgetAccentable()
+            } else {
+                VStack(spacing: 0) {
+                    Text("\(entry.streak)")
+                        .font(.headline)
+                    Text("days")
+                        .font(.system(size: 9))
+                }
+            }
+        }
+    }
+
+    private var rectangularView: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(entry.quote)
+                .font(.caption2)
+                .lineLimit(2)
+            if entry.hasCompletedToday {
+                Label("Done", systemImage: "checkmark.circle.fill")
+                    .font(.caption2)
+                    .widgetAccentable()
+            } else {
+                Button(intent: MarkPracticeIntent()) {
+                    Text("Practice")
+                        .font(.caption2)
+                }
+            }
         }
     }
 }
@@ -79,7 +130,7 @@ struct BeadsWidget: Widget {
         }
         .configurationDisplayName("Today's Practice")
         .description("See today's quote and mark your practice without opening the app.")
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .accessoryCircular, .accessoryRectangular])
     }
 }
 
