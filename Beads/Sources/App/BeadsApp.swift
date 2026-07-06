@@ -12,6 +12,10 @@ struct BeadsApp: App {
                 .onChange(of: scenePhase) { newPhase in
                     if newPhase == .active {
                         store.refreshFromDisk()
+                        Task {
+                            await NotificationScheduler.requestAuthorizationIfNeeded()
+                            NotificationScheduler.rescheduleUpcoming()
+                        }
                     }
                 }
         }

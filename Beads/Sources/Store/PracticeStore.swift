@@ -91,6 +91,7 @@ final class PracticeStore: ObservableObject {
         guard let entry = SharedStorage.markTodayComplete() else { return }
         practiceEntries.append(entry)
         pushToCloud(entry)
+        NotificationScheduler.cancelReminder()
     }
 
     func makeUp(date: Date) {
