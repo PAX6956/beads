@@ -23,6 +23,7 @@
 		5FD11FB93974A8E86C64A7AE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8198F46797D2C58BAB1B01B /* JournalView.swift */; };
 		6208DD480035049FDD2B2E8D /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E4A07D1261A1F346AB8819 /* SharedStorage.swift */; };
 		6292480D711E5FA991AFB9A7 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BC7176DB1CD403C8FF6CA /* NotificationScheduler.swift */; };
+		67EC426097CEE21AF5B817D3 /* TakeAMomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C38A4DEEA7C37140D33CB /* TakeAMomentView.swift */; };
 		7692250C32655979A1A666BB /* JournalEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */; };
 		89365D7F5994F02E24A179A1 /* MarkPracticeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */; };
 		8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726037A2CCC684FCC972B4A8 /* TodayView.swift */; };
@@ -76,6 +77,7 @@
 		185043DB4207ADFE1B004F2F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1C144B14F477F40800394608 /* DataExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExporter.swift; sourceTree = "<group>"; };
 		2FCCA6F5667EA92D1A97DF95 /* BeadsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeadsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		303C38A4DEEA7C37140D33CB /* TakeAMomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAMomentView.swift; sourceTree = "<group>"; };
 		36226408D1E2BE2756C90E67 /* BeadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsApp.swift; sourceTree = "<group>"; };
 		3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardTemplate.swift; sourceTree = "<group>"; };
 		4DA534FCD2B47998E200F09D /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				C8198F46797D2C58BAB1B01B /* JournalView.swift */,
 				B8D6819EA996FDB56EF81C1E /* MakeUpPracticeSheet.swift */,
 				B9DB22B80E75AA0E56E42D12 /* SettingsView.swift */,
+				303C38A4DEEA7C37140D33CB /* TakeAMomentView.swift */,
 				726037A2CCC684FCC972B4A8 /* TodayView.swift */,
 			);
 			path = Views;
@@ -384,6 +387,7 @@
 				C8FFEAEDE9A3FB2893F57E2F /* ShareCardTemplate.swift in Sources */,
 				0A136826FBB021B7DD5BFD69 /* ShareCardView.swift in Sources */,
 				E4250F0C6997F3FC2FE9811D /* SharedStorage.swift in Sources */,
+				67EC426097CEE21AF5B817D3 /* TakeAMomentView.swift in Sources */,
 				8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

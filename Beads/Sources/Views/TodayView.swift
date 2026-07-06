@@ -9,6 +9,7 @@ struct TodayView: View {
     @State private var journalText: String = ""
     @State private var selectedMoods: Set<Mood> = []
     @State private var isShowingShareCard = false
+    @State private var isShowingMoment = false
     @FocusState private var isJournalFieldFocused: Bool
     #if DEBUG
     @State private var pendingNotificationsSummary: String = "Loading…"
@@ -45,11 +46,21 @@ struct TodayView: View {
                     Spacer()
                     Button("Done") { isJournalFieldFocused = false }
                 }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        isShowingMoment = true
+                    } label: {
+                        Label("Take a moment", systemImage: "wind")
+                    }
+                }
             }
             .sheet(isPresented: $isShowingShareCard) {
                 if let item = todayItem {
                     ShareCardSheet(text: item.quote)
                 }
+            }
+            .fullScreenCover(isPresented: $isShowingMoment) {
+                TakeAMomentView()
             }
         }
     }
