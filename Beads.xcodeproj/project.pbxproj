@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		164588818D3A7695DA899620 /* PracticeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC293FFB8808AC68A45501A /* PracticeStore.swift */; };
+		1BA21018BED4C7451754C7A2 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15501694577ACD8D789461EF /* CloudSyncService.swift */; };
 		20AC8C8D5409C39CC1C5D085 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760F4ACC67AB26B7152213F /* JournalEntry.swift */; };
+		2C640E0533208C35FA7282DD /* PracticeEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */; };
 		2F1728E0FF8CD97CA0C4F5C9 /* seed_practices.json in Resources */ = {isa = PBXBuildFile; fileRef = FA525BD62D3CA2B4745E01DE /* seed_practices.json */; };
 		498A66BEF60852864D2BE48B /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA534FCD2B47998E200F09D /* Mood.swift */; };
 		4A52EB1D763E155D5851E19F /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */; };
 		5FD11FB93974A8E86C64A7AE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8198F46797D2C58BAB1B01B /* JournalView.swift */; };
+		7692250C32655979A1A666BB /* JournalEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */; };
 		8AA91902CD4343B343AD3F3D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726037A2CCC684FCC972B4A8 /* TodayView.swift */; };
 		9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36226408D1E2BE2756C90E67 /* BeadsApp.swift */; };
 		C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */; };
@@ -22,10 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15501694577ACD8D789461EF /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
+		16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PracticeEntry+CloudKit.swift"; sourceTree = "<group>"; };
 		185043DB4207ADFE1B004F2F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		36226408D1E2BE2756C90E67 /* BeadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsApp.swift; sourceTree = "<group>"; };
 		4DA534FCD2B47998E200F09D /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		4E93A924D25E7D1663ECE189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CloudKit.swift"; sourceTree = "<group>"; };
 		6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeEntry.swift; sourceTree = "<group>"; };
 		726037A2CCC684FCC972B4A8 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		8FC293FFB8808AC68A45501A /* PracticeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeStore.swift; sourceTree = "<group>"; };
@@ -43,6 +49,7 @@
 			children = (
 				4E93A924D25E7D1663ECE189 /* Assets.xcassets */,
 				A3A2670964103F8E67381B99 /* App */,
+				B3B5BDA77BD458D9FC019F4F /* CloudKit */,
 				DA237FFCEC20D16242DAD30F /* Models */,
 				F70FEB5CB5E372066892091D /* Store */,
 				592DBDDA8BB0C4A55271E1BB /* Views */,
@@ -83,6 +90,16 @@
 				185043DB4207ADFE1B004F2F /* RootView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		B3B5BDA77BD458D9FC019F4F /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				15501694577ACD8D789461EF /* CloudSyncService.swift */,
+				6DD9F392D78BF9B90235D1ED /* JournalEntry+CloudKit.swift */,
+				16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */,
+			);
+			path = CloudKit;
 			sourceTree = "<group>";
 		};
 		C7B27705FBCA0E4C344F8D70 /* Products */ = {
@@ -191,10 +208,13 @@
 			files = (
 				9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */,
 				C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */,
+				1BA21018BED4C7451754C7A2 /* CloudSyncService.swift in Sources */,
 				4A52EB1D763E155D5851E19F /* ContentItem.swift in Sources */,
+				7692250C32655979A1A666BB /* JournalEntry+CloudKit.swift in Sources */,
 				20AC8C8D5409C39CC1C5D085 /* JournalEntry.swift in Sources */,
 				5FD11FB93974A8E86C64A7AE /* JournalView.swift in Sources */,
 				498A66BEF60852864D2BE48B /* Mood.swift in Sources */,
+				2C640E0533208C35FA7282DD /* PracticeEntry+CloudKit.swift in Sources */,
 				D995C9756ECC1DB30391A7CC /* PracticeEntry.swift in Sources */,
 				164588818D3A7695DA899620 /* PracticeStore.swift in Sources */,
 				FF963502567CA4DA7E7AD1D0 /* RootView.swift in Sources */,
