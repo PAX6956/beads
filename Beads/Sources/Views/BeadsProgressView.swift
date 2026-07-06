@@ -35,7 +35,7 @@ struct BeadsProgressView: View {
 
     private func bead(filled: Bool, isCurrent: Bool) -> some View {
         Circle()
-            .fill(filled ? Color.brown : Color.gray.opacity(0.25))
+            .fill(filled ? Color.accentColor : Color.gray.opacity(0.25))
             .frame(width: 44, height: 44)
             .overlay(
                 Circle().strokeBorder(isCurrent ? Color.accentColor : .clear, lineWidth: 3)
