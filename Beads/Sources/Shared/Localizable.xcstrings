@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "A short reflection" : {
+
+    },
     "A short reflection (optional)" : {
 
     },
@@ -23,6 +26,9 @@
 
     },
     "Close" : {
+
+    },
+    "Complete" : {
 
     },
     "Delete all my data" : {
@@ -64,6 +70,9 @@
     "Low" : {
 
     },
+    "Make Up Practice" : {
+
+    },
     "No reflections yet" : {
 
     },
@@ -71,6 +80,9 @@
 
     },
     "Restless" : {
+
+    },
+    "Ringed days are within the last 3 days — tap to make up a missed practice." : {
 
     },
     "Ripple Card" : {

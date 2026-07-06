@@ -5,30 +5,34 @@ struct BeadsProgressView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 24) {
-                Text("\(store.currentStreak) day streak")
-                    .font(.largeTitle.weight(.bold))
+            ScrollView {
+                VStack(spacing: 24) {
+                    Text("\(store.currentStreak) day streak")
+                        .font(.largeTitle.weight(.bold))
 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 16) {
-                        ForEach(0..<max(store.beadCount + 1, 1), id: \.self) { index in
-                            bead(filled: index < store.beadCount,
-                                 isCurrent: index == store.beadCount)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 16) {
+                            ForEach(0..<max(store.beadCount + 1, 1), id: \.self) { index in
+                                bead(filled: index < store.beadCount,
+                                     isCurrent: index == store.beadCount)
+                            }
                         }
+                        .padding()
                     }
-                    .padding()
+
+                    ProgressView(value: store.progressToNextBead)
+                        .padding(.horizontal)
+
+                    Text("\(7 - Int(store.progressToNextBead * 7)) days to your next bead")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+
+                    Divider()
+
+                    HistoryCalendarView()
                 }
-
-                ProgressView(value: store.progressToNextBead)
-                    .padding(.horizontal)
-
-                Text("\(7 - Int(store.progressToNextBead * 7)) days to your next bead")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-
-                Spacer()
+                .padding(.top, 32)
             }
-            .padding(.top, 32)
             .navigationTitle("Beads")
         }
     }
