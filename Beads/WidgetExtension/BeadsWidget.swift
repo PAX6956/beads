@@ -42,27 +42,27 @@ struct BeadsWidgetView: View {
     let entry: BeadsWidgetEntry
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 6) {
             Text(entry.quote)
                 .font(.caption.weight(.medium))
-                .lineLimit(4)
+                .lineLimit(3)
                 .minimumScaleFactor(0.8)
-            Spacer()
-            HStack {
-                Text("\(entry.streak)d streak")
-                    .font(.caption2)
-                    .foregroundStyle(.secondary)
-                Spacer()
-                if entry.hasCompletedToday {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(.green)
-                } else {
-                    Button(intent: MarkPracticeIntent()) {
-                        Text("Practice")
-                            .font(.caption2.weight(.semibold))
-                    }
-                    .buttonStyle(.borderedProminent)
+            Spacer(minLength: 4)
+            Text("\(entry.streak)d streak")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+            if entry.hasCompletedToday {
+                Label("Done", systemImage: "checkmark.circle.fill")
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(.green)
+            } else {
+                Button(intent: MarkPracticeIntent()) {
+                    Text("Practice")
+                        .font(.caption2.weight(.semibold))
+                        .frame(maxWidth: .infinity)
                 }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.small)
             }
         }
         .padding()
