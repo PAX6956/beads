@@ -28,6 +28,8 @@
 		A5ACED7A86C7ED75556948AA /* seed_practices.json in Resources */ = {isa = PBXBuildFile; fileRef = FA525BD62D3CA2B4745E01DE /* seed_practices.json */; };
 		C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */; };
 		C8FFEAEDE9A3FB2893F57E2F /* ShareCardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */; };
+		C9E9646EDD8C7EBE2E54A08E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */; };
+		CDE5E3E7357446AB35EDDAA5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */; };
 		CE29B018158A2D4484A99559 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */; };
 		D995C9756ECC1DB30391A7CC /* PracticeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */; };
 		E38420F97F28B732C4DA0FD4 /* PracticeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A9B4D564A4C175A849CC0 /* PracticeEntry.swift */; };
@@ -79,6 +81,7 @@
 		726037A2CCC684FCC972B4A8 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		8FC293FFB8808AC68A45501A /* PracticeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeStore.swift; sourceTree = "<group>"; };
 		B1EBC43281E94DE2A0E685C0 /* Beads.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Beads.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		C8198F46797D2C58BAB1B01B /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItem.swift; sourceTree = "<group>"; };
 		D760F4ACC67AB26B7152213F /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		8ECAE11DE261E363FF1DC7CA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C0C9CEB0E33F78D5E121A75D /* Localizable.xcstrings */,
 				60E4A07D1261A1F346AB8819 /* SharedStorage.swift */,
 			);
 			path = Shared;
@@ -298,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB23DD50C9CA8635D9189B6E /* Assets.xcassets in Resources */,
+				C9E9646EDD8C7EBE2E54A08E /* Localizable.xcstrings in Resources */,
 				2F1728E0FF8CD97CA0C4F5C9 /* seed_practices.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE5E3E7357446AB35EDDAA5 /* Localizable.xcstrings in Resources */,
 				A5ACED7A86C7ED75556948AA /* seed_practices.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beadsapp.beads.BeadsWidget;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -517,6 +524,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beadsapp.beads.BeadsWidget;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -539,6 +547,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beadsapp.beads;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -561,6 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beadsapp.beads;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

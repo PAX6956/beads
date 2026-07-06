@@ -58,6 +58,7 @@ struct JournalView: View {
             HStack {
                 ForEach(entry.moods) { mood in
                     Text(mood.emoji)
+                        .accessibilityLabel(mood.label)
                 }
                 Spacer()
                 Text(entry.date, style: .date)

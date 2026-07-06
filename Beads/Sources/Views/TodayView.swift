@@ -110,6 +110,7 @@ struct TodayView: View {
                         .padding(8)
                         .background(selectedMoods.contains(mood) ? Color.accentColor.opacity(0.2) : .clear, in: Circle())
                 }
+                .accessibilityLabel(mood.label)
             }
         }
     }
