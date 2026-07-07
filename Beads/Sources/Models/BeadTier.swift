@@ -1,7 +1,7 @@
 import Foundation
 
-/// One rung of the "patina" ladder — driven by lifetime cumulative practice
-/// days, never resets on a broken streak. Deliberately data-driven (bundled
+/// One rung of the "patina" ladder — driven by lifetime cumulative growth
+/// value, never resets on a broken streak. Deliberately data-driven (bundled
 /// JSON, same pattern as the content library) rather than a hardcoded enum:
 /// the ladder tops out at ~3 years today, but the whole point is that it
 /// isn't supposed to have a real ceiling. Adding tier 12+ later is just
@@ -34,17 +34,28 @@ enum BeadTierLibrary {
         return tiers.sorted { $0.thresholdDays < $1.thresholdDays }
     }
 
-    /// `beyondIntensity` is 0 for anyone still within the defined ladder, and
-    /// climbs slowly (never quite capping) once someone has out-lived every
-    /// tier currently in the data file — the "no ceiling" piece made concrete.
-    static func currentTier(lifetimeDays: Int, tiers: [BeadTier]) -> (tier: BeadTier, beyondIntensity: Double)? {
+    /// `growthValue` is a blend of practice/journaling/sharing (see
+    /// PracticeStore.growthValue) — thresholds are still expressed in
+    /// "day equivalents" since practice is the dominant contributor, but
+    /// journaling and sharing let someone nudge past a threshold a little
+    /// sooner. `beyondIntensity` is 0 for anyone still within the defined
+    /// ladder, and climbs slowly (never quite capping) once someone has
+    /// out-grown every tier currently in the data file — the "no ceiling"
+    /// piece made concrete.
+    static func currentTier(growthValue: Double, tiers: [BeadTier]) -> (tier: BeadTier, beyondIntensity: Double)? {
         guard let last = tiers.last else { return nil }
-        let tier = tiers.last(where: { $0.thresholdDays <= lifetimeDays }) ?? tiers[0]
+        let tier = tiers.last(where: { Double($0.thresholdDays) <= growthValue }) ?? tiers[0]
 
-        guard tier.order == last.order, lifetimeDays > last.thresholdDays else {
+        guard tier.order == last.order, growthValue > Double(last.thresholdDays) else {
             return (tier, 0)
         }
-        let extraYears = Double(lifetimeDays - last.thresholdDays) / 365.0
+        let extraYears = (growthValue - Double(last.thresholdDays)) / 365.0
         return (tier, min(1.0, extraYears / 10.0))
+    }
+
+    /// The next tier to reach, if any — used for the "N to go" annotation on
+    /// the Beads tab. Nil once someone has passed the last defined tier.
+    static func nextTier(after growthValue: Double, tiers: [BeadTier]) -> BeadTier? {
+        tiers.first { Double($0.thresholdDays) > growthValue }
     }
 }

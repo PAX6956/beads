@@ -10,11 +10,17 @@ struct JournalEntry: Codable, Identifiable {
     let date: Date
     var text: String
     var moods: [Mood]
+    /// The quote/practice line that was showing when this entry was written —
+    /// the whole point of a good line is that someone might be moved enough
+    /// by it, in that moment, to write a few words of their own. Optional so
+    /// entries synced from before this existed still decode fine.
+    var associatedQuote: String?
 
-    init(id: UUID = UUID(), date: Date = Date(), text: String = "", moods: [Mood] = []) {
+    init(id: UUID = UUID(), date: Date = Date(), text: String = "", moods: [Mood] = [], associatedQuote: String? = nil) {
         self.id = id
         self.date = date
         self.text = String(text.prefix(Self.maxTextLength))
         self.moods = Array(moods.prefix(Self.maxMoods))
+        self.associatedQuote = associatedQuote
     }
 }

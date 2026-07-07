@@ -11,7 +11,7 @@ struct BeadTierDebugView: View {
     var body: some View {
         List(tiers) { tier in
             HStack(spacing: 16) {
-                BeadRingView(lifetimeDays: tier.thresholdDays, cycleProgress: 8, size: 90)
+                BeadRingView(growthValue: Double(tier.thresholdDays), cycleProgress: 8, size: 90)
                 VStack(alignment: .leading) {
                     Text("\(tier.order). \(tier.name)")
                         .font(.headline)

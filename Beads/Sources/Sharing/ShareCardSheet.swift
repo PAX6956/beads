@@ -8,14 +8,15 @@ struct ShareCardSheet: View {
     @State private var selectedTemplate: ShareCardTemplate = .inkWash
     @State private var shareURL: URL?
     @State private var previewImage: Image?
+    @State private var showGrowthPulse = false
+    @State private var leveledUp = false
 
-    private var lifetimeDays: Int { store.practiceEntries.count }
     private var cycleProgress: Int { store.beadCount % BeadRingView.ringCapacity }
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 24) {
-                ShareCardView(text: text, template: selectedTemplate, lifetimeDays: lifetimeDays, cycleProgress: cycleProgress)
+                ShareCardView(text: text, template: selectedTemplate, growthValue: store.growthValue, cycleProgress: cycleProgress)
                     .shadow(radius: 12, y: 6)
                     .padding(.top, 16)
 
@@ -35,6 +36,7 @@ struct ShareCardSheet: View {
             .task(id: selectedTemplate) {
                 renderToTempFile()
             }
+            .growthPulse(isPresented: $showGrowthPulse, tier: store.currentTierInfo?.tier, beyondIntensity: store.currentTierInfo?.beyondIntensity ?? 0, leveledUp: leveledUp)
         }
     }
 
@@ -48,11 +50,20 @@ struct ShareCardSheet: View {
             }
             .buttonStyle(.borderedProminent)
             .padding(.horizontal)
+            .simultaneousGesture(TapGesture().onEnded { recordShareGrowth() })
         } else {
             ProgressView()
                 .frame(maxWidth: .infinity)
                 .padding()
         }
+    }
+
+    private func recordShareGrowth() {
+        let previousTier = store.currentTierInfo?.tier.order
+        store.recordShare()
+        leveledUp = previousTier != store.currentTierInfo?.tier.order
+        showGrowthPulse = true
+        Haptics.lightTap()
     }
 
     private var templatePicker: some View {
@@ -77,7 +88,7 @@ struct ShareCardSheet: View {
 
     private func renderToTempFile() {
         shareURL = nil
-        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, lifetimeDays: lifetimeDays, cycleProgress: cycleProgress) else { return }
+        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, growthValue: store.growthValue, cycleProgress: cycleProgress) else { return }
         previewImage = Image(uiImage: image)
         guard let data = image.pngData() else { return }
         let url = FileManager.default.temporaryDirectory

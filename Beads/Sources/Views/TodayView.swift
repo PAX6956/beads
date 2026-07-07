@@ -10,6 +10,8 @@ struct TodayView: View {
     @State private var selectedMoods: Set<Mood> = []
     @State private var isShowingShareCard = false
     @State private var isShowingMoment = false
+    @State private var showGrowthPulse = false
+    @State private var leveledUp = false
     @FocusState private var isJournalFieldFocused: Bool
     #if DEBUG
     @State private var pendingNotificationsSummary: String = "Loading…"
@@ -63,7 +65,17 @@ struct TodayView: View {
             .fullScreenCover(isPresented: $isShowingMoment) {
                 TakeAMomentView()
             }
+            .growthPulse(isPresented: $showGrowthPulse, tier: store.currentTierInfo?.tier, beyondIntensity: store.currentTierInfo?.beyondIntensity ?? 0, leveledUp: leveledUp)
         }
+    }
+
+    /// Callers capture `store.currentTierInfo?.tier.order` *before* the action
+    /// that changes growthValue, then pass it here right after — comparing to
+    /// the (now-updated) current tier tells us whether this specific action
+    /// was the one that tipped the bracelet into a new material.
+    private func pulseGrowth(previousTierOrder: Int?) {
+        leveledUp = previousTierOrder != store.currentTierInfo?.tier.order
+        showGrowthPulse = true
     }
 
     private func quoteCard(_ item: ContentItem) -> some View {
@@ -90,8 +102,10 @@ struct TodayView: View {
 
     private var practiceButton: some View {
         Button {
+            let previousTier = store.currentTierInfo?.tier.order
             store.markTodayComplete()
             Haptics.success()
+            pulseGrowth(previousTierOrder: previousTier)
         } label: {
             Label(store.hasCompletedToday() ? "Done for today" : "Practice",
                   systemImage: store.hasCompletedToday() ? "checkmark.circle.fill" : "circle")
@@ -116,11 +130,13 @@ struct TodayView: View {
                     }
                 }
             Button("Save") {
-                store.addJournalEntry(text: journalText, moods: Array(selectedMoods))
+                let previousTier = store.currentTierInfo?.tier.order
+                store.addJournalEntry(text: journalText, moods: Array(selectedMoods), associatedQuote: todayItem?.quote)
                 journalText = ""
                 selectedMoods = []
                 isJournalFieldFocused = false
                 Haptics.lightTap()
+                pulseGrowth(previousTierOrder: previousTier)
             }
             .disabled(journalText.isEmpty && selectedMoods.isEmpty)
         }

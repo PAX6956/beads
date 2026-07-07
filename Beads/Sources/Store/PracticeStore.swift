@@ -12,6 +12,7 @@ import CloudKit
 final class PracticeStore: ObservableObject {
     @Published private(set) var practiceEntries: [PracticeEntry] = []
     @Published private(set) var journalEntries: [JournalEntry] = []
+    @Published private(set) var shareCount: Int = SharedStorage.loadShareCount()
 
     private let cloudSync = CloudSyncService()
 
@@ -19,6 +20,25 @@ final class PracticeStore: ObservableObject {
         practiceEntries = SharedStorage.loadPracticeEntries()
         journalEntries = SharedStorage.loadJournalEntries()
         Task { await syncWithCloud() }
+    }
+
+    /// Practice, journaling, and sharing all move the bracelet forward — practice
+    /// is worth a full day since it's the core habit, journaling and sharing are
+    /// smaller bonuses so someone who reflects or shares often sees their string
+    /// change a bit faster without practice itself feeling secondary.
+    var growthValue: Double {
+        Double(practiceEntries.count)
+            + Double(journalEntries.count) * 0.3
+            + Double(shareCount) * 0.2
+    }
+
+    func recordShare() {
+        SharedStorage.incrementShareCount()
+        shareCount = SharedStorage.loadShareCount()
+    }
+
+    var currentTierInfo: (tier: BeadTier, beyondIntensity: Double)? {
+        BeadTierLibrary.currentTier(growthValue: growthValue, tiers: BeadTierLibrary.loadTiers())
     }
 
     /// Call when the app returns to the foreground so a completion recorded by
@@ -104,8 +124,8 @@ final class PracticeStore: ObservableObject {
         pushToCloud(entry)
     }
 
-    func addJournalEntry(text: String, moods: [Mood]) {
-        let entry = JournalEntry(text: text, moods: moods)
+    func addJournalEntry(text: String, moods: [Mood], associatedQuote: String? = nil, date: Date = Date()) {
+        let entry = JournalEntry(date: date, text: text, moods: moods, associatedQuote: associatedQuote)
         journalEntries.insert(entry, at: 0)
         SharedStorage.saveJournalEntries(journalEntries)
         pushToCloud(entry)

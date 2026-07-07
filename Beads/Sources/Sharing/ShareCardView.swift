@@ -3,12 +3,12 @@ import SwiftUI
 struct ShareCardView: View {
     let text: String
     let template: ShareCardTemplate
-    var lifetimeDays: Int = 0
+    var growthValue: Double = 0
     var cycleProgress: Int = 0
     var size: CGFloat = 360
 
     private var tierInfo: (tier: BeadTier, beyondIntensity: Double)? {
-        BeadTierLibrary.currentTier(lifetimeDays: lifetimeDays, tiers: BeadTierLibrary.loadTiers())
+        BeadTierLibrary.currentTier(growthValue: growthValue, tiers: BeadTierLibrary.loadTiers())
     }
 
     var body: some View {
@@ -50,8 +50,8 @@ struct ShareCardView: View {
 enum ShareCardRenderer {
     static let exportSize: CGFloat = 1080
 
-    static func renderImage(text: String, template: ShareCardTemplate, lifetimeDays: Int = 0, cycleProgress: Int = 0) -> UIImage? {
-        let view = ShareCardView(text: text, template: template, lifetimeDays: lifetimeDays, cycleProgress: cycleProgress, size: exportSize)
+    static func renderImage(text: String, template: ShareCardTemplate, growthValue: Double = 0, cycleProgress: Int = 0) -> UIImage? {
+        let view = ShareCardView(text: text, template: template, growthValue: growthValue, cycleProgress: cycleProgress, size: exportSize)
         let renderer = ImageRenderer(content: view)
         renderer.scale = 1
         return renderer.uiImage
@@ -59,5 +59,5 @@ enum ShareCardRenderer {
 }
 
 #Preview {
-    ShareCardView(text: "Simplicity is the return to the root.", template: .sunsetGradient, lifetimeDays: 120, cycleProgress: 6)
+    ShareCardView(text: "Simplicity is the return to the root.", template: .sunsetGradient, growthValue: 120, cycleProgress: 6)
 }

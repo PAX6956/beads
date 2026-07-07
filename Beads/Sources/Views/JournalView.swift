@@ -73,6 +73,11 @@ struct JournalView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
+            if let quote = entry.associatedQuote, !quote.isEmpty {
+                Text(quote)
+                    .font(.system(.callout, design: .serif).italic())
+                    .foregroundStyle(.secondary)
+            }
             if !entry.text.isEmpty {
                 Text(entry.text)
                     .font(.body)

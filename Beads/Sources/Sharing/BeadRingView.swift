@@ -8,14 +8,14 @@ import SwiftUI
 /// in bead count — and giving even a brand-new user a visible, bounded goal
 /// rather than nothing to look at.
 struct BeadRingView: View {
-    let lifetimeDays: Int
+    let growthValue: Double
     let cycleProgress: Int
     var size: CGFloat = 120
 
     static let ringCapacity = 12
 
     private var tierInfo: (tier: BeadTier, beyondIntensity: Double)? {
-        BeadTierLibrary.currentTier(lifetimeDays: lifetimeDays, tiers: BeadTierLibrary.loadTiers())
+        BeadTierLibrary.currentTier(growthValue: growthValue, tiers: BeadTierLibrary.loadTiers())
     }
 
     var body: some View {
@@ -40,10 +40,10 @@ struct BeadRingView: View {
 
 #Preview {
     VStack(spacing: 24) {
-        BeadRingView(lifetimeDays: 2, cycleProgress: 0)
-        BeadRingView(lifetimeDays: 45, cycleProgress: 4)
-        BeadRingView(lifetimeDays: 400, cycleProgress: 8)
-        BeadRingView(lifetimeDays: 1000, cycleProgress: 12)
+        BeadRingView(growthValue: 2, cycleProgress: 0)
+        BeadRingView(growthValue: 45, cycleProgress: 4)
+        BeadRingView(growthValue: 400, cycleProgress: 8)
+        BeadRingView(growthValue: 1000, cycleProgress: 12)
     }
     .padding()
 }

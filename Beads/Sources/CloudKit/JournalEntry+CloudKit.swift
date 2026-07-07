@@ -8,7 +8,8 @@ extension JournalEntry {
               let text = record["text"] as? String else { return nil }
         let moodsRaw = record["moods"] as? [String] ?? []
         let moods = moodsRaw.compactMap { Mood(rawValue: $0) }
-        self.init(id: id, date: date, text: text, moods: moods)
+        let associatedQuote = record["associatedQuote"] as? String
+        self.init(id: id, date: date, text: text, moods: moods, associatedQuote: associatedQuote)
     }
 
     func asRecord() -> CKRecord {
@@ -17,6 +18,7 @@ extension JournalEntry {
         record["date"] = date
         record["text"] = text
         record["moods"] = moods.map(\.rawValue)
+        record["associatedQuote"] = associatedQuote
         return record
     }
 }

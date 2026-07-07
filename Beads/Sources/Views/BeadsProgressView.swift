@@ -4,7 +4,11 @@ struct BeadsProgressView: View {
     @EnvironmentObject private var store: PracticeStore
 
     private var tierInfo: (tier: BeadTier, beyondIntensity: Double)? {
-        BeadTierLibrary.currentTier(lifetimeDays: store.practiceEntries.count, tiers: BeadTierLibrary.loadTiers())
+        store.currentTierInfo
+    }
+
+    private var nextTier: BeadTier? {
+        BeadTierLibrary.nextTier(after: store.growthValue, tiers: BeadTierLibrary.loadTiers())
     }
 
     private var cycleProgress: Int {
@@ -17,9 +21,13 @@ struct BeadsProgressView: View {
                 VStack(spacing: 20) {
                     if let tierInfo {
                         BeadCarouselView(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, cycleProgress: cycleProgress)
-                        Text(tierInfo.tier.name)
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(.secondary)
+                        VStack(spacing: 2) {
+                            Text(tierInfo.tier.name)
+                                .font(.subheadline.weight(.semibold))
+                            Text(growthAnnotation)
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
+                        }
                     }
 
                     Text("\(store.currentStreak) day streak")
@@ -40,6 +48,15 @@ struct BeadsProgressView: View {
             }
             .navigationTitle("Beads")
         }
+    }
+
+    private var growthAnnotation: String {
+        let growth = Int(store.growthValue)
+        if let nextTier {
+            let remaining = max(0, nextTier.thresholdDays - growth)
+            return "\(growth) growth days · \(remaining) to \(nextTier.name)"
+        }
+        return "\(growth) growth days"
     }
 }
 

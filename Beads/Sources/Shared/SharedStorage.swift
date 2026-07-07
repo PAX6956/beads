@@ -49,6 +49,17 @@ enum SharedStorage {
         return entry
     }
 
+    /// Device-local only (not synced to CloudKit) — a minor growth-value input,
+    /// not core data worth the complexity of syncing across devices.
+    static func loadShareCount() -> Int {
+        UserDefaults(suiteName: appGroupIdentifier)?.integer(forKey: "shareCount") ?? 0
+    }
+
+    static func incrementShareCount() {
+        let defaults = UserDefaults(suiteName: appGroupIdentifier)
+        defaults?.set(loadShareCount() + 1, forKey: "shareCount")
+    }
+
     private static func persist<T: Encodable>(_ value: T, to url: URL) {
         guard let data = try? JSONEncoder().encode(value) else { return }
         try? data.write(to: url, options: .atomic)

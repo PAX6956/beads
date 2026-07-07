@@ -8,6 +8,12 @@ struct MakeUpPracticeSheet: View {
     @EnvironmentObject private var store: PracticeStore
     @Environment(\.dismiss) private var dismiss
     @State private var reflection = ""
+    @State private var showGrowthPulse = false
+    @State private var leveledUp = false
+
+    private var quoteForDate: String? {
+        ContentLibrary.todayItem(from: ContentLibrary.loadSeed(), date: date)?.quote
+    }
 
     var body: some View {
         NavigationStack {
@@ -27,13 +33,19 @@ struct MakeUpPracticeSheet: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Complete") {
+                        let previousTier = store.currentTierInfo?.tier.order
                         store.makeUp(date: date)
-                        store.addJournalEntry(text: reflection, moods: [])
+                        store.addJournalEntry(text: reflection, moods: [], associatedQuote: quoteForDate, date: date)
                         Haptics.success()
-                        dismiss()
+                        leveledUp = previousTier != store.currentTierInfo?.tier.order
+                        showGrowthPulse = true
                     }
                     .disabled(reflection.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }
+            }
+            .growthPulse(isPresented: $showGrowthPulse, tier: store.currentTierInfo?.tier, beyondIntensity: store.currentTierInfo?.beyondIntensity ?? 0, leveledUp: leveledUp)
+            .onChange(of: showGrowthPulse) { isPresented in
+                if !isPresented { dismiss() }
             }
         }
     }
