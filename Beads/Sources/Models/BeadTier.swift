@@ -16,6 +16,12 @@ struct BeadTier: Codable, Identifiable {
     let sparkleIntensity: Double
 
     var id: Int { order }
+
+    /// Looks up "BeadTier1" ... "BeadTier11" in the asset catalog. Returns nil
+    /// (callers fall back to the procedural placeholder) until the real image
+    /// for that tier has actually been added — swapping in one tier's art at
+    /// a time doesn't require touching any other tier or any code.
+    var assetName: String { "BeadTier\(order)" }
 }
 
 enum BeadTierLibrary {

@@ -23,47 +23,17 @@ struct BeadRingView: View {
             if let tierInfo {
                 ForEach(0..<Self.ringCapacity, id: \.self) { index in
                     let angle = Double(index) / Double(Self.ringCapacity) * 2 * .pi - .pi / 2
-                    let reached = index < cycleProgress
-                    beadDot(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, reached: reached)
-                        .offset(x: cos(angle) * size / 2, y: sin(angle) * size / 2)
+                    BeadMaterialView(
+                        tier: tierInfo.tier,
+                        beyondIntensity: tierInfo.beyondIntensity,
+                        reached: index < cycleProgress,
+                        size: size * 0.16
+                    )
+                    .offset(x: cos(angle) * size / 2, y: sin(angle) * size / 2)
                 }
             }
         }
         .frame(width: size, height: size)
-    }
-
-    @ViewBuilder
-    private func beadDot(tier: BeadTier, beyondIntensity: Double, reached: Bool) -> some View {
-        let baseColor = Color(hex: tier.baseColorHex)
-        let glowColor = Color(hex: tier.glowColorHex)
-        let dotSize = size * 0.16
-        let sparkle = reached ? tier.sparkleIntensity + beyondIntensity * 0.3 : 0
-
-        Circle()
-            .fill(reached ? baseColor : baseColor.opacity(0.22))
-            .frame(width: dotSize, height: dotSize)
-            .overlay(
-                // A tight specular highlight rather than a broad wash — real
-                // shine is a small bright spot, not the whole surface fading
-                // toward white. Keeps dark/rich colors (e.g. Patina) reading
-                // as dark even at high glossiness, instead of washing pale.
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [.white.opacity(reached ? tier.glossiness * 0.95 : 0), .clear],
-                            center: UnitPoint(x: 0.32, y: 0.26),
-                            startRadius: 0,
-                            endRadius: dotSize * 0.32
-                        )
-                    )
-            )
-            .overlay(
-                Circle()
-                    .strokeBorder(.white.opacity(sparkle * 0.6), lineWidth: dotSize * 0.06)
-                    .blur(radius: dotSize * 0.08)
-            )
-            .shadow(color: reached ? glowColor.opacity(0.45 + beyondIntensity * 0.3) : .clear,
-                    radius: reached ? dotSize * (0.3 + sparkle * 0.5) : 0)
     }
 }
 

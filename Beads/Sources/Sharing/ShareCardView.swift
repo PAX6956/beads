@@ -7,27 +7,29 @@ struct ShareCardView: View {
     var cycleProgress: Int = 0
     var size: CGFloat = 360
 
+    private var tierInfo: (tier: BeadTier, beyondIntensity: Double)? {
+        BeadTierLibrary.currentTier(lifetimeDays: lifetimeDays, tiers: BeadTierLibrary.loadTiers())
+    }
+
     var body: some View {
         ZStack {
             template.background
 
-            VStack {
-                HStack {
-                    Spacer()
-                    BeadRingView(lifetimeDays: lifetimeDays, cycleProgress: cycleProgress, size: size * 0.16)
-                        .padding(size * 0.06)
-                }
-                Spacer()
-            }
+            VStack(spacing: size * 0.05) {
+                Spacer(minLength: size * 0.06)
 
-            VStack {
-                Spacer()
+                if let tierInfo {
+                    BeadMaterialView(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, reached: true, size: size * 0.32)
+                }
+
                 Text(text)
                     .font(.system(.title2, design: .serif).weight(.medium))
                     .foregroundStyle(template.textColor)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, size * 0.09)
+
                 Spacer()
+
                 HStack(spacing: 6) {
                     Circle()
                         .fill(template.textColor.opacity(0.6))
