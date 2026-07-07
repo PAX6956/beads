@@ -3,11 +3,23 @@ import SwiftUI
 struct ShareCardView: View {
     let text: String
     let template: ShareCardTemplate
+    var lifetimeDays: Int = 0
+    var cycleProgress: Int = 0
     var size: CGFloat = 360
 
     var body: some View {
         ZStack {
             template.background
+
+            VStack {
+                HStack {
+                    Spacer()
+                    BeadRingView(lifetimeDays: lifetimeDays, cycleProgress: cycleProgress, size: size * 0.16)
+                        .padding(size * 0.06)
+                }
+                Spacer()
+            }
+
             VStack {
                 Spacer()
                 Text(text)
@@ -36,8 +48,8 @@ struct ShareCardView: View {
 enum ShareCardRenderer {
     static let exportSize: CGFloat = 1080
 
-    static func renderImage(text: String, template: ShareCardTemplate) -> UIImage? {
-        let view = ShareCardView(text: text, template: template, size: exportSize)
+    static func renderImage(text: String, template: ShareCardTemplate, lifetimeDays: Int = 0, cycleProgress: Int = 0) -> UIImage? {
+        let view = ShareCardView(text: text, template: template, lifetimeDays: lifetimeDays, cycleProgress: cycleProgress, size: exportSize)
         let renderer = ImageRenderer(content: view)
         renderer.scale = 1
         return renderer.uiImage
@@ -45,5 +57,5 @@ enum ShareCardRenderer {
 }
 
 #Preview {
-    ShareCardView(text: "Simplicity is the return to the root.", template: .sunsetGradient)
+    ShareCardView(text: "Simplicity is the return to the root.", template: .sunsetGradient, lifetimeDays: 120, cycleProgress: 6)
 }

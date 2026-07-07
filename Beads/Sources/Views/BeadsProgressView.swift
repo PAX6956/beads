@@ -7,6 +7,13 @@ struct BeadsProgressView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 24) {
+                    BeadRingView(
+                        lifetimeDays: store.practiceEntries.count,
+                        cycleProgress: store.beadCount % BeadRingView.ringCapacity,
+                        size: 100
+                    )
+                    .padding(.top, 8)
+
                     Text("\(store.currentStreak) day streak")
                         .font(.largeTitle.weight(.bold))
 

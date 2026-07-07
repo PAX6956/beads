@@ -3,15 +3,19 @@ import SwiftUI
 struct ShareCardSheet: View {
     let text: String
 
+    @EnvironmentObject private var store: PracticeStore
     @Environment(\.dismiss) private var dismiss
     @State private var selectedTemplate: ShareCardTemplate = .inkWash
     @State private var shareURL: URL?
     @State private var previewImage: Image?
 
+    private var lifetimeDays: Int { store.practiceEntries.count }
+    private var cycleProgress: Int { store.beadCount % BeadRingView.ringCapacity }
+
     var body: some View {
         NavigationStack {
             VStack(spacing: 24) {
-                ShareCardView(text: text, template: selectedTemplate)
+                ShareCardView(text: text, template: selectedTemplate, lifetimeDays: lifetimeDays, cycleProgress: cycleProgress)
                     .shadow(radius: 12, y: 6)
                     .padding(.top, 16)
 
@@ -73,7 +77,7 @@ struct ShareCardSheet: View {
 
     private func renderToTempFile() {
         shareURL = nil
-        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate) else { return }
+        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, lifetimeDays: lifetimeDays, cycleProgress: cycleProgress) else { return }
         previewImage = Image(uiImage: image)
         guard let data = image.pngData() else { return }
         let url = FileManager.default.temporaryDirectory
@@ -90,4 +94,5 @@ struct ShareCardSheet: View {
 
 #Preview {
     ShareCardSheet(text: "Simplicity is the return to the root.")
+        .environmentObject(PracticeStore())
 }

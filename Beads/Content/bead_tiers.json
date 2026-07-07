@@ -1,0 +1,101 @@
+[
+  {
+    "order": 1,
+    "name": "Raw Wood",
+    "thresholdDays": 0,
+    "baseColorHex": "#D8C9A3",
+    "glowColorHex": "#00000000",
+    "glossiness": 0.05,
+    "sparkleIntensity": 0.0
+  },
+  {
+    "order": 2,
+    "name": "Handled",
+    "thresholdDays": 7,
+    "baseColorHex": "#C9A66B",
+    "glowColorHex": "#FFDDA6",
+    "glossiness": 0.2,
+    "sparkleIntensity": 0.0
+  },
+  {
+    "order": 3,
+    "name": "Smooth",
+    "thresholdDays": 30,
+    "baseColorHex": "#A67C42",
+    "glowColorHex": "#FFC98A",
+    "glossiness": 0.4,
+    "sparkleIntensity": 0.0
+  },
+  {
+    "order": 4,
+    "name": "Patina",
+    "thresholdDays": 90,
+    "baseColorHex": "#5C3A21",
+    "glowColorHex": "#FFB347",
+    "glossiness": 0.7,
+    "sparkleIntensity": 0.0
+  },
+  {
+    "order": 5,
+    "name": "Amethyst Stone",
+    "thresholdDays": 365,
+    "baseColorHex": "#9B6FCE",
+    "glowColorHex": "#C9A6F5",
+    "glossiness": 0.5,
+    "sparkleIntensity": 0.0
+  },
+  {
+    "order": 6,
+    "name": "Pearl",
+    "thresholdDays": 455,
+    "baseColorHex": "#F2ECE4",
+    "glowColorHex": "#FFD9EC",
+    "glossiness": 0.6,
+    "sparkleIntensity": 0.1
+  },
+  {
+    "order": 7,
+    "name": "Silver",
+    "thresholdDays": 545,
+    "baseColorHex": "#C7CCD1",
+    "glowColorHex": "#FFFFFF",
+    "glossiness": 0.85,
+    "sparkleIntensity": 0.15
+  },
+  {
+    "order": 8,
+    "name": "Gold",
+    "thresholdDays": 635,
+    "baseColorHex": "#D4AF37",
+    "glowColorHex": "#FFE9A8",
+    "glossiness": 0.9,
+    "sparkleIntensity": 0.2
+  },
+  {
+    "order": 9,
+    "name": "Crystal",
+    "thresholdDays": 730,
+    "baseColorHex": "#DCEEFB",
+    "glowColorHex": "#B9E7FF",
+    "glossiness": 0.9,
+    "sparkleIntensity": 0.35
+  },
+  {
+    "order": 10,
+    "name": "Iridescent Glass",
+    "thresholdDays": 850,
+    "baseColorHex": "#B392E8",
+    "glowColorHex": "#FF9AD5",
+    "glossiness": 0.95,
+    "sparkleIntensity": 0.5
+  },
+  {
+    "order": 11,
+    "name": "Radiant Diamond",
+    "thresholdDays": 970,
+    "baseColorHex": "#F5FBFF",
+    "glowColorHex": "#FFFFFF",
+    "glossiness": 1.0,
+    "sparkleIntensity": 0.7
+  }
+]
