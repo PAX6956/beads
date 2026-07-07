@@ -20,6 +20,12 @@ struct BeadMaterialView: View {
                     .scaledToFill()
                     .frame(width: size, height: size)
                     .clipShape(Circle())
+                    // Draft photo/render assets are reading darker on-device
+                    // than intended — a small lift keeps the material legible
+                    // without washing it out the way the earlier procedural
+                    // gloss overlay did.
+                    .brightness(reached ? 0.12 : 0.04)
+                    .contrast(1.05)
                     .opacity(reached ? 1 : 0.35)
             } else {
                 placeholder

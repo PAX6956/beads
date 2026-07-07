@@ -1,82 +1,102 @@
 import SwiftUI
 
-/// A coverflow-style strand: the bead nearest the center of the visible strip
-/// is large and sharp, beads further out shrink, blur, and fade — a cheap
-/// (pure SwiftUI, no SceneKit) approximation of depth that reads as "a string
-/// curving away from you" rather than a flat row of dots. Real texture
-/// assets (once they exist) will read far better in this large, focused
-/// treatment than they ever could as a 12px ring dot.
+/// A rotating elliptical bead wheel, not a linear strip: beads sit on an
+/// ellipse, the bottom position is "nearest" (largest, sharpest), the top is
+/// "farthest" (smallest, blurriest) — approximating a bracelet loop viewed
+/// at an angle, the way real hand-strung beads actually sit when you look
+/// down at them. Drag left/right to spin; it loops forever (angle wraps at
+/// 360°, so there's no start or end to hit), and a full turn ticks
+/// `completedSpins`.
 struct BeadCarouselView: View {
     let tier: BeadTier
     let beyondIntensity: Double
     let cycleProgress: Int
 
-    private let itemSize: CGFloat = 92
-    private let spacing: CGFloat = 30
     private let ringCapacity = BeadRingView.ringCapacity
+    private let maxItemSize: CGFloat = 132
+    private let minItemSize: CGFloat = 46
+
+    @State private var rotationDegrees: Double
+    @State private var dragStartRotation: Double = 0
+    @State private var completedSpins: Int = 0
+
+    init(tier: BeadTier, beyondIntensity: Double, cycleProgress: Int) {
+        self.tier = tier
+        self.beyondIntensity = beyondIntensity
+        self.cycleProgress = cycleProgress
+        // Land the most recently reached bead at the bottom (nearest) position
+        // on first appearance, matching what the old scroll-to-current did.
+        let ringCapacity = BeadRingView.ringCapacity
+        let targetIndex = max(0, min(cycleProgress, ringCapacity - 1))
+        let baseAngle = Double(targetIndex) / Double(ringCapacity) * 360
+        _rotationDegrees = State(initialValue: 90 - baseAngle)
+    }
 
     var body: some View {
-        GeometryReader { outerGeo in
-            ScrollViewReader { proxy in
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: spacing) {
-                        ForEach(0..<ringCapacity, id: \.self) { index in
-                            BeadMaterialView(
-                                tier: tier,
-                                beyondIntensity: beyondIntensity,
-                                reached: index < cycleProgress,
-                                size: itemSize
-                            )
-                            .rotationEffect(BeadStrandJitter.rotation(for: index))
-                            .id(index)
-                            .modifier(DepthEffect(containerWidth: outerGeo.size.width))
+        VStack(spacing: 6) {
+            GeometryReader { geo in
+                let center = CGPoint(x: geo.size.width / 2, y: geo.size.height / 2)
+                let ellipseRadiusX = min(geo.size.width * 0.38, maxItemSize * 1.15)
+                let ellipseRadiusY = maxItemSize * 0.4
+
+                ZStack {
+                    ForEach(0..<ringCapacity, id: \.self) { index in
+                        beadView(index: index, center: center, radiusX: ellipseRadiusX, radiusY: ellipseRadiusY)
+                    }
+                }
+                .contentShape(Rectangle())
+                .gesture(
+                    DragGesture()
+                        .onChanged { value in
+                            rotationDegrees = dragStartRotation + Double(value.translation.width) * 0.7
+                            updateSpinCount()
                         }
-                    }
-                    .padding(.horizontal, max(0, (outerGeo.size.width - itemSize) / 2))
-                }
-                .coordinateSpace(name: DepthEffect.coordinateSpaceName)
-                .onAppear {
-                    let target = max(0, min(cycleProgress, ringCapacity - 1))
-                    DispatchQueue.main.async {
-                        proxy.scrollTo(target, anchor: .center)
-                    }
-                }
+                        .onEnded { _ in
+                            dragStartRotation = rotationDegrees
+                        }
+                )
             }
+            .frame(height: maxItemSize + maxItemSize * 0.4 * 2 + 12)
+
+            Text("\(abs(completedSpins)) spins")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
         }
-        .frame(height: itemSize * 1.7)
     }
-}
 
-private struct DepthEffect: ViewModifier {
-    static let coordinateSpaceName = "beadCarousel"
-    let containerWidth: CGFloat
+    private func angleDegrees(for index: Int) -> Double {
+        let baseAngle = Double(index) / Double(ringCapacity) * 360
+        return baseAngle + rotationDegrees
+    }
 
-    @State private var scale: CGFloat = 0.6
-    @State private var blur: CGFloat = 3
-    @State private var fade: Double = 0.6
+    private func beadView(index: Int, center: CGPoint, radiusX: CGFloat, radiusY: CGFloat) -> some View {
+        let degrees = angleDegrees(for: index)
+        let radians = degrees * .pi / 180
+        // Screen space: sin = +1 at the bottom of the ellipse (nearest), -1 at the top (farthest).
+        let depth = sin(radians)
+        let nearness = (depth + 1) / 2 // 0 = far, 1 = near
 
-    func body(content: Content) -> some View {
-        content
-            .scaleEffect(scale)
+        let size = minItemSize + (maxItemSize - minItemSize) * nearness
+        let blur = (1 - nearness) * 4.5
+        let opacity = 0.45 + nearness * 0.55
+
+        let x = center.x + cos(radians) * radiusX
+        let y = center.y + depth * radiusY
+
+        return BeadMaterialView(tier: tier, beyondIntensity: beyondIntensity, reached: index < cycleProgress, size: size)
+            .rotationEffect(BeadStrandJitter.rotation(for: index))
             .blur(radius: blur)
-            .opacity(fade)
-            .background(
-                GeometryReader { geo in
-                    Color.clear.onAppear { update(with: geo) }.onChange(of: geo.frame(in: .named(Self.coordinateSpaceName)).midX) { _ in
-                        update(with: geo)
-                    }
-                }
-            )
+            .opacity(opacity)
+            .position(x: x, y: y)
+            .zIndex(depth)
     }
 
-    private func update(with geo: GeometryProxy) {
-        let midX = geo.frame(in: .named(Self.coordinateSpaceName)).midX
-        let center = containerWidth / 2
-        let distance = abs(midX - center)
-        let normalized = min(1, distance / max(center, 1))
-        scale = 1 - normalized * 0.45
-        blur = normalized * 3
-        fade = 1 - normalized * 0.55
+    private func updateSpinCount() {
+        let spins = Int(rotationDegrees / 360)
+        if spins != completedSpins {
+            completedSpins = spins
+            Haptics.lightTap()
+        }
     }
 }
 
