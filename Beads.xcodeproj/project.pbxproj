@@ -57,6 +57,7 @@
 		E820A90AD1E08CA65E16FF69 /* BeadsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3F17A809DE0B075A33D97 /* BeadsWidget.swift */; };
 		E99A72C882B40E1725D6889F /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4A59D786DD332926160FA4 /* Color+Hex.swift */; };
 		EB23DD50C9CA8635D9189B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E93A924D25E7D1663ECE189 /* Assets.xcassets */; };
+		F6EA37929F6B07D08FF64A2C /* BeadStrandJitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE17C4E44B52016FD474BACE /* BeadStrandJitter.swift */; };
 		F93E491A7BFDCA4A18DE9A0D /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B59AC02DA412C238BA8D9D /* Haptics.swift */; };
 		FC930CCCF5FAF5A733448123 /* ShareCardSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057C27830636231EB48EA37 /* ShareCardSheet.swift */; };
 		FF963502567CA4DA7E7AD1D0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185043DB4207ADFE1B004F2F /* RootView.swift */; };
@@ -120,6 +121,7 @@
 		C8198F46797D2C58BAB1B01B /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		D21AEA729838BAD2D0B5B8E3 /* ContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItem.swift; sourceTree = "<group>"; };
 		D760F4ACC67AB26B7152213F /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		DE17C4E44B52016FD474BACE /* BeadStrandJitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadStrandJitter.swift; sourceTree = "<group>"; };
 		E1A00EC7F4F957D47E68DF11 /* BeadsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsWidgetBundle.swift; sourceTree = "<group>"; };
 		E63BC7176DB1CD403C8FF6CA /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPracticeIntent.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				641ABF6AFB34BCBBD69B4ACD /* BeadCarouselView.swift */,
 				BFB769E0DD873F8F8FA41F72 /* BeadMaterialView.swift */,
 				93D3CC83313A5469C3C43FF1 /* BeadRingView.swift */,
+				DE17C4E44B52016FD474BACE /* BeadStrandJitter.swift */,
 				5057C27830636231EB48EA37 /* ShareCardSheet.swift */,
 				3CCC8DEBC1FCD67546960FF0 /* ShareCardTemplate.swift */,
 				EAF15C95AD3F868CBFDCEB93 /* ShareCardView.swift */,
@@ -418,6 +421,7 @@
 				8EA484E5577C20435C472EA6 /* BeadCarouselView.swift in Sources */,
 				3A9498EC111E5BB1EF156257 /* BeadMaterialView.swift in Sources */,
 				AFEAC88199DCF050AD57E8FC /* BeadRingView.swift in Sources */,
+				F6EA37929F6B07D08FF64A2C /* BeadStrandJitter.swift in Sources */,
 				3A09159DD09C3A4B1655EAB1 /* BeadTier.swift in Sources */,
 				1CF132C4BDACA862CF5645DD /* BeadTierDebugView.swift in Sources */,
 				9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */,

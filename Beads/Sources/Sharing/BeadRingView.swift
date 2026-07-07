@@ -29,6 +29,7 @@ struct BeadRingView: View {
                         reached: index < cycleProgress,
                         size: size * 0.16
                     )
+                    .rotationEffect(BeadStrandJitter.rotation(for: index))
                     .offset(x: cos(angle) * size / 2, y: sin(angle) * size / 2)
                 }
             }

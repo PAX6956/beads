@@ -27,6 +27,7 @@ struct BeadCarouselView: View {
                                 reached: index < cycleProgress,
                                 size: itemSize
                             )
+                            .rotationEffect(BeadStrandJitter.rotation(for: index))
                             .id(index)
                             .modifier(DepthEffect(containerWidth: outerGeo.size.width))
                         }
