@@ -49,6 +49,10 @@ actor CloudSyncService {
         _ = try await database.save(entry.asRecord())
     }
 
+    func delete(_ entry: JournalEntry) async throws {
+        try await database.deleteRecord(withID: CKRecord.ID(recordName: entry.id.uuidString))
+    }
+
     func deleteAllPracticeEntries() async throws {
         try await deleteAllRecords(ofType: CloudRecordType.practiceEntry)
     }

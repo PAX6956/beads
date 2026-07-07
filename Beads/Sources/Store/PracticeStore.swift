@@ -111,6 +111,12 @@ final class PracticeStore: ObservableObject {
         pushToCloud(entry)
     }
 
+    func deleteJournalEntry(_ entry: JournalEntry) {
+        journalEntries.removeAll { $0.id == entry.id }
+        SharedStorage.saveJournalEntries(journalEntries)
+        Task { try? await cloudSync.delete(entry) }
+    }
+
     func exportDataFile() -> URL? {
         DataExporter.export(practiceEntries: practiceEntries, journalEntries: journalEntries)
     }

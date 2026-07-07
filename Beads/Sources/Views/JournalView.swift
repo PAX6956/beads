@@ -24,6 +24,14 @@ struct JournalView: View {
                             Section(month) {
                                 ForEach(entries) { entry in
                                     entryRow(entry)
+                                        .swipeActions {
+                                            Button(role: .destructive) {
+                                                Haptics.warning()
+                                                store.deleteJournalEntry(entry)
+                                            } label: {
+                                                Label("Delete", systemImage: "trash")
+                                            }
+                                        }
                                 }
                             }
                         }
