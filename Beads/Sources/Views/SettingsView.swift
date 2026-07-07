@@ -39,6 +39,14 @@ struct SettingsView: View {
                 } footer: {
                     Text("Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card.")
                 }
+
+                #if DEBUG
+                Section {
+                    NavigationLink("Bead Tier Preview (Debug)") {
+                        BeadTierDebugView()
+                    }
+                }
+                #endif
             }
             .navigationTitle("Settings")
             .confirmationDialog(

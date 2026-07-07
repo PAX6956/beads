@@ -11,6 +11,7 @@
 		0D84618A53B85D6A58B1849F /* BeadsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A00EC7F4F957D47E68DF11 /* BeadsWidgetBundle.swift */; };
 		164588818D3A7695DA899620 /* PracticeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC293FFB8808AC68A45501A /* PracticeStore.swift */; };
 		1BA21018BED4C7451754C7A2 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15501694577ACD8D789461EF /* CloudSyncService.swift */; };
+		1CF132C4BDACA862CF5645DD /* BeadTierDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8ADC46DA0BA0042C6B678 /* BeadTierDebugView.swift */; };
 		20AC8C8D5409C39CC1C5D085 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D760F4ACC67AB26B7152213F /* JournalEntry.swift */; };
 		2C640E0533208C35FA7282DD /* PracticeEntry+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */; };
 		2CBFD9978A5F958A9019902B /* bead_tiers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FD36EB42D12994D0F18F938 /* bead_tiers.json */; };
@@ -118,6 +119,7 @@
 		E1A00EC7F4F957D47E68DF11 /* BeadsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsWidgetBundle.swift; sourceTree = "<group>"; };
 		E63BC7176DB1CD403C8FF6CA /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		E699B5213FD42BD8DF1A57EC /* MarkPracticeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPracticeIntent.swift; sourceTree = "<group>"; };
+		E9B8ADC46DA0BA0042C6B678 /* BeadTierDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadTierDebugView.swift; sourceTree = "<group>"; };
 		EAF15C95AD3F868CBFDCEB93 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
 		EE88A8120DEB2C5184D1A5D3 /* MarkPracticeAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkPracticeAppIntent.swift; sourceTree = "<group>"; };
 		F2A3F17A809DE0B075A33D97 /* BeadsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsWidget.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F11D69ED3AF5CA52DD8480 /* BeadsProgressView.swift */,
+				E9B8ADC46DA0BA0042C6B678 /* BeadTierDebugView.swift */,
 				B47D6D2EB861A07B207B14B1 /* HistoryCalendarView.swift */,
 				C8198F46797D2C58BAB1B01B /* JournalView.swift */,
 				B8D6819EA996FDB56EF81C1E /* MakeUpPracticeSheet.swift */,
@@ -408,6 +411,7 @@
 			files = (
 				AFEAC88199DCF050AD57E8FC /* BeadRingView.swift in Sources */,
 				3A09159DD09C3A4B1655EAB1 /* BeadTier.swift in Sources */,
+				1CF132C4BDACA862CF5645DD /* BeadTierDebugView.swift in Sources */,
 				9BE78B0D1EC49AF16ECD9CA8 /* BeadsApp.swift in Sources */,
 				C52F1771679408A453D937C1 /* BeadsProgressView.swift in Sources */,
 				1BA21018BED4C7451754C7A2 /* CloudSyncService.swift in Sources */,
