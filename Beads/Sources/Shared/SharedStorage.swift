@@ -60,6 +60,33 @@ enum SharedStorage {
         defaults?.set(loadShareCount() + 1, forKey: "shareCount")
     }
 
+    /// Spinning the beads is a small, capped-per-day growth contributor —
+    /// the point is that handling them is itself a moment of mindful focus,
+    /// not a way to grind past the daily-practice-driven tiers by flicking
+    /// the wheel for five minutes. Returns whether this tick counted (still
+    /// worth a haptic either way — the tactile feel isn't the reward, it's
+    /// just what real beads feel like).
+    static let maxDailySpinTicks = 20
+
+    @discardableResult
+    static func recordSpinTickIfAllowed(calendar: Calendar = .current, today: Date = Date()) -> Bool {
+        let defaults = UserDefaults(suiteName: appGroupIdentifier)
+        let lastDate = defaults?.object(forKey: "lastSpinTickDate") as? Date
+        var todayCount = defaults?.integer(forKey: "spinTicksToday") ?? 0
+        if lastDate == nil || !calendar.isDate(lastDate!, inSameDayAs: today) {
+            todayCount = 0
+            defaults?.set(today, forKey: "lastSpinTickDate")
+        }
+        guard todayCount < maxDailySpinTicks else { return false }
+        defaults?.set(todayCount + 1, forKey: "spinTicksToday")
+        defaults?.set(loadLifetimeSpinTicks() + 1, forKey: "spinTicksLifetime")
+        return true
+    }
+
+    static func loadLifetimeSpinTicks() -> Int {
+        UserDefaults(suiteName: appGroupIdentifier)?.integer(forKey: "spinTicksLifetime") ?? 0
+    }
+
     private static func persist<T: Encodable>(_ value: T, to url: URL) {
         guard let data = try? JSONEncoder().encode(value) else { return }
         try? data.write(to: url, options: .atomic)

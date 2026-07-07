@@ -13,6 +13,7 @@ final class PracticeStore: ObservableObject {
     @Published private(set) var practiceEntries: [PracticeEntry] = []
     @Published private(set) var journalEntries: [JournalEntry] = []
     @Published private(set) var shareCount: Int = SharedStorage.loadShareCount()
+    @Published private(set) var spinTicks: Int = SharedStorage.loadLifetimeSpinTicks()
 
     private let cloudSync = CloudSyncService()
 
@@ -22,19 +23,29 @@ final class PracticeStore: ObservableObject {
         Task { await syncWithCloud() }
     }
 
-    /// Practice, journaling, and sharing all move the bracelet forward — practice
-    /// is worth a full day since it's the core habit, journaling and sharing are
-    /// smaller bonuses so someone who reflects or shares often sees their string
-    /// change a bit faster without practice itself feeling secondary.
+    /// Practice, journaling, sharing, and handling the beads themselves all
+    /// move the bracelet forward — practice is worth a full day since it's
+    /// the core habit, the rest are smaller bonuses so someone who reflects,
+    /// shares, or spends a mindful moment spinning the wheel sees their
+    /// string change a bit faster without practice itself feeling secondary.
     var growthValue: Double {
         Double(practiceEntries.count)
             + Double(journalEntries.count) * 0.3
             + Double(shareCount) * 0.2
+            + Double(spinTicks) * 0.01
     }
 
     func recordShare() {
         SharedStorage.incrementShareCount()
         shareCount = SharedStorage.loadShareCount()
+    }
+
+    /// Called once per bead-step as the wheel spins. Capped per day (see
+    /// SharedStorage) — spinning is meant to be a small, repeatable moment
+    /// of focus, not a way to out-pace the tiers that daily practice drives.
+    func recordSpinTick() {
+        guard SharedStorage.recordSpinTickIfAllowed() else { return }
+        spinTicks = SharedStorage.loadLifetimeSpinTicks()
     }
 
     var currentTierInfo: (tier: BeadTier, beyondIntensity: Double)? {

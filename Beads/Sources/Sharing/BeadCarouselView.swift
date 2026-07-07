@@ -5,12 +5,16 @@ import SwiftUI
 /// "farthest" (smallest, blurriest) — approximating a bracelet loop viewed
 /// at an angle, the way real hand-strung beads actually sit when you look
 /// down at them. Drag left/right to spin; it loops forever (angle wraps at
-/// 360°, so there's no start or end to hit), and a full turn ticks
-/// `completedSpins`.
+/// 360°, so there's no start or end to hit). Every bead-step is a small
+/// haptic "click," like real beads passing under a thumb, and (up to a daily
+/// cap) nudges growthValue — handling the beads is meant to be its own small
+/// moment of focus, not just a decoration.
 struct BeadCarouselView: View {
     let tier: BeadTier
     let beyondIntensity: Double
     let cycleProgress: Int
+
+    @EnvironmentObject private var store: PracticeStore
 
     private let ringCapacity = BeadRingView.ringCapacity
     private let maxItemSize: CGFloat = 132
@@ -19,6 +23,7 @@ struct BeadCarouselView: View {
     @State private var rotationDegrees: Double
     @State private var dragStartRotation: Double = 0
     @State private var completedSpins: Int = 0
+    @State private var lastBeadStep: Int
 
     init(tier: BeadTier, beyondIntensity: Double, cycleProgress: Int) {
         self.tier = tier
@@ -29,7 +34,9 @@ struct BeadCarouselView: View {
         let ringCapacity = BeadRingView.ringCapacity
         let targetIndex = max(0, min(cycleProgress, ringCapacity - 1))
         let baseAngle = Double(targetIndex) / Double(ringCapacity) * 360
-        _rotationDegrees = State(initialValue: 90 - baseAngle)
+        let initialRotation = 90 - baseAngle
+        _rotationDegrees = State(initialValue: initialRotation)
+        _lastBeadStep = State(initialValue: Self.beadStep(for: initialRotation, ringCapacity: ringCapacity))
     }
 
     var body: some View {
@@ -49,7 +56,7 @@ struct BeadCarouselView: View {
                     DragGesture()
                         .onChanged { value in
                             rotationDegrees = dragStartRotation + Double(value.translation.width) * 0.7
-                            updateSpinCount()
+                            handleRotationChange()
                         }
                         .onEnded { _ in
                             dragStartRotation = rotationDegrees
@@ -78,29 +85,44 @@ struct BeadCarouselView: View {
 
         let size = minItemSize + (maxItemSize - minItemSize) * nearness
         let blur = (1 - nearness) * 4.5
-        let opacity = 0.45 + nearness * 0.55
 
         let x = center.x + cos(radians) * radiusX
         let y = center.y + depth * radiusY
 
+        // Depth is conveyed by size + blur only — fading opacity too caused
+        // overlapping near beads to show a translucent "ghosting" double-
+        // image where their circles crossed, since none of them ever quite
+        // hit fully opaque. Fully opaque + correct zIndex is enough for the
+        // front bead to cleanly occlude the ones behind it.
         return BeadMaterialView(tier: tier, beyondIntensity: beyondIntensity, reached: index < cycleProgress, size: size)
             .rotationEffect(BeadStrandJitter.rotation(for: index))
             .blur(radius: blur)
-            .opacity(opacity)
             .position(x: x, y: y)
             .zIndex(depth)
     }
 
-    private func updateSpinCount() {
+    private static func beadStep(for rotation: Double, ringCapacity: Int) -> Int {
+        let degreesPerBead = 360.0 / Double(ringCapacity)
+        return Int((rotation / degreesPerBead).rounded())
+    }
+
+    private func handleRotationChange() {
+        let step = Self.beadStep(for: rotationDegrees, ringCapacity: ringCapacity)
+        if step != lastBeadStep {
+            lastBeadStep = step
+            Haptics.lightTap()
+            store.recordSpinTick()
+        }
+
         let spins = Int(rotationDegrees / 360)
         if spins != completedSpins {
             completedSpins = spins
-            Haptics.lightTap()
         }
     }
 }
 
 #Preview {
     BeadCarouselView(tier: BeadTierLibrary.loadTiers()[3], beyondIntensity: 0, cycleProgress: 5)
+        .environmentObject(PracticeStore())
         .background(Color.black)
 }
