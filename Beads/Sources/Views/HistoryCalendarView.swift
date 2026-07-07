@@ -37,7 +37,7 @@ struct HistoryCalendarView: View {
                     if let date {
                         dayCell(date)
                     } else {
-                        Color.clear.frame(height: 32)
+                        Color.clear.frame(height: 38)
                     }
                 }
             }
@@ -73,22 +73,29 @@ struct HistoryCalendarView: View {
 
     private func dayCell(_ date: Date) -> some View {
         let isCompleted = completedDays.contains(calendar.dateComponents([.year, .month, .day], from: date))
+        let isToday = calendar.isDateInToday(date)
         let daysAgo = calendar.dateComponents([.day], from: calendar.startOfDay(for: date), to: calendar.startOfDay(for: Date())).day ?? -1
         let isMakeUpEligible = !isCompleted && daysAgo > 0 && daysAgo <= 3
 
-        return Text("\(calendar.component(.day, from: date))")
-            .font(.footnote)
-            .frame(width: 32, height: 32)
-            .background(isCompleted ? Color.accentColor : Color.gray.opacity(0.15), in: Circle())
-            .foregroundStyle(isCompleted ? .white : .primary)
-            .overlay(
-                Circle().strokeBorder(isMakeUpEligible ? Color.accentColor : .clear, lineWidth: 1.5)
-            )
-            .onTapGesture {
-                if isMakeUpEligible {
-                    makeUpDate = date
-                }
+        return VStack(spacing: 2) {
+            Text("\(calendar.component(.day, from: date))")
+                .font(.footnote)
+                .frame(width: 32, height: 32)
+                .background(isCompleted ? Color.accentColor : Color.gray.opacity(0.15), in: Circle())
+                .foregroundStyle(isCompleted ? .white : .primary)
+                .overlay(
+                    Circle().strokeBorder(isMakeUpEligible ? Color.accentColor : .clear, lineWidth: 1.5)
+                )
+            Circle()
+                .fill(isToday ? Color.accentColor : .clear)
+                .frame(width: 4, height: 4)
+        }
+        .onTapGesture {
+            if isMakeUpEligible {
+                Haptics.lightTap()
+                makeUpDate = date
             }
+        }
     }
 }
 
