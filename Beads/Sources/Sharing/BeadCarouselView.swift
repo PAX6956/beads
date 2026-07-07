@@ -33,8 +33,8 @@ struct BeadCarouselView: View {
                         }
                     }
                     .padding(.horizontal, max(0, (outerGeo.size.width - itemSize) / 2))
-                    .coordinateSpace(name: DepthEffect.coordinateSpaceName)
                 }
+                .coordinateSpace(name: DepthEffect.coordinateSpaceName)
                 .onAppear {
                     let target = max(0, min(cycleProgress, ringCapacity - 1))
                     DispatchQueue.main.async {
