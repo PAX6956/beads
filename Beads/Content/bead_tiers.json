@@ -23,7 +23,7 @@
     "thresholdDays": 30,
     "baseColorHex": "#A67C42",
     "glowColorHex": "#FFC98A",
-    "glossiness": 0.4,
+    "glossiness": 0.35,
     "sparkleIntensity": 0.0
   },
   {
@@ -32,34 +32,34 @@
     "thresholdDays": 90,
     "baseColorHex": "#5C3A21",
     "glowColorHex": "#FFB347",
-    "glossiness": 0.7,
+    "glossiness": 0.5,
     "sparkleIntensity": 0.0
   },
   {
     "order": 5,
     "name": "Amethyst Stone",
     "thresholdDays": 365,
-    "baseColorHex": "#9B6FCE",
+    "baseColorHex": "#8C5FC7",
     "glowColorHex": "#C9A6F5",
-    "glossiness": 0.5,
+    "glossiness": 0.45,
     "sparkleIntensity": 0.0
   },
   {
     "order": 6,
     "name": "Pearl",
     "thresholdDays": 455,
-    "baseColorHex": "#F2ECE4",
+    "baseColorHex": "#F0CBD8",
     "glowColorHex": "#FFD9EC",
-    "glossiness": 0.6,
+    "glossiness": 0.5,
     "sparkleIntensity": 0.1
   },
   {
     "order": 7,
     "name": "Silver",
     "thresholdDays": 545,
-    "baseColorHex": "#C7CCD1",
-    "glowColorHex": "#FFFFFF",
-    "glossiness": 0.85,
+    "baseColorHex": "#8FA6BC",
+    "glowColorHex": "#E6F0FF",
+    "glossiness": 0.65,
     "sparkleIntensity": 0.15
   },
   {
@@ -68,34 +68,34 @@
     "thresholdDays": 635,
     "baseColorHex": "#D4AF37",
     "glowColorHex": "#FFE9A8",
-    "glossiness": 0.9,
+    "glossiness": 0.7,
     "sparkleIntensity": 0.2
   },
   {
     "order": 9,
     "name": "Crystal",
     "thresholdDays": 730,
-    "baseColorHex": "#DCEEFB",
+    "baseColorHex": "#5FC3E8",
     "glowColorHex": "#B9E7FF",
-    "glossiness": 0.9,
-    "sparkleIntensity": 0.35
+    "glossiness": 0.7,
+    "sparkleIntensity": 0.4
   },
   {
     "order": 10,
     "name": "Iridescent Glass",
     "thresholdDays": 850,
-    "baseColorHex": "#B392E8",
+    "baseColorHex": "#D667C4",
     "glowColorHex": "#FF9AD5",
-    "glossiness": 0.95,
-    "sparkleIntensity": 0.5
+    "glossiness": 0.75,
+    "sparkleIntensity": 0.55
   },
   {
     "order": 11,
     "name": "Radiant Diamond",
     "thresholdDays": 970,
-    "baseColorHex": "#F5FBFF",
+    "baseColorHex": "#EAF6FF",
     "glowColorHex": "#FFFFFF",
-    "glossiness": 1.0,
-    "sparkleIntensity": 0.7
+    "glossiness": 0.85,
+    "sparkleIntensity": 0.85
   }
 ]

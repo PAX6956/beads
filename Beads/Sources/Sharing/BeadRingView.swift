@@ -43,13 +43,17 @@ struct BeadRingView: View {
             .fill(reached ? baseColor : baseColor.opacity(0.22))
             .frame(width: dotSize, height: dotSize)
             .overlay(
+                // A tight specular highlight rather than a broad wash — real
+                // shine is a small bright spot, not the whole surface fading
+                // toward white. Keeps dark/rich colors (e.g. Patina) reading
+                // as dark even at high glossiness, instead of washing pale.
                 Circle()
                     .fill(
                         RadialGradient(
-                            colors: [.white.opacity(reached ? tier.glossiness : 0), .clear],
-                            center: UnitPoint(x: 0.35, y: 0.3),
+                            colors: [.white.opacity(reached ? tier.glossiness * 0.95 : 0), .clear],
+                            center: UnitPoint(x: 0.32, y: 0.26),
                             startRadius: 0,
-                            endRadius: dotSize
+                            endRadius: dotSize * 0.32
                         )
                     )
             )
@@ -58,7 +62,8 @@ struct BeadRingView: View {
                     .strokeBorder(.white.opacity(sparkle * 0.6), lineWidth: dotSize * 0.06)
                     .blur(radius: dotSize * 0.08)
             )
-            .shadow(color: reached ? glowColor.opacity(0.5 + beyondIntensity * 0.3) : .clear, radius: reached ? dotSize * 0.5 : 0)
+            .shadow(color: reached ? glowColor.opacity(0.45 + beyondIntensity * 0.3) : .clear,
+                    radius: reached ? dotSize * (0.3 + sparkle * 0.5) : 0)
     }
 }
 
