@@ -13,17 +13,20 @@ struct SettingsView: View {
                 Section {
                     if let exportURL {
                         ShareLink(item: exportURL) {
-                            Label("Export my data", systemImage: "square.and.arrow.up")
+                            Label("Share Exported File", systemImage: "checkmark.circle.fill")
+                                .foregroundStyle(.green)
                         }
                     } else {
                         Button {
                             exportURL = store.exportDataFile()
+                            Haptics.lightTap()
                         } label: {
                             Label("Export my data", systemImage: "square.and.arrow.up")
                         }
                     }
 
                     Button(role: .destructive) {
+                        Haptics.warning()
                         isShowingDeleteConfirmation = true
                     } label: {
                         if isDeleting {
@@ -50,6 +53,7 @@ struct SettingsView: View {
                         exportURL = nil
                         isDeleting = false
                         didDelete = true
+                        Haptics.success()
                     }
                 }
                 Button("Cancel", role: .cancel) {}

@@ -29,6 +29,7 @@ struct MakeUpPracticeSheet: View {
                     Button("Complete") {
                         store.makeUp(date: date)
                         store.addJournalEntry(text: reflection, moods: [])
+                        Haptics.success()
                         dismiss()
                     }
                     .disabled(reflection.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)

@@ -48,6 +48,7 @@ struct TodayView: View {
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
+                        Haptics.lightTap()
                         isShowingMoment = true
                     } label: {
                         Label("Take a moment", systemImage: "wind")
@@ -90,6 +91,7 @@ struct TodayView: View {
     private var practiceButton: some View {
         Button {
             store.markTodayComplete()
+            Haptics.success()
         } label: {
             Label(store.hasCompletedToday() ? "Done for today" : "Practice",
                   systemImage: store.hasCompletedToday() ? "checkmark.circle.fill" : "circle")
@@ -118,6 +120,7 @@ struct TodayView: View {
                 journalText = ""
                 selectedMoods = []
                 isJournalFieldFocused = false
+                Haptics.lightTap()
             }
             .disabled(journalText.isEmpty && selectedMoods.isEmpty)
         }
@@ -159,6 +162,7 @@ struct TodayView: View {
         } else if selectedMoods.count < JournalEntry.maxMoods {
             selectedMoods.insert(mood)
         }
+        Haptics.lightTap()
     }
 }
 
