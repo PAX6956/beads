@@ -55,6 +55,7 @@ struct ShareCardSheet: View {
         HStack(spacing: 16) {
             ForEach(ShareCardTemplate.allCases) { template in
                 Button {
+                    Haptics.lightTap()
                     selectedTemplate = template
                 } label: {
                     RoundedRectangle(cornerRadius: 10)
