@@ -37,10 +37,10 @@
   },
   {
     "order": 5,
-    "name": "Amethyst Stone",
+    "name": "Turquoise",
     "thresholdDays": 365,
-    "baseColorHex": "#8C5FC7",
-    "glowColorHex": "#C9A6F5",
+    "baseColorHex": "#2FA8A0",
+    "glowColorHex": "#7FE5DB",
     "glossiness": 0.45,
     "sparkleIntensity": 0.0
   },
@@ -73,12 +73,12 @@
   },
   {
     "order": 9,
-    "name": "Crystal",
+    "name": "Agate",
     "thresholdDays": 730,
-    "baseColorHex": "#5FC3E8",
-    "glowColorHex": "#B9E7FF",
-    "glossiness": 0.7,
-    "sparkleIntensity": 0.4
+    "baseColorHex": "#C97B5A",
+    "glowColorHex": "#F2C9A0",
+    "glossiness": 0.55,
+    "sparkleIntensity": 0.05
   },
   {
     "order": 10,
