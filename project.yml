@@ -29,6 +29,7 @@ targets:
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         ITSAppUsesNonExemptEncryption: false
+        NSPhotoLibraryAddUsageDescription: Beads saves your Ripple Card to Photos when you tap Save.
     entitlements:
       path: Beads/Beads.entitlements
       properties:

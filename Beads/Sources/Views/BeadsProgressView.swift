@@ -22,7 +22,7 @@ struct BeadsProgressView: View {
                     if let tierInfo {
                         BeadCarouselView(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, cycleProgress: cycleProgress)
                         VStack(spacing: 2) {
-                            Text(tierInfo.tier.name)
+                            Text(tierInfo.tier.localizedName)
                                 .font(.subheadline.weight(.semibold))
                             Text(growthAnnotation)
                                 .font(.caption2)
@@ -54,9 +54,9 @@ struct BeadsProgressView: View {
         let growth = Int(store.growthValue)
         if let nextTier {
             let remaining = max(0, nextTier.thresholdDays - growth)
-            return "\(growth) growth days · \(remaining) to \(nextTier.name)"
+            return String(localized: "\(growth) growth days · \(remaining) to \(nextTier.localizedName)")
         }
-        return "\(growth) growth days"
+        return String(localized: "\(growth) growth days")
     }
 }
 

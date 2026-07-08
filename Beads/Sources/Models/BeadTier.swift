@@ -14,8 +14,17 @@ struct BeadTier: Codable, Identifiable {
     let glowColorHex: String
     let glossiness: Double
     let sparkleIntensity: Double
+    let nameZh: String?
 
     var id: Int { order }
+
+    /// Same `QuoteLanguagePreference` that governs the daily quote — a tier
+    /// name shown next to a Chinese quote in English would be the same
+    /// language-mismatch problem that preference already exists to avoid.
+    var localizedName: String {
+        guard QuoteLanguagePreference.current.wantsChinese, let nameZh else { return name }
+        return nameZh
+    }
 
     /// Looks up "BeadTier1" ... "BeadTier11" in the asset catalog. Returns nil
     /// (callers fall back to the procedural placeholder) until the real image

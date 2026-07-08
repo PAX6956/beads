@@ -14,7 +14,7 @@ struct GrowthPulseToast: View {
     var body: some View {
         HStack(spacing: 10) {
             BeadMaterialView(tier: tier, beyondIntensity: beyondIntensity, reached: true, size: 30)
-            Text(leveledUp ? "Your string reached a new tier — \(tier.name)." : "Your string just changed a little.")
+            Text(leveledUp ? "Your string reached a new tier — \(tier.localizedName)." : "Your string just changed a little.")
                 .font(.subheadline.weight(.medium))
                 .lineLimit(2)
         }

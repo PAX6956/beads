@@ -6,7 +6,8 @@
     "baseColorHex": "#D8C9A3",
     "glowColorHex": "#00000000",
     "glossiness": 0.05,
-    "sparkleIntensity": 0.0
+    "sparkleIntensity": 0.0,
+    "nameZh": "生木"
   },
   {
     "order": 2,
@@ -15,7 +16,8 @@
     "baseColorHex": "#C9A66B",
     "glowColorHex": "#FFDDA6",
     "glossiness": 0.2,
-    "sparkleIntensity": 0.0
+    "sparkleIntensity": 0.0,
+    "nameZh": "上手"
   },
   {
     "order": 3,
@@ -24,7 +26,8 @@
     "baseColorHex": "#A67C42",
     "glowColorHex": "#FFC98A",
     "glossiness": 0.35,
-    "sparkleIntensity": 0.0
+    "sparkleIntensity": 0.0,
+    "nameZh": "温润"
   },
   {
     "order": 4,
@@ -33,7 +36,8 @@
     "baseColorHex": "#5C3A21",
     "glowColorHex": "#FFB347",
     "glossiness": 0.5,
-    "sparkleIntensity": 0.0
+    "sparkleIntensity": 0.0,
+    "nameZh": "包浆"
   },
   {
     "order": 5,
@@ -42,7 +46,8 @@
     "baseColorHex": "#2FA8A0",
     "glowColorHex": "#7FE5DB",
     "glossiness": 0.45,
-    "sparkleIntensity": 0.0
+    "sparkleIntensity": 0.0,
+    "nameZh": "绿松石"
   },
   {
     "order": 6,
@@ -51,7 +56,8 @@
     "baseColorHex": "#F0CBD8",
     "glowColorHex": "#FFD9EC",
     "glossiness": 0.5,
-    "sparkleIntensity": 0.1
+    "sparkleIntensity": 0.1,
+    "nameZh": "珍珠"
   },
   {
     "order": 7,
@@ -60,7 +66,8 @@
     "baseColorHex": "#8FA6BC",
     "glowColorHex": "#E6F0FF",
     "glossiness": 0.65,
-    "sparkleIntensity": 0.15
+    "sparkleIntensity": 0.15,
+    "nameZh": "银"
   },
   {
     "order": 8,
@@ -69,7 +76,8 @@
     "baseColorHex": "#D4AF37",
     "glowColorHex": "#FFE9A8",
     "glossiness": 0.7,
-    "sparkleIntensity": 0.2
+    "sparkleIntensity": 0.2,
+    "nameZh": "金"
   },
   {
     "order": 9,
@@ -78,7 +86,8 @@
     "baseColorHex": "#C97B5A",
     "glowColorHex": "#F2C9A0",
     "glossiness": 0.55,
-    "sparkleIntensity": 0.05
+    "sparkleIntensity": 0.05,
+    "nameZh": "玛瑙"
   },
   {
     "order": 10,
@@ -87,7 +96,8 @@
     "baseColorHex": "#D667C4",
     "glowColorHex": "#FF9AD5",
     "glossiness": 0.75,
-    "sparkleIntensity": 0.55
+    "sparkleIntensity": 0.55,
+    "nameZh": "幻彩琉璃"
   },
   {
     "order": 11,
@@ -96,6 +106,7 @@
     "baseColorHex": "#EAF6FF",
     "glowColorHex": "#FFFFFF",
     "glossiness": 0.85,
-    "sparkleIntensity": 0.85
+    "sparkleIntensity": 0.85,
+    "nameZh": "璀璨钻石"
   }
 ]

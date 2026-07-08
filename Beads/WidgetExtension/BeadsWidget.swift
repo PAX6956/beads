@@ -31,7 +31,7 @@ struct BeadsWidgetProvider: TimelineProvider {
         let hasCompleted = entries.contains { Calendar.current.isDateInToday($0.date) }
         return BeadsWidgetEntry(
             date: Date(),
-            quote: item?.quote ?? "Take a quiet breath.",
+            quote: item?.localizedQuote ?? "Take a quiet breath.",
             hasCompletedToday: hasCompleted,
             streak: BeadsProgress.currentStreak(entries: entries)
         )

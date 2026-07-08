@@ -1,168 +1,656 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%lld" : {
-
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
+          }
+        }
+      }
     },
-    "%lld day streak" : {
-
+    "%lld day streak": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连续 %lld 天"
+          }
+        }
+      }
     },
-    "%lld days to your next bead" : {
-
+    "%lld days to your next bead": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "距离下一颗珠子还有 %lld 天"
+          }
+        }
+      }
     },
-    "%lld growth days" : {
-
+    "%lld growth days": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 个成长日"
+          }
+        }
+      }
     },
-    "%lld spins" : {
-
+    "%lld growth days · %lld to %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 个成长日 · 还差 %lld 天到 %@"
+          }
+        }
+      }
     },
-    "%lldd streak" : {
-
+    "%lld spins": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "转动 %lld 圈"
+          }
+        }
+      }
     },
-    "A short reflection" : {
-
+    "%lldd streak": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连续%lld天"
+          }
+        }
+      }
     },
-    "A short reflection (optional)" : {
-
+    "A short reflection": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "简短的感悟"
+          }
+        }
+      }
     },
-    "All your data has been deleted." : {
-
+    "A short reflection (optional)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "简短的感悟（可选）"
+          }
+        }
+      }
     },
-    "Beads" : {
-
+    "All your data has been deleted.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的所有数据已被删除。"
+          }
+        }
+      }
     },
-    "Beads Pro" : {
-
+    "Beads": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beads"
+          }
+        }
+      }
     },
-    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card." : {
-
+    "Beads Pro": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beads Pro"
+          }
+        }
+      }
     },
-    "Cancel" : {
-
+    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beads 只会把你的练习记录和日记保存在你自己的 iCloud 账户里——除非你主动分享心语卡片，否则不会有任何人看到。"
+          }
+        }
+      }
     },
-    "Choose your own photo" : {
-
+    "Breathe in…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "吸气…"
+          }
+        }
+      }
     },
-    "Close" : {
-
+    "Breathe out…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "呼气…"
+          }
+        }
+      }
     },
-    "Complete" : {
-
+    "Cancel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        }
+      }
     },
-    "days" : {
-
+    "Choose your own photo": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你自己的照片"
+          }
+        }
+      }
     },
-    "Delete" : {
-
+    "Close": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭"
+          }
+        }
+      }
     },
-    "Delete all my data" : {
-
+    "Complete": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
+        }
+      }
     },
-    "Delete all your data? This can't be undone." : {
-
+    "Controls the language of daily quotes and micro-actions, independent of your device's system language.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "控制每日语录和微行动建议的语言，与设备系统语言无关。"
+          }
+        }
+      }
     },
-    "Delete Everything" : {
-
+    "Delete": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除"
+          }
+        }
+      }
     },
-    "Deleting…" : {
-
+    "Delete Everything": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除全部"
+          }
+        }
+      }
     },
-    "Done" : {
-
+    "Delete all my data": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除我的所有数据"
+          }
+        }
+      }
     },
-    "Done for today" : {
-
+    "Delete all your data? This can't be undone.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除所有数据？此操作无法撤销。"
+          }
+        }
+      }
     },
-    "Entries you save from Today will show up here — visible only to you." : {
-
+    "Deleting…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除中…"
+          }
+        }
+      }
     },
-    "Export my data" : {
-
+    "Done": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
+        }
+      }
     },
-    "How are you feeling?" : {
-
+    "Done for today": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日已完成"
+          }
+        }
+      }
     },
-    "Journal" : {
-
+    "English": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英文"
+          }
+        }
+      }
     },
-    "Make Up Practice" : {
-
+    "Entries you save from Today will show up here — visible only to you.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你在“今天”页面保存的记录会显示在这里——只有你自己能看到。"
+          }
+        }
+      }
     },
-    "Mark Practice" : {
-
+    "Export my data": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出我的数据"
+          }
+        }
+      }
     },
-    "Marks today's practice as complete." : {
-
+    "Hold…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "屏息…"
+          }
+        }
+      }
     },
-    "Nice — today's practice is marked complete." : {
-
+    "How are you feeling?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你现在感觉怎么样？"
+          }
+        }
+      }
     },
-    "No reflections yet" : {
-
+    "Journal": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日记"
+          }
+        }
+      }
     },
-    "OK" : {
-
+    "Make Up Practice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "补做练习"
+          }
+        }
+      }
     },
-    "Practice" : {
-
+    "Mark Practice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "标记练习"
+          }
+        }
+      }
     },
-    "Restore Purchases" : {
-
+    "Marks today's practice as complete.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将今天的练习标记为已完成。"
+          }
+        }
+      }
     },
-    "Ringed days are within the last 3 days — tap to make up a missed practice." : {
-
+    "Match System": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跟随系统"
+          }
+        }
+      }
     },
-    "Ripple Card" : {
-
+    "Nice — today's practice is marked complete.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "很好——今天的练习已标记完成。"
+          }
+        }
+      }
     },
-    "Save" : {
-
+    "No reflections yet": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有感悟记录"
+          }
+        }
+      }
     },
-    "See today's quote and mark your practice without opening the app." : {
-
+    "OK": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "好的"
+          }
+        }
+      }
     },
-    "Settings" : {
-
+    "Practice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "练习"
+          }
+        }
+      }
     },
-    "Share" : {
-
+    "Quote Language": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语录语言"
+          }
+        }
+      }
     },
-    "Share Exported File" : {
-
+    "Restore Purchases": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复购买"
+          }
+        }
+      }
     },
-    "Subscribe — %@/month" : {
-
+    "Ringed days are within the last 3 days — tap to make up a missed practice.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "带圈的日期是最近 3 天内——点击可以补做错过的练习。"
+          }
+        }
+      }
     },
-    "Take a moment" : {
-
+    "Ripple Card": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "心语卡片"
+          }
+        }
+      }
     },
-    "Today" : {
-
+    "Save": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        }
+      }
     },
-    "Today's practice" : {
-
+    "Save to Photos": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存储到相册"
+          }
+        }
+      }
     },
-    "Today's Practice" : {
-
+    "See today's quote and mark your practice without opening the app.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无需打开 App，即可查看今日语录并标记练习。"
+          }
+        }
+      }
     },
-    "Unlock custom photo backgrounds" : {
-
+    "Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        }
+      }
     },
-    "Use your own photos as Ripple Card backgrounds, plus extra card styles." : {
-
+    "Share": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分享"
+          }
+        }
+      }
     },
-    "What's one thing that felt calm, even briefly, on %@?" : {
-
+    "Share Exported File": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分享导出的文件"
+          }
+        }
+      }
     },
-    "You've already practiced today." : {
-
+    "Something went wrong. Please try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "出了点问题，请重试。"
+          }
+        }
+      }
     },
-    "Your string just changed a little." : {
-
+    "Subscribe — %@/month": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "订阅 — 每月%@"
+          }
+        }
+      }
     },
-    "Your string reached a new tier — %@." : {
-
+    "Take a moment": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此刻"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天"
+          }
+        }
+      }
+    },
+    "Today's Practice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日练习"
+          }
+        }
+      }
+    },
+    "Today's practice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日练习"
+          }
+        }
+      }
+    },
+    "Unlock custom photo backgrounds": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解锁自定义照片背景"
+          }
+        }
+      }
+    },
+    "Use your own photos as Ripple Card backgrounds, plus extra card styles.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用你自己的照片作为心语卡片背景，还能解锁更多卡片风格。"
+          }
+        }
+      }
+    },
+    "What's one thing that felt calm, even briefly, on %@?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 那天，有什么事让你感到过片刻的平静？"
+          }
+        }
+      }
+    },
+    "You've already practiced today.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你今天已经练习过了。"
+          }
+        }
+      }
+    },
+    "Your string just changed a little.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的珠串悄悄起了一点变化。"
+          }
+        }
+      }
+    },
+    "Your string reached a new tier — %@.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的珠串进阶到了新的等级——%@。"
+          }
+        }
+      }
+    },
+    "days": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "天"
+          }
+        }
+      }
+    },
+    "中文": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中文"
+          }
+        }
+      }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

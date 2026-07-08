@@ -367,6 +367,7 @@
 			knownRegions = (
 				Base,
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 5D6C80A3F8B61C4A5ED299EE;
 			projectDirPath = "";

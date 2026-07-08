@@ -59,7 +59,7 @@ struct TodayView: View {
             }
             .sheet(isPresented: $isShowingShareCard) {
                 if let item = todayItem {
-                    ShareCardSheet(text: item.quote)
+                    ShareCardSheet(text: item.localizedQuote)
                 }
             }
             .fullScreenCover(isPresented: $isShowingMoment) {
@@ -80,7 +80,7 @@ struct TodayView: View {
 
     private func quoteCard(_ item: ContentItem) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(item.quote)
+            Text(item.localizedQuote)
                 .font(.title3.weight(.medium))
             Text("Today's practice")
                 .font(.caption)
@@ -131,7 +131,7 @@ struct TodayView: View {
                 }
             Button("Save") {
                 let previousTier = store.currentTierInfo?.tier.order
-                store.addJournalEntry(text: journalText, moods: Array(selectedMoods), associatedQuote: todayItem?.quote)
+                store.addJournalEntry(text: journalText, moods: Array(selectedMoods), associatedQuote: todayItem?.localizedQuote)
                 journalText = ""
                 selectedMoods = []
                 isJournalFieldFocused = false

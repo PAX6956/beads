@@ -1,1052 +1,3905 @@
 [
   {
     "id": 1,
-    "quote": "You can't stop the waves, but you can learn to surf.",
+    "quote": "The bad news kept coming all morning. I stopped trying to make it stop and just learned to keep my feet under me.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Before your first meeting today, take three quiet breaths and notice what you're feeling.",
-    "tags": ["calm", "stress"]
+    "microAction": "Notice one place in your body holding tension right now, and let your next breath go there.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "风雨不止，我自站稳"
   },
   {
     "id": 2,
     "quote": "Water benefits all things without contending with them.",
     "sourceNote": "Inspired by the Tao Te Ching",
-    "microAction": "The next time someone disagrees with you, pause before responding.",
-    "tags": ["calm", "growth"]
+    "microAction": "Let one small disagreement today pass through you without needing to win it.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "上善若水，利而不争"
   },
   {
     "id": 3,
     "quote": "Difficulty itself can be the doorway to clarity.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Write down one annoying thing that happened today, and one thing it taught you.",
-    "tags": ["growth", "stress"]
+    "microAction": "Let today's one hard thing be exactly as hard as it is, without rushing past it.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "困处即是明处门"
   },
   {
     "id": 4,
     "quote": "The obstacle you're avoiding is often the exact path forward.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "Name one task you've been putting off. Spend just two minutes starting it.",
-    "tags": ["growth"]
+    "microAction": "Feel the weight of the thing you're avoiding, and notice you're still standing.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "所避之坎，正是前路"
   },
   {
     "id": 5,
     "quote": "A journey of a thousand miles begins with a single step.",
     "sourceNote": "Inspired by Laozi",
-    "microAction": "Pick the smallest possible first step toward something you want to change, and take it today.",
-    "tags": ["growth"]
+    "microAction": "Rest your hand somewhere warm — a cup, your chest, sunlight — and let that be today's whole step.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "千里之行，始于足下"
   },
   {
     "id": 6,
     "quote": "The mind is like water — when agitated, it's hard to see; when calm, everything becomes clear.",
     "sourceNote": "Inspired by classical Zen teaching",
-    "microAction": "Sit quietly for 60 seconds before opening your first email today.",
-    "tags": ["calm"]
+    "microAction": "Before you open your first message today, let your shoulders drop away from your ears.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "心水澄时，万象自明"
   },
   {
     "id": 7,
     "quote": "What you resist tends to persist.",
     "sourceNote": "Inspired by modern mindfulness psychology",
-    "microAction": "Notice one feeling you've been pushing away today. Just name it, without trying to fix it.",
-    "tags": ["stress", "growth"]
+    "microAction": "Let one feeling you've been pushing away just sit beside you for a minute, unfixed.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "越是抗拒，越被纠缠"
   },
   {
     "id": 8,
     "quote": "The quieter you become, the more you can hear.",
     "sourceNote": "Inspired by Taoist wisdom",
-    "microAction": "Eat one meal today without your phone nearby.",
-    "tags": ["calm"]
+    "microAction": "Close your eyes for thirty seconds and notice what's actually here once it's quiet.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "心越静，万声越清"
   },
   {
     "id": 9,
-    "quote": "A tree that bends in the storm survives; one that stands rigid breaks.",
+    "quote": "I changed the plan halfway through the day instead of forcing it to work. Bending wasn't losing — it's how I made it to tonight in one piece.",
     "sourceNote": "Inspired by classical Taoist parable",
-    "microAction": "When plans change today, notice your first reaction before you react.",
-    "tags": ["growth", "stress"]
+    "microAction": "When something bends your plans today, let your body soften before you respond.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "能弯身，方能安抵夜"
   },
   {
     "id": 10,
     "quote": "You do not have to control your thoughts. You just have to stop letting them control you.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Next time a worry loops in your head, silently say 'thinking' and let it pass.",
-    "tags": ["stress"]
+    "microAction": "Notice one thought passing through, and let it keep passing — you don't have to chase it.",
+    "tags": [
+      "stress"
+    ],
+    "quoteZh": "念起不控，心不随转"
   },
   {
     "id": 11,
     "quote": "Empty your cup so that it may be filled.",
     "sourceNote": "Inspired by a classical Zen story",
-    "microAction": "In your next conversation, try listening fully before forming your reply.",
-    "tags": ["growth"]
+    "microAction": "Let your next inhale come in a little slower, like you're making room for something.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "杯空，方能盛新茶"
   },
   {
     "id": 12,
     "quote": "Nature does not hurry, yet everything is accomplished.",
     "sourceNote": "Inspired by Laozi",
-    "microAction": "Do one task today 20% slower than you normally would, on purpose.",
-    "tags": ["calm"]
+    "microAction": "Move through one task today at half your usual speed, just to feel what that's like.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "天地不急，万物自成"
   },
   {
     "id": 13,
     "quote": "The wound is the place where the light enters you.",
     "sourceNote": "Inspired by classical poetic wisdom",
-    "microAction": "Think of a hard moment from this year. Name one strength it gave you.",
-    "tags": ["growth"]
+    "microAction": "Place a hand over wherever today's ache lives, and let it be tended, not solved.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "裂痕之处，光正进来"
   },
   {
     "id": 14,
     "quote": "Knowing others is wisdom; knowing yourself is clarity.",
     "sourceNote": "Inspired by Laozi, reframed",
-    "microAction": "Ask yourself once today: 'What do I actually need right now?'",
-    "tags": ["growth"]
+    "microAction": "Ask, gently, what you actually need right now — and let the answer be small if it wants to be.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "知人是智，知己是明"
   },
   {
     "id": 15,
     "quote": "The best way to spend today is to be fully here for it.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Pick one ordinary moment today — a walk, a coffee — and give it your full attention.",
-    "tags": ["calm"]
+    "microAction": "Let one ordinary moment today — a walk, a cup of tea — hold your whole attention.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "活在此刻，便不负今日"
   },
   {
     "id": 16,
     "quote": "A calm sea never made a skilled sailor.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Notice one challenge today and silently thank it for the practice it's giving you.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Notice one wave that already passed through you today, and how you're still here.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "静海练不出好舵手"
   },
   {
     "id": 17,
     "quote": "When you let go of what you cannot control, you find what you can.",
     "sourceNote": "Inspired by Taoist and Stoic thought",
-    "microAction": "Name one thing outside your control today, and consciously set it down.",
-    "tags": ["stress", "calm"]
+    "microAction": "Feel your hands unclench, even a little, around whatever you've been holding too tightly.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "放下不可控，握住可为"
   },
   {
     "id": 18,
     "quote": "Gratitude turns what we have into enough.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Before bed tonight, name one small thing that went well today.",
-    "tags": ["gratitude"]
+    "microAction": "Let yourself feel, just for a moment, how much is already enough.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "感恩一起，拥有即足"
   },
   {
     "id": 19,
     "quote": "The soft overcomes the hard; the slow overcomes the fast.",
     "sourceNote": "Inspired by the Tao Te Ching",
-    "microAction": "In a disagreement today, try responding gently instead of firmly.",
-    "tags": ["growth", "calm"]
+    "microAction": "Move slower through one small thing today, and notice how much less it costs you.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "柔能胜刚，慢可胜急"
   },
   {
     "id": 20,
-    "quote": "You are not your thoughts. You are the one who notices them.",
+    "quote": "My mind wouldn't stop running the same argument on a loop. I finally noticed I was the one watching it loop, not the loop itself.",
     "sourceNote": "Inspired by modern mindfulness psychology",
-    "microAction": "When a stressful thought arises today, mentally take one step back from it.",
-    "tags": ["stress", "calm"]
+    "microAction": "Notice you're the one watching the thought, not the thought itself — and rest there.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "念潮自起，我是观潮人"
   },
   {
     "id": 21,
     "quote": "Every ending carries the seed of a new beginning.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "Think of something that recently ended. Name one door it opened.",
-    "tags": ["growth"]
+    "microAction": "Let one small ending today be tender instead of tidy.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "一场结束，一粒新芽"
   },
   {
     "id": 22,
     "quote": "Stillness is not the absence of motion, but the absence of struggle.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Take one task today and do it without rushing toward the finish.",
-    "tags": ["calm"]
+    "microAction": "Let your body be still for sixty seconds, without needing the stillness to be perfect.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "真正的静，是不再争"
   },
   {
     "id": 23,
     "quote": "What you pay attention to grows.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Spend 30 seconds today noticing something beautiful and ordinary — light, a sound, a face.",
-    "tags": ["gratitude", "calm"]
+    "microAction": "Let your attention rest, gently, on one thing that's already going right.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "心有所向，万物生长"
   },
   {
     "id": 24,
     "quote": "The bamboo that bends is stronger than the oak that resists.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Where today can you bend a little instead of insisting on being right?",
-    "tags": ["growth"]
+    "microAction": "Bend, don't brace, the next time something pushes against you today.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "竹能弯，故比木更韧"
   },
   {
     "id": 25,
     "quote": "Not knowing is the most intimate.",
     "sourceNote": "Inspired by a classical Zen koan",
-    "microAction": "Sit with one question today without rushing to answer it.",
-    "tags": ["growth", "calm"]
+    "microAction": "Let one thing stay a mystery today — you don't have to understand it to be okay.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "不知处，最近真如"
   },
   {
     "id": 26,
     "quote": "Anger is a stone thrown into still water — the ripples take time to settle.",
     "sourceNote": "Inspired by classical Zen imagery",
-    "microAction": "Next time you feel irritated, wait 10 seconds before you speak.",
-    "tags": ["stress"]
+    "microAction": "Feel the ripple of one frustration today, and let it move through you instead of staying stuck.",
+    "tags": [
+      "stress"
+    ],
+    "quoteZh": "怒投静水，涟漪自平"
   },
   {
     "id": 27,
     "quote": "Simplicity is the return to the root.",
     "sourceNote": "Inspired by Laozi",
-    "microAction": "Remove one unnecessary thing from your to-do list today.",
-    "tags": ["calm", "growth"]
+    "microAction": "Let one thing today be simpler than you're making it.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "至简之处，便是归根"
   },
   {
     "id": 28,
     "quote": "The one who conquers themselves is the strongest.",
     "sourceNote": "Inspired by Laozi",
-    "microAction": "Notice one small urge today (checking your phone, snapping back) and choose not to act on it.",
-    "tags": ["growth"]
+    "microAction": "Be gentle with the part of you that's still learning to be gentle with itself.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "胜己者，最有力量"
   },
   {
     "id": 29,
-    "quote": "Even the darkest night will end, and the sun will rise.",
+    "quote": "I lay awake at 3am convinced this feeling was permanent. It wasn't. Morning came anyway, the way it always does, whether I believed in it or not.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "If today feels heavy, name one small thing you're looking forward to tomorrow.",
-    "tags": ["low", "growth"]
+    "microAction": "Notice that tonight, whatever it holds, is not the whole story.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "长夜会尽，晨光仍来"
   },
   {
     "id": 30,
     "quote": "A candle loses nothing by lighting another candle.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Offer one small piece of encouragement to someone today, without expecting anything back.",
-    "tags": ["gratitude"]
+    "microAction": "Let your warmth reach someone today without worrying it will run out.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "分光予人，自身不暗"
   },
   {
     "id": 31,
     "quote": "The quality of your attention determines the quality of your day.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Choose one activity today to do with your phone in another room.",
-    "tags": ["calm"]
+    "microAction": "Give one moment today your full, undivided, unhurried attention — nothing else required.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "一念专注，一日清明"
   },
   {
     "id": 32,
     "quote": "Rest is not idleness — it is the ground where growth happens.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "Give yourself 10 minutes today to do absolutely nothing, on purpose.",
-    "tags": ["calm", "stress"]
+    "microAction": "Let yourself rest today without needing to have earned it first.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "休息非懒，是养根"
   },
   {
     "id": 33,
     "quote": "The river cuts through rock not by force, but by persistence.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Take one tiny step today on something that feels too big to finish.",
-    "tags": ["growth"]
+    "microAction": "Feel how a small, steady effort today doesn't need to be dramatic to matter.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "水以恒心，终能穿石"
   },
   {
     "id": 34,
-    "quote": "Comparison is the thief of your own quiet joy.",
+    "quote": "I closed the app before I could measure my week against someone else's highlight reel. My own ordinary Tuesday got to stay mine.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Notice one moment today when you compare yourself to someone else. Just notice it, gently.",
-    "tags": ["stress", "growth"]
+    "microAction": "Let your gaze come back to your own life, gently, whenever it wanders to someone else's.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "不观他光，守我平日"
   },
   {
     "id": 35,
     "quote": "The tighter the grip, the harder it is to hold anything at all.",
     "sourceNote": "Inspired by Taoist imagery",
-    "microAction": "Notice one thing you're gripping too tightly today — a plan, an outcome — and loosen your hold slightly.",
-    "tags": ["stress", "calm"]
+    "microAction": "Loosen your grip on one thing today — notice it doesn't disappear when you do.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "握得越紧，失得越多"
   },
   {
     "id": 36,
     "quote": "A mind that is too full has no room left to receive.",
     "sourceNote": "Inspired by classical Zen teaching",
-    "microAction": "Leave 5 minutes of unscheduled space somewhere in today's calendar.",
-    "tags": ["calm"]
+    "microAction": "Leave a little space today, unscheduled and unclaimed, for nothing in particular.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "心若太满，新意难入"
   },
   {
     "id": 37,
     "quote": "Kindness returns to the one who gives it, even when unseen.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do one small kind thing today that no one will ever know about.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Offer one small kindness today and let it go, without needing it seen.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "善意种下，先暖己身"
   },
   {
     "id": 38,
     "quote": "Change is not something to survive — it is something to move with.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "Name one change happening in your life right now, and one way you could move with it instead of against it.",
-    "tags": ["growth"]
+    "microAction": "Let one change move through you today instead of bracing against it.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "与变同行，便不被困"
   },
   {
     "id": 39,
     "quote": "The quiet moment before you speak is where wisdom lives.",
     "sourceNote": "Inspired by classical Zen teaching",
-    "microAction": "In your next conversation, leave one full breath of silence before you reply.",
-    "tags": ["calm", "growth"]
+    "microAction": "Take one breath before you speak today, and let that pause be enough.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "话前一息，智慧自生"
   },
   {
     "id": 40,
     "quote": "You are already whole. Today is simply for remembering it.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Look in the mirror once today and silently say one true, kind thing to yourself.",
-    "tags": ["gratitude", "calm"]
+    "microAction": "Rest for a moment in the plain fact that you don't have to become anything today — you already are someone.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "你本完整，只待想起"
   },
   {
     "id": 41,
     "quote": "What looks empty, like a valley, often holds the most.",
     "sourceNote": "Inspired by the Tao Te Ching",
-    "microAction": "Notice one place today where softness gets more done than force.",
-    "tags": ["calm", "growth"]
+    "microAction": "Notice what today's quiet, empty-looking moment is actually holding.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "虚谷无声，所藏最丰"
   },
   {
     "id": 42,
     "quote": "Muddy water, let stand, becomes clear.",
     "sourceNote": "Inspired by Laozi",
-    "microAction": "If a decision feels unclear today, wait one hour before making it.",
-    "tags": ["calm"]
+    "microAction": "Let your mind settle the way still water does — nothing to force, just time.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "浊水静置，自会澄明"
   },
   {
     "id": 43,
     "quote": "The usefulness of a cup is in its emptiness.",
     "sourceNote": "Inspired by the Tao Te Ching",
-    "microAction": "Leave one task undone on purpose today, just to notice how it feels.",
-    "tags": ["calm", "growth"]
+    "microAction": "Clear a little space today, and notice what it feels like to have room.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "杯因其空，方有用处"
   },
   {
     "id": 44,
     "quote": "What you control is smaller than you think, and freer than you think.",
     "sourceNote": "Inspired by Stoic philosophy",
-    "microAction": "Write down one thing today that is entirely yours to decide, and decide it well.",
-    "tags": ["stress", "growth"]
+    "microAction": "Feel where you're gripping something you don't actually control, and let your fingers loosen.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "可控虽少，心却更自由"
   },
   {
     "id": 45,
-    "quote": "It is not events that disturb us, but our judgments about them.",
+    "quote": "The flight got delayed. I noticed I was more upset by the story I was telling myself about it than the delay itself, so I put the story down.",
     "sourceNote": "Inspired by Epictetus",
-    "microAction": "Next time you feel annoyed today, ask: is this the event, or my story about it?",
-    "tags": ["stress", "calm"]
+    "microAction": "Notice one judgment you're adding to a plain fact today, and set the judgment down.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "事本无重，重在心编"
   },
   {
     "id": 46,
     "quote": "No one steps in the same river twice, for the water has moved on, and so have you.",
     "sourceNote": "Inspired by Heraclitus",
-    "microAction": "Notice one way you've changed this year that you haven't given yourself credit for.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Feel, just briefly, how different you are today from who met this same feeling before.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "水已前行，你亦更新"
   },
   {
     "id": 47,
     "quote": "Begin again, as many times as you need to.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "If your attention wanders today, just notice, and gently come back — no scorekeeping.",
-    "tags": ["calm", "growth"]
+    "microAction": "Let yourself begin again today, without needing yesterday's tally to be perfect.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "需重来时，就再启程"
   },
   {
     "id": 48,
-    "quote": "A thought is not a fact, even when it's loud.",
+    "quote": "The thought showed up loud and certain, like it always does. I let it be loud. I just didn't let it drive.",
     "sourceNote": "Inspired by modern mindfulness psychology",
-    "microAction": "Catch one loud thought today and ask, quietly, 'is this true, or just familiar?'",
-    "tags": ["stress", "anxious"]
+    "microAction": "Notice a loud thought today, and remind your body: loud isn't the same as true.",
+    "tags": [
+      "stress",
+      "anxious"
+    ],
+    "quoteZh": "念可喧哗，不许掌舵"
   },
   {
     "id": 49,
     "quote": "The tighter the fist, the less it can hold.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Notice one thing you're holding onto too tightly today, and loosen your grip a little.",
-    "tags": ["stress", "calm"]
+    "microAction": "Let your hand open, physically, around whatever you're holding onto too hard right now.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "拳越紧，掌中越空"
   },
   {
     "id": 50,
-    "quote": "Winter is not a failure of summer.",
+    "quote": "I'm in a slow, quiet stretch right now, and I stopped calling it falling behind. Some seasons are just quiet — that's not the same as broken.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "If you're in a slow season right now, let it be a season instead of a verdict.",
-    "tags": ["low", "growth"]
+    "microAction": "Let this quieter season be a season, not a verdict on you.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "静季不是坏，是养息"
   },
   {
     "id": 51,
     "quote": "Small deeds done are better than great deeds planned.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Pick the smallest version of today's most important task, and just do that part.",
-    "tags": ["growth"]
+    "microAction": "Do one small thing today and let it be enough, without needing the grand version.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "成一小事，胜空大愿"
   },
   {
     "id": 52,
     "quote": "The bow that is always bent will eventually break.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Take one real break today — not a scrolling break, an actual one.",
-    "tags": ["stress", "calm"]
+    "microAction": "Let something in you unbend today — a plan, a posture, a rule you made for yourself.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "弓久紧绷，终会断弦"
   },
   {
     "id": 53,
     "quote": "Listening is a form of hospitality.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "In one conversation today, ask a question and then say nothing until they finish answering.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Listen to one person today like their words are a gift, not a queue you're waiting to speak in.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "倾听，是给心安座"
   },
   {
     "id": 54,
-    "quote": "You cannot pour from an empty cup, and pretending otherwise doesn't refill it.",
+    "quote": "I said yes to one more thing today with nothing left to give it. Tonight I'm saying no to the next one, and that's not selfish, that's arithmetic.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do one small thing today that refills you, not just one that's productive.",
-    "tags": ["stress", "calm"]
+    "microAction": "Let someone pour into you today, even a little, instead of insisting you're fine.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "杯已空时，拒绝亦慈悲"
   },
   {
     "id": 55,
     "quote": "The path is made by walking, not by knowing the whole way first.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Start the thing you've been overthinking, before you feel fully ready.",
-    "tags": ["growth"]
+    "microAction": "Take the next single step today without needing the whole path lit up first.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "路在脚下，不在想尽"
   },
   {
     "id": 56,
-    "quote": "Nothing is permanent except the fact that nothing is permanent.",
+    "quote": "Today felt unbearable at 2pm and almost fine by 8. I'm learning to trust that the feeling swallowing me whole is never actually the whole story.",
     "sourceNote": "Inspired by Buddhist-adjacent philosophy, reframed",
-    "microAction": "Notice one difficult feeling today and remind yourself: this, too, is moving through.",
-    "tags": ["low", "stress"]
+    "microAction": "Let one thing today be allowed to change, since nothing was ever going to stay the same.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "吞人的情绪，不是全局"
   },
   {
     "id": 57,
     "quote": "A good traveler has no fixed plans and is not intent on arriving.",
     "sourceNote": "Inspired by Laozi",
-    "microAction": "Let one plan today change without treating it as a problem.",
-    "tags": ["calm", "growth"]
+    "microAction": "Loosen your plans for one part of today, and notice what arrives instead.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "善行者，无定亦无执"
   },
   {
     "id": 58,
     "quote": "Say what you mean plainly; the plain thing is usually the kind thing too.",
     "sourceNote": "Inspired by Taoist simplicity",
-    "microAction": "In one message today, cut it down to half the words.",
-    "tags": ["growth", "calm"]
+    "microAction": "Say one plain, kind true thing today, and let it be enough without dressing it up.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "平实之语，常含善意"
   },
   {
     "id": 59,
     "quote": "The tree does not compete with the tree next to it. It simply grows toward the light.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Unfollow, mute, or simply look away from one comparison trigger today.",
-    "tags": ["growth", "stress"]
+    "microAction": "Let yourself grow at your own pace today, without measuring against the tree next to you.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "树不争高，只向光长"
   },
   {
     "id": 60,
     "quote": "Even a small star gives its own light.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do one small good thing today without mentioning it to anyone.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Let your own small light count today, even next to someone else's brighter one.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "星再小，也自有光"
   },
   {
     "id": 61,
     "quote": "The quiet work is still work.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Give yourself credit today for one thing that was hard but invisible to everyone else.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Let one quiet, unnoticed effort today count, even if nobody claps for it.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "无声耕耘，也是功课"
   },
   {
     "id": 62,
     "quote": "A held breath is not the same as calm.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Notice if you're holding your breath right now. If so, let it go, slowly.",
-    "tags": ["calm", "stress"]
+    "microAction": "Notice if you're holding your breath right now, and let it go, slowly.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "屏息不是安宁"
   },
   {
     "id": 63,
     "quote": "The master doesn't try to be great; that's how greatness happens.",
     "sourceNote": "Inspired by the Tao Te Ching",
-    "microAction": "Do one task today just because it needs doing, not because anyone will notice.",
-    "tags": ["growth"]
+    "microAction": "Do one thing today without trying to make it impressive — just do it.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "不求伟大，伟大自来"
   },
   {
     "id": 64,
-    "quote": "Worry is a misuse of imagination.",
+    "quote": "I spent an hour imagining every way tomorrow could go wrong. Tonight I'm giving that imagination a better job — picturing it going right, for once.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Take one worry today and imagine, in detail, it going fine instead.",
-    "tags": ["anxious", "stress"]
+    "microAction": "Notice one worry today, and gently ask it to wait until it's actually happening.",
+    "tags": [
+      "anxious",
+      "stress"
+    ],
+    "quoteZh": "莫预演忧，试想顺遂"
   },
   {
     "id": 65,
-    "quote": "You don't have to see the whole staircase, just the next step.",
+    "quote": "I don't know how the whole year turns out. I only had to figure out the next hour, so that's the only part I let myself look at.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Name the very next step of something big, and only think about that one.",
-    "tags": ["growth", "anxious"]
+    "microAction": "Look only as far as your next step today — the staircase can stay in the dark for now.",
+    "tags": [
+      "growth",
+      "anxious"
+    ],
+    "quoteZh": "不问整年，只照一时"
   },
   {
     "id": 66,
-    "quote": "The wave doesn't need to become the ocean; it already is the ocean, moving.",
+    "quote": "I keep thinking I need to become someone different to be okay. Tonight I let myself just be exactly who's here — not becoming, just moving.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Notice one moment today where you feel separate from everything, and just breathe there.",
-    "tags": ["calm", "low"]
+    "microAction": "Feel that you don't have to arrive anywhere today to already be enough, moving.",
+    "tags": [
+      "calm",
+      "low"
+    ],
+    "quoteZh": "不必成谁，做此刻人"
   },
   {
     "id": 67,
     "quote": "A student asked, 'What is the way?' The teacher said, 'Have you eaten? Then wash your bowl.'",
     "sourceNote": "Inspired by a classical Zen koan",
-    "microAction": "Do one ordinary chore today with your full attention, start to finish.",
-    "tags": ["calm"]
+    "microAction": "Do one ordinary task today — a dish, a bowl, a bag — like it's the whole point, not a chore before the point.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "饭后洗碗，道在寻常"
   },
   {
     "id": 68,
     "quote": "Not every ship needs to reach every shore.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let go of one goal today that was never really yours to begin with.",
-    "tags": ["growth", "calm"]
+    "microAction": "Let one thing today stay unfinished without it meaning you failed.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "船有其岸，不必遍抵"
   },
   {
     "id": 69,
     "quote": "Kind words cost nothing and are worth everything.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Say one genuine compliment out loud to someone today.",
-    "tags": ["gratitude"]
+    "microAction": "Say one kind word today to someone who probably won't expect it.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "善语不费，却值千金"
   },
   {
     "id": 70,
-    "quote": "You are not behind. There is no schedule everyone else is on.",
+    "quote": "I stopped comparing my timeline to the life I thought I'd have by now. There was never a real schedule — I just made one up to punish myself with.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Cross out one 'should have by now' from your internal list today.",
-    "tags": ["growth", "stress"]
+    "microAction": "Let go of the schedule you imagine everyone else is on — there isn't one.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "人生无表，莫自催逼"
   },
   {
     "id": 71,
     "quote": "The archer who misses the mark looks inward, not at the target.",
     "sourceNote": "Inspired by classical philosophy",
-    "microAction": "After one mistake today, ask what it taught you instead of what it says about you.",
-    "tags": ["growth"]
+    "microAction": "Notice one thing today that didn't go your way, and look at what it's showing you, gently.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "失箭之时，回看己心"
   },
   {
     "id": 72,
-    "quote": "Rain falls on the just and unjust alike; stop taking the weather personally.",
+    "quote": "Everything went wrong today and none of it was actually about me. I let the bad luck be bad luck instead of proof of something.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Name one bad thing that happened today that truly had nothing to do with you.",
-    "tags": ["stress", "low"]
+    "microAction": "Let today's bad weather — literal or otherwise — be impersonal, not a message about you.",
+    "tags": [
+      "stress",
+      "low"
+    ],
+    "quoteZh": "不顺只是风，不是判词"
   },
   {
     "id": 73,
     "quote": "The quietest room in the house is still part of the house.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Spend 2 minutes today in total silence, phone in another room.",
-    "tags": ["calm"]
+    "microAction": "Sit in the quietest part of your space for a minute, and let it hold you.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "静室无声，仍属此家"
   },
   {
     "id": 74,
-    "quote": "A candle flame doesn't fight the wind; it simply goes out and is relit.",
+    "quote": "I lost my footing today — snapped at someone, went quiet, checked out for an hour. I didn't make it mean I'm broken. I just relit it and kept going.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "If you 'fail' at something today, just start again — no drama required.",
-    "tags": ["growth", "low"]
+    "microAction": "Let one small setback today go out and be relit, instead of treated as final.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "失足不坏，重燃前行"
   },
   {
     "id": 75,
     "quote": "The cracked bowl lets the light in, and holds soup just fine.",
     "sourceNote": "Inspired by the kintsugi tradition",
-    "microAction": "Show one imperfect piece of work to someone today instead of waiting for perfect.",
-    "tags": ["growth"]
+    "microAction": "Let one cracked, imperfect part of your day still hold you, the way it's meant to.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "裂碗有光，仍可盛汤"
   },
   {
     "id": 76,
-    "quote": "There is no wrong way to breathe. Just breathe.",
+    "quote": "My chest was tight and my breath was shallow and fast. I stopped trying to fix it and just let it be uneven for a minute. That was enough.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Take five slow breaths right now, counting only the exhale.",
-    "tags": ["calm", "anxious"]
+    "microAction": "Just breathe, for ten seconds, without trying to do it the 'right' way.",
+    "tags": [
+      "calm",
+      "anxious"
+    ],
+    "quoteZh": "呼吸乱时，也可容它"
   },
   {
     "id": 77,
     "quote": "The mountain doesn't move for the wind, yet nothing lives more peacefully.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "In a heated moment today, imagine yourself as the mountain, not the wind.",
-    "tags": ["calm", "stress"]
+    "microAction": "Stay steady through one small storm today, the way a mountain doesn't move for wind.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "山不随风，故得安宁"
   },
   {
     "id": 78,
     "quote": "A full inbox is not the same as a full life.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Close your email for one hour today and do something that isn't a task.",
-    "tags": ["stress", "calm"]
+    "microAction": "Let your inbox stay imperfect today so something in your actual life can be full instead.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "信箱满，不等于人生满"
   },
   {
     "id": 79,
     "quote": "The tea tastes different when you're not rushing to finish it.",
     "sourceNote": "Inspired by Japanese tea ceremony philosophy",
-    "microAction": "Drink one cup of something today with no phone, no screen, just the cup.",
-    "tags": ["calm"]
+    "microAction": "Slow down one cup of something today enough to taste it changing.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "不急饮茶，茶味自深"
   },
   {
     "id": 80,
-    "quote": "Grief and gratitude can sit at the same table.",
+    "quote": "I missed someone and felt lucky in the same hour today. I used to think I had to pick one. Turns out they were never fighting for the same seat.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "If you're sad about something today, let yourself also notice one small good thing nearby.",
-    "tags": ["low", "gratitude"]
+    "microAction": "Let grief and gratitude sit at the same table today — you don't have to choose.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "思念与幸运，可同坐"
   },
   {
     "id": 81,
     "quote": "You water what you want to grow.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Spend 5 minutes today on something that quietly matters to your future, not just today's fire.",
-    "tags": ["growth"]
+    "microAction": "Give a little attention today to the thing you want more of in your life.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "所愿生长，便去浇灌"
   },
   {
     "id": 82,
-    "quote": "The wind doesn't apologize for blowing.",
+    "quote": "Something knocked me off balance today and I stopped waiting for the universe to apologize. It's not personal. I just have to stand differently.",
     "sourceNote": "Inspired by Taoist imagery",
-    "microAction": "Stop apologizing today for one thing that isn't actually your fault.",
-    "tags": ["growth", "stress"]
+    "microAction": "Let something today just be weather — the wind doesn't need your forgiveness to keep blowing.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "世不道歉，我换姿站稳"
   },
   {
     "id": 83,
     "quote": "A single spark can outlast the match that struck it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do one small act of encouragement today for someone who might need it more than they show.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Let one small spark of hope today outlast the hard moment that struck it.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "一点星火，久过柴薪"
   },
   {
     "id": 84,
     "quote": "The bamboo forest bends together in the storm.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Ask one person for help today instead of carrying it alone.",
-    "tags": ["stress", "growth"]
+    "microAction": "Lean on someone today, even slightly, the way bamboo bends together in a storm.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "风雨来时，竹林同弯"
   },
   {
     "id": 85,
     "quote": "There is a season for rest, and it is not a moral failing.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "Rest for 10 minutes today without earning it first.",
-    "tags": ["calm", "stress"]
+    "microAction": "Let one part of today be rest, and let that be enough reason.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "休息有时，并非亏欠"
   },
   {
     "id": 86,
     "quote": "The quiet mind hears what the busy mind misses.",
     "sourceNote": "Inspired by classical Zen teaching",
-    "microAction": "Sit somewhere new today for 3 minutes and just notice what you'd normally rush past.",
-    "tags": ["calm"]
+    "microAction": "Sit quietly for a minute and notice what the busy part of your mind has been missing.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "静心所闻，忙心错过"
   },
   {
     "id": 87,
-    "quote": "You can't control the tide, only when you go swimming.",
+    "quote": "I can't control what's coming this week. I can control what I do about it right now, so that's the only part I picked up.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Name one uncontrollable thing today, and one controllable choice you still have inside it.",
-    "tags": ["stress", "growth"]
+    "microAction": "Let today's tide be what it is, and just choose gently when you'll step in.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "不控来日，只握当下"
   },
   {
     "id": 88,
     "quote": "The teacher opens the door; you walk through it yourself.",
     "sourceNote": "Inspired by Confucian philosophy",
-    "microAction": "Take one piece of advice you've been given and actually try it today.",
-    "tags": ["growth"]
+    "microAction": "Walk through one door today that's already open, without waiting to be led.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "师开其门，行由己入"
   },
   {
     "id": 89,
     "quote": "A jar half full of stones still has room for sand.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Fit one small joy into today's schedule before it fills up with obligations.",
-    "tags": ["gratitude", "calm"]
+    "microAction": "Notice today has room left in it, even if it feels full.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "半罐石中，仍容细沙"
   },
   {
     "id": 90,
     "quote": "What is easy to postpone is easy to abandon.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do the thing you were going to postpone today, just for five minutes.",
-    "tags": ["growth"]
+    "microAction": "Let one thing you've been postponing wait one more day, without guilt attached.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "易拖之事，也易荒废"
   },
   {
     "id": 91,
     "quote": "The river does not hurry, and still it reaches the sea.",
     "sourceNote": "Inspired by Taoist philosophy",
-    "microAction": "Slow down your pace on purpose during one errand today.",
-    "tags": ["calm", "growth"]
+    "microAction": "Let yourself move at your own unhurried pace today, and trust you'll still get where you're going.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "江河不急，终归大海"
   },
   {
     "id": 92,
     "quote": "Anger points at something true, even when it shouts.",
     "sourceNote": "Inspired by modern mindfulness psychology",
-    "microAction": "If you feel angry today, ask what need is underneath it before reacting.",
-    "tags": ["stress", "growth"]
+    "microAction": "Let today's anger tell you the truth it's pointing at, without needing to shout it.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "怒声虽烈，也指真处"
   },
   {
     "id": 93,
     "quote": "The forest doesn't explain itself to the axe.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Skip explaining or justifying one decision today — let it just be your decision.",
-    "tags": ["growth"]
+    "microAction": "Let one hard thing today just exist, without needing to explain or defend yourself to it.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "森林无须向斧解释"
   },
   {
     "id": 94,
     "quote": "Joy shared is doubled; joy hidden slowly fades.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Tell someone about one good thing that happened today, however small.",
-    "tags": ["gratitude"]
+    "microAction": "Share one small joy today with someone, and let it grow bigger for the sharing.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "喜悦分享，便会加倍"
   },
   {
     "id": 95,
-    "quote": "A locked door and a closed heart open the same way — slowly, and from the inside.",
+    "quote": "I let one person a little closer today than I usually do. Nothing forced it open. I just stopped holding it shut for a second.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let your guard down slightly in one low-stakes conversation today.",
-    "tags": ["growth", "low"]
+    "microAction": "Let one small part of your heart open a little, slowly, from the inside.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "心门微开，便有人近"
   },
   {
     "id": 96,
     "quote": "The seed does not know it will be a tree, and grows anyway.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Take one step today toward something whose outcome you can't yet see.",
-    "tags": ["growth"]
+    "microAction": "Trust one thing you're growing today, even without knowing exactly what it becomes.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "种子不知树，仍向上生"
   },
   {
     "id": 97,
     "quote": "A calm voice can walk into a storm and not get wet.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Lower your voice, not your point, in one disagreement today.",
-    "tags": ["stress", "calm"]
+    "microAction": "Keep your voice gentle in one hard conversation today, and notice it doesn't cost you anything.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "平声入风雨，不湿其心"
   },
   {
     "id": 98,
-    "quote": "The night is long only to those who cannot sleep.",
+    "quote": "I stopped fighting the 2am ceiling-staring and just let the night be long, without stacking my frustration on top of it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Put your phone outside the bedroom once tonight.",
-    "tags": ["calm", "stress"]
+    "microAction": "Let tonight be simply night — it isn't longer just because it's hard.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "长夜自长，莫添烦恼"
   },
   {
     "id": 99,
-    "quote": "What you feed grows; what you starve fades.",
+    "quote": "I gave the good thought five more minutes of attention today than the anxious one. Small ratio — it's the only garden I actually get to tend.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Spend today's spare attention on a good habit instead of a nagging worry.",
-    "tags": ["growth", "anxious"]
+    "microAction": "Feed the part of yourself that's hungry for rest today, instead of starving it further.",
+    "tags": [
+      "growth",
+      "anxious"
+    ],
+    "quoteZh": "多看善念，心园自荣"
   },
   {
     "id": 100,
     "quote": "One hundred days of practice is still just one day, repeated with care.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Don't think about day 100 today. Just do today's practice.",
-    "tags": ["growth", "calm"]
+    "microAction": "Show up for one small, caring thing today, and let that be the whole practice.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "百日修行，一日反复"
   },
   {
     "id": 101,
-    "quote": "The lantern doesn't light the whole road, only the next few steps — and that's enough.",
+    "quote": "I couldn't see past tomorrow and stopped demanding to. I just lit the part of the road I'm actually standing on.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Plan only tomorrow's first task tonight, not the whole week.",
-    "tags": ["anxious", "calm"]
+    "microAction": "Let the next few steps today be enough light — you don't need to see the whole road.",
+    "tags": [
+      "anxious",
+      "calm"
+    ],
+    "quoteZh": "看不见远，先照脚下"
   },
   {
     "id": 102,
     "quote": "A house is built one brick at a time, and no one brick gets the credit.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Acknowledge one 'boring' task today as part of something you're actually building.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Do one unglamorous, uncredited good thing today, just because it's worth doing.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "一砖一瓦，方成屋宇"
   },
   {
     "id": 103,
     "quote": "The fish doesn't notice the water until it's gone.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Name one thing you have today that you'd miss badly if it were gone.",
-    "tags": ["gratitude"]
+    "microAction": "Notice the water you're swimming in today — one ordinary thing you'd miss if it were gone.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "水在时，鱼常不知"
   },
   {
     "id": 104,
     "quote": "You can't hurry a sunrise, and you don't need to.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let one thing today take exactly as long as it takes.",
-    "tags": ["calm"]
+    "microAction": "Let today unfold at its own pace, the way a sunrise won't be hurried.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "日出不可催，也不必催"
   },
   {
     "id": 105,
-    "quote": "The mask gets heavier the longer you wear it.",
+    "quote": "I told one person the truth about how today actually went. My face got to rest for the first time since morning.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Be one degree more honest than usual in one conversation today.",
-    "tags": ["growth", "low"]
+    "microAction": "Let your face rest today — you don't have to hold the mask up for anyone in this moment.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "说出真相，脸也松了"
   },
   {
     "id": 106,
     "quote": "Even the ocean was once just rain, one drop at a time.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Don't dismiss one small effort today as not enough — it's part of something larger.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Let one small drop of effort today count, the way rain slowly becomes an ocean.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "大海曾是，一滴一滴"
   },
   {
     "id": 107,
-    "quote": "A path walked in doubt still leads somewhere.",
+    "quote": "I wasn't sure I was doing this right, and I kept walking anyway. Turns out doubt was just the sound of me moving, not a stop sign.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Take the next step on something today even while still unsure.",
-    "tags": ["growth", "anxious"]
+    "microAction": "Keep walking through one uncertain thing today, even without full confidence.",
+    "tags": [
+      "growth",
+      "anxious"
+    ],
+    "quoteZh": "疑声不是停，是在行"
   },
   {
     "id": 108,
     "quote": "The scar is proof the wound closed.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Notice one old hurt today that you've actually moved past, and give yourself credit.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Notice one old scar today, and let it remind you that you closed, you healed.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "有疤之处，伤已合拢"
   },
   {
     "id": 109,
     "quote": "The quiet guest still deserves a seat at the table.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Make space for the quieter voice in one meeting or conversation today.",
-    "tags": ["growth"]
+    "microAction": "Make room for one quiet person or feeling today that's easy to overlook.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "沉默之人，也该有席"
   },
   {
     "id": 110,
     "quote": "A garden grown too fast has shallow roots.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Resist the urge to rush one thing today that actually needs time.",
-    "tags": ["growth", "calm"]
+    "microAction": "Let one thing grow slowly today instead of rushing it toward looking finished.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "长得太急，根便浅"
   },
   {
     "id": 111,
     "quote": "Even stone is shaped by water that never stopped being gentle.",
     "sourceNote": "Inspired by Taoist imagery",
-    "microAction": "Choose the gentle version of one hard conversation today.",
-    "tags": ["growth", "calm"]
+    "microAction": "Be gentle with yourself today, the way water is gentle with the stone it's shaping.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "温水不止，亦能塑石"
   },
   {
     "id": 112,
     "quote": "The bird doesn't sing because it has an answer; it sings because it has a song.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do one creative thing today with no goal except doing it.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Do one small thing today simply because it's your song, not because it needs an answer.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "鸟唱非为答，只因有歌"
   },
   {
     "id": 113,
-    "quote": "Nobody drowns from falling in water; they drown from staying there.",
+    "quote": "I let myself fall apart for an hour today. The trouble was never falling — it's the version of me that used to stay down there too long.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Notice one mistake today and let yourself simply move on from it.",
-    "tags": ["growth", "low"]
+    "microAction": "Let yourself come up for air today from one thing you've been sinking in.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "可崩一时，不久沉陷"
   },
   {
     "id": 114,
     "quote": "The full moon took the whole month to get there.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Check in on a slow goal today without expecting it to be finished.",
-    "tags": ["growth"]
+    "microAction": "Trust that something quietly growing in you today doesn't need to be visible yet.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "月圆也需走满一月"
   },
   {
     "id": 115,
     "quote": "You can hold two truths at once: this is hard, and I am capable.",
     "sourceNote": "Inspired by modern mindfulness psychology",
-    "microAction": "Say both halves of that sentence out loud once today.",
-    "tags": ["stress", "growth"]
+    "microAction": "Hold both today: this is hard, and you are still capable — let both be true at once.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "事虽难，我亦能承"
   },
   {
     "id": 116,
     "quote": "A well doesn't run dry from one bucket too many; it runs dry from never being refilled.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Refill your own energy today before someone else asks for more of it.",
-    "tags": ["stress", "calm"]
+    "microAction": "Let someone refill you today, in some small way, instead of running yourself dry.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "井枯非多取，是少滋养"
   },
   {
     "id": 117,
-    "quote": "The quiet corner of the room still belongs to the room.",
+    "quote": "I didn't say much at dinner tonight. Nobody made me feel like I had to earn my seat by being loud.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "If you feel invisible today, do one thing that only you would notice, for you.",
-    "tags": ["low", "gratitude"]
+    "microAction": "Let the quiet, overlooked part of your day still count as part of your day.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "少言之人，也配安坐"
   },
   {
     "id": 118,
-    "quote": "A knot untied gently comes apart easier than one pulled at.",
+    "quote": "I stopped yanking at the thing that was tangled and just worked it loose, slowly. It gave way the moment I stopped fighting it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Approach one tangled problem today slowly, instead of forcing it.",
-    "tags": ["stress", "growth"]
+    "microAction": "Untie one small knot today gently, instead of pulling at it harder.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "结不硬扯，慢解自松"
   },
   {
     "id": 119,
     "quote": "The old tree still gives shade, whether or not anyone thanks it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Do one kind thing today for someone who will probably never say thank you.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Let yourself be thanked today, or simply notice the shade you're already giving.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "老树赐荫，不问谢声"
   },
   {
     "id": 120,
     "quote": "A candle shared with another still burns just as bright.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Teach or show someone one small thing you know today.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Share your warmth with someone today, and notice your own flame doesn't dim.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "火分予人，仍自明亮"
   },
   {
     "id": 121,
-    "quote": "The tide always comes back, even after it seems entirely gone.",
+    "quote": "The joy felt completely gone this week. I've been here before — it came back last time too. I'm choosing to believe it again.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "If motivation feels absent today, do a small version of the task anyway — it tends to return once you start.",
-    "tags": ["low", "growth"]
+    "microAction": "Trust one thing that feels far away today to come back around, the way the tide always does.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "欢喜暂隐，也会归来"
   },
   {
     "id": 122,
-    "quote": "You are the sky; the mood is just weather passing through.",
+    "quote": "I let this mood pass through me today instead of moving into it and unpacking its bags. I'm the sky. This was just weather.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Name today's mood like weather — 'a little stormy' — and let it pass without judgment.",
-    "tags": ["low", "calm"]
+    "microAction": "Let today's mood pass through you like weather — you are the sky, not the storm.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "我是天空，情绪是云"
   },
   {
     "id": 123,
     "quote": "The strongest branches grew through wind, not despite it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Look for one strength today that a hard time actually gave you.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Let one hard wind today be shaping you, not just battering you.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "劲枝由风中长成"
   },
   {
     "id": 124,
     "quote": "A door closed softly can still be opened again.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "End one disagreement today gently, even if it isn't fully resolved.",
-    "tags": ["growth", "calm"]
+    "microAction": "Let one softly closed door stay open to being reopened, whenever you're ready.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "轻合之门，仍可再开"
   },
   {
     "id": 125,
     "quote": "The smallest lantern still counts as light.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Don't dismiss a small win today just because it isn't a big one.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Let your smallest bit of light count today, even if it doesn't reach very far.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "小灯一盏，也是光明"
   },
   {
     "id": 126,
     "quote": "Even the tallest bamboo started out hollow and light.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let yourself be a beginner at one thing today without apologizing for it.",
-    "tags": ["growth"]
+    "microAction": "Trust the hollow, early part of something you're building — it's meant to be light for now.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "高竹初生，亦空且轻"
   },
   {
     "id": 127,
     "quote": "The quiet path and the busy road can lead to the same door.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Take the slower, quieter option today when it's available.",
-    "tags": ["calm"]
+    "microAction": "Let today's quiet path and today's busy road both lead somewhere worth going.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "静径喧途，同可抵门"
   },
   {
     "id": 128,
     "quote": "A cup of tea shared says more than a long apology.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Offer a small, ordinary kindness today instead of a big gesture.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Share a small warm moment with someone today instead of a long explanation.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "一盏共茶，胜万句歉"
   },
   {
     "id": 129,
-    "quote": "The field left fallow this year is not a field wasted.",
+    "quote": "I didn't produce much this year. I stopped calling it a wasted year and started calling it a resting one.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let one part of your life rest this season without calling it failure.",
-    "tags": ["low", "calm"]
+    "microAction": "Let one fallow part of your life rest this season, without calling it wasted.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "无成果年，也是休养"
   },
   {
     "id": 130,
     "quote": "A single candle can relight a hundred others without losing its own flame.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Encourage someone today without worrying it will cost you anything.",
-    "tags": ["gratitude"]
+    "microAction": "Pass a little warmth to someone today, and notice your own doesn't run out.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "一灯燃百灯，光不减"
   },
   {
     "id": 131,
     "quote": "The mountain looks different depending on where you're standing.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Try seeing today's problem from one other person's point of view.",
-    "tags": ["growth"]
+    "microAction": "Look at today's problem from one new angle before deciding what it is.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "山随所立，各有其貌"
   },
   {
     "id": 132,
     "quote": "Sand held loosely stays in the hand; sand gripped tightly slips away.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Loosen your grip today on one outcome you can't fully control.",
-    "tags": ["stress", "calm"]
+    "microAction": "Hold today's worry loosely, like sand — grip it, and it slips away faster.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "沙宜松捧，紧握即流"
   },
   {
     "id": 133,
     "quote": "The best time to plant a tree was years ago; the second best time is today.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Start the thing you've been delaying, even a small piece of it, today.",
-    "tags": ["growth"]
+    "microAction": "Plant one small thing today, even though the best time was technically years ago.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "种树良时，仍在今日"
   },
   {
     "id": 134,
     "quote": "A room feels bigger once you stop filling every corner.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Leave one part of today's schedule intentionally empty.",
-    "tags": ["calm"]
+    "microAction": "Clear one small space today, and feel the room that opens up.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "少塞一角，屋便开阔"
   },
   {
     "id": 135,
     "quote": "The quiet friend who stays is worth more than the loud one who visits once.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Reach out today to someone steady, just to say hello.",
-    "tags": ["gratitude"]
+    "microAction": "Sit quietly with one steady, quiet friend today — presence, not performance.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "久伴无声，胜一时热"
   },
   {
     "id": 136,
-    "quote": "Even a cracked mirror still shows the truth.",
+    "quote": "I don't feel put-together today. I looked anyway, and the person looking back was still telling me the truth — just a tired one.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Accept one imperfect truth about today without trying to fix it right away.",
-    "tags": ["growth", "low"]
+    "microAction": "Trust that even a cracked, tired version of you is still showing you something true.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "镜中疲惫，仍是真我"
   },
   {
     "id": 137,
     "quote": "The snow doesn't fall faster because you're impatient for spring.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Notice one thing today you're rushing that simply needs its own time.",
-    "tags": ["calm", "growth"]
+    "microAction": "Let today move at its own pace — spring won't come faster for your impatience, and that's okay.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "急盼春来，雪仍自落"
   },
   {
     "id": 138,
     "quote": "A quiet apology is still an apology.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "If you owe someone an apology, offer it today, simply and without excuses.",
-    "tags": ["growth"]
+    "microAction": "Offer one small, quiet apology today, even if it feels too small to matter.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "轻声道歉，也是真歉"
   },
   {
     "id": 139,
     "quote": "The smallest root still holds the largest tree in place.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Name one small daily habit today that's quietly holding up something bigger.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Trust the smallest, least visible part of your effort today — it's still holding things up.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "细根无声，撑起高树"
   },
   {
     "id": 140,
     "quote": "A calm sea and a skilled sailor rarely make a good story, but they make a good life.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let one ordinary, uneventful moment today be enough, without needing more.",
-    "tags": ["calm", "gratitude"]
+    "microAction": "Let today be unremarkable and good, without needing it to be a good story.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "静海良舵，亦成好日"
   },
   {
     "id": 141,
     "quote": "The reflection in still water is clear; the reflection in a storm is not.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Wait for a calmer moment today before responding to something that upset you.",
-    "tags": ["stress", "calm"]
+    "microAction": "Wait for the water to still before deciding what today's reflection actually looks like.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "水静影清，风起影乱"
   },
   {
     "id": 142,
     "quote": "A single stitch, repeated, becomes a whole garment.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Repeat one small good habit today, even if yesterday you skipped it.",
-    "tags": ["growth"]
+    "microAction": "Add one small stitch to something today, and trust the whole garment is coming.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "一针复一针，终成衣"
   },
   {
     "id": 143,
     "quote": "The old road is still a road, even when the map calls it slow.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Choose the more meaningful option today over the merely efficient one.",
-    "tags": ["growth", "calm"]
+    "microAction": "Let the slow road count today, even if the map calls it the long way.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "旧路虽慢，仍是道路"
   },
   {
     "id": 144,
     "quote": "A single kind word can outlast a hundred harsh ones.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Choose your words once today as if they'll be remembered for years.",
-    "tags": ["growth", "gratitude"]
+    "microAction": "Say one kind word today, and let it be the one that outlasts the rest.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "一善语，久过百恶声"
   },
   {
     "id": 145,
     "quote": "The lamp doesn't need to understand the dark to shine into it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Show up for someone today even if you don't have the right words.",
-    "tags": ["gratitude", "growth"]
+    "microAction": "Let your light reach into one dark corner today without needing to understand it first.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "灯不懂夜，也能照夜"
   },
   {
     "id": 146,
     "quote": "A field of one flower is still a garden.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let one small joy today be enough, without needing a whole bouquet of good things.",
-    "tags": ["gratitude", "calm"]
+    "microAction": "Let one small, single thing today be enough of a garden.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "一花成圃，亦是花园"
   },
   {
     "id": 147,
-    "quote": "The heaviest stone is lighter once someone helps you carry it.",
+    "quote": "I finally told someone how heavy this has been. It didn't get lighter because I solved it — it got lighter because I wasn't the only one holding it.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "Let someone help you with one thing today instead of insisting on doing it alone.",
-    "tags": ["stress", "growth"]
+    "microAction": "Let someone help carry today's heaviest thing, even just for a moment.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "重担一分，心便轻些"
   },
   {
     "id": 148,
-    "quote": "A quiet season is not the same as a wasted one.",
+    "quote": "Nothing dramatic happened this month. I stopped needing it to, to count.",
     "sourceNote": "Proverb, reframed",
-    "microAction": "If things feel slow today, look for one quiet form of progress you might be missing.",
-    "tags": ["low", "growth"]
+    "microAction": "Let this quiet season be exactly that — quiet, not wasted.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "无大事月，也有分量"
   },
   {
     "id": 149,
     "quote": "The bell doesn't ring until it's struck, and the striking isn't violence — it's purpose.",
     "sourceNote": "Inspired by Zen teaching",
-    "microAction": "Let one challenge today reveal something in you, instead of just wearing you down.",
-    "tags": ["growth", "stress"]
+    "microAction": "Let today's striking moment — whatever wakes you up — be purpose, not violence.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "钟因敲而鸣，敲亦使命"
   },
   {
     "id": 150,
     "quote": "Coming home to yourself doesn't require a journey, only a pause.",
     "sourceNote": "Inspired by modern mindfulness teaching",
-    "microAction": "Pause once today, hand on your chest, and just notice you're here.",
-    "tags": ["calm", "gratitude"]
+    "microAction": "Pause for a moment, right now, and just come home to yourself — no journey required.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "归心无需远行，一停即至"
+  },
+  {
+    "id": 151,
+    "quote": "The obstacle is not in your way; the obstacle is the way.",
+    "sourceNote": "Inspired by Stoic philosophy",
+    "microAction": "Feel today's one obstacle as something you're moving through, not something blocking you.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "障碍不挡路，障碍即路"
+  },
+  {
+    "id": 152,
+    "quote": "I couldn't change what happened today. I could change what I let it do to the rest of my evening, and that turned out to be the actual power I had.",
+    "sourceNote": "Inspired by Marcus Aurelius",
+    "microAction": "Notice one thing today that's outside your control, and feel your grip on it loosen.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "事不可改，心可转向"
+  },
+  {
+    "id": 153,
+    "quote": "I closed the tab where I compare my life to everyone else's. Got the whole evening back.",
+    "sourceNote": "Inspired by Marcus Aurelius",
+    "microAction": "Let go of checking on someone else's day today, and come back to your own.",
+    "tags": [
+      "anxious",
+      "calm"
+    ],
+    "quoteZh": "关掉比较，夜归自己"
+  },
+  {
+    "id": 154,
+    "quote": "The version of tomorrow I built in my head last night was so much worse than the one that actually happened.",
+    "sourceNote": "Inspired by Seneca",
+    "microAction": "Notice if today's worry is about what's happening, or what your mind is imagining — and breathe.",
+    "tags": [
+      "anxious"
+    ],
+    "quoteZh": "脑中明日，常比真实重"
+  },
+  {
+    "id": 155,
+    "quote": "Every new beginning comes from some other beginning's end.",
+    "sourceNote": "Inspired by Seneca",
+    "microAction": "Let one ending today be trusted as the quiet start of something else.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "新始皆从旧终来"
+  },
+  {
+    "id": 156,
+    "quote": "He who fears death will never do anything worthy of a living man.",
+    "sourceNote": "Inspired by Seneca",
+    "microAction": "Do the small brave thing today, before your mind can talk you out of it.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "畏死太深，难真活着"
+  },
+  {
+    "id": 157,
+    "quote": "First say to yourself what you would be, and then do what you have to do.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Let one sentence describe, gently, who you're already becoming.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "先明所愿，再行所当"
+  },
+  {
+    "id": 158,
+    "quote": "The situation didn't change. My story about it did, and suddenly I could breathe again.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Catch one thought today and notice: that's your view of it, not the thing itself.",
+    "tags": [
+      "anxious",
+      "stress"
+    ],
+    "quoteZh": "事未变，心中故事变了"
+  },
+  {
+    "id": 159,
+    "quote": "No person is free who is not master of themselves.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Notice one small urge today — to snap, to scroll — and choose softness instead.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "不能主己，何以自由"
+  },
+  {
+    "id": 160,
+    "quote": "Wealth consists not in having great possessions, but in having few wants.",
+    "sourceNote": "Inspired by Stoic philosophy",
+    "microAction": "Let yourself feel, for a moment, how much you already have.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "少欲之人，方为富足"
+  },
+  {
+    "id": 161,
+    "quote": "If it is not right, do not do it. If it is not true, do not say it.",
+    "sourceNote": "Inspired by Marcus Aurelius",
+    "microAction": "Let one conversation today stay simple and true, without performing.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "非正不做，非真不言"
+  },
+  {
+    "id": 162,
+    "quote": "Waste no more time arguing about what a good person should be. Be one.",
+    "sourceNote": "Inspired by Marcus Aurelius",
+    "microAction": "Skip the debate in your head today, and just let the kind thing happen.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "莫论良善，起身去做"
+  },
+  {
+    "id": 163,
+    "quote": "The soul becomes dyed with the color of its thoughts.",
+    "sourceNote": "Inspired by Marcus Aurelius",
+    "microAction": "Choose one gentle thought today to return to, whenever your mind goes quiet.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "念染灵魂，如色入布"
+  },
+  {
+    "id": 164,
+    "quote": "It is not the man who has too little, but the man who craves more, who is poor.",
+    "sourceNote": "Inspired by Seneca",
+    "microAction": "Notice one moment today when 'enough' actually felt like enough.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "欲壑难填，方是真贫"
+  },
+  {
+    "id": 165,
+    "quote": "Difficulties strengthen the mind, as labor does the body.",
+    "sourceNote": "Inspired by Seneca",
+    "microAction": "Let one difficulty today be building something in you, even if it doesn't feel like it yet.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "难事炼心，如劳炼身"
+  },
+  {
+    "id": 166,
+    "quote": "Associate with people who are likely to improve you.",
+    "sourceNote": "Inspired by Seneca",
+    "microAction": "Spend a little time today with someone who leaves you feeling steadier, not smaller.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "近良友，心自向上"
+  },
+  {
+    "id": 167,
+    "quote": "I looked at the actual facts of the thing scaring me, not the version my anxiety had been narrating. The facts were survivable. The narration wasn't.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Rewrite one worry today in plainer, gentler language, and see if it shrinks.",
+    "tags": [
+      "anxious"
+    ],
+    "quoteZh": "看清事实，莫听惧声"
+  },
+  {
+    "id": 168,
+    "quote": "Circumstances don't make the man, they only reveal him to himself.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Notice what today's small frustration is revealing about what actually matters to you.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "境不造人，只照见人"
+  },
+  {
+    "id": 169,
+    "quote": "He is a wise man who does not grieve for the things which he has not, but rejoices for those which he has.",
+    "sourceNote": "Inspired by Epictetus",
+    "microAction": "Name three things today you have now that you didn't have a few years ago.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "智者不悲无，只喜已有"
+  },
+  {
+    "id": 170,
+    "quote": "Before enlightenment, chop wood, carry water. After enlightenment, chop wood, carry water.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Do one ordinary task today with your whole, unhurried attention.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "悟前挑水，悟后挑水"
+  },
+  {
+    "id": 171,
+    "quote": "If you understand, things are just as they are. If you do not understand, things are just as they are.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Let one thing today just be what it is, without needing to understand it fully.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "懂与不懂，事仍如是"
+  },
+  {
+    "id": 172,
+    "quote": "I sat and did nothing for ten minutes today. Nothing fell apart. Some things really do grow on their own.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Give yourself five unscheduled minutes today, and let them be unproductive on purpose.",
+    "tags": [
+      "calm",
+      "low"
+    ],
+    "quoteZh": "静坐片刻，万物自长"
+  },
+  {
+    "id": 173,
+    "quote": "The thing blocking me today turned out to be the actual work, not a detour from it.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "Look at today's one obstacle and notice the opening hidden inside it.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "所挡之处，正是功课"
+  },
+  {
+    "id": 174,
+    "quote": "When walking, walk. When eating, eat.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Do one thing today without your phone anywhere nearby.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "行时只行，食时只食"
+  },
+  {
+    "id": 175,
+    "quote": "Something I loved ended today, and something I didn't ask for showed up anyway. I stopped trying to make either one make sense.",
+    "sourceNote": "Inspired by a classical Zen teaching",
+    "microAction": "Notice one thing today that changed whether or not you wanted it to, and let it be.",
+    "tags": [
+      "calm",
+      "low"
+    ],
+    "quoteZh": "有爱落幕，未知登场"
+  },
+  {
+    "id": 176,
+    "quote": "I finally let go of the outcome I was white-knuckling. Turns out I was the one dragging myself the whole time.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Notice one thing you're gripping too tightly today, and loosen your hold by one small notch.",
+    "tags": [
+      "stress",
+      "anxious"
+    ],
+    "quoteZh": "松开结果，才放过己"
+  },
+  {
+    "id": 177,
+    "quote": "I stopped trying to prove I'm okay today. Turns out I already was, underneath the performance.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Notice one way you're already enough today, without needing to prove anything.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "不演无恙，本已安然"
+  },
+  {
+    "id": 178,
+    "quote": "When you realize nothing is lacking, the whole world belongs to you.",
+    "sourceNote": "Inspired by a classical Zen teaching",
+    "microAction": "Notice one thing today that already feels complete, exactly as it is.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "知无所缺，天地皆归"
+  },
+  {
+    "id": 179,
+    "quote": "Ten thousand flowers in spring, the moon in autumn, a cool breeze in summer, snow in winter. If your mind isn't clouded by unnecessary things, this is the best season of your life.",
+    "sourceNote": "Inspired by a classical Zen poem",
+    "microAction": "Step outside for two minutes today and let the season be the only thing you notice.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "心无闲碍，四时皆好"
+  },
+  {
+    "id": 180,
+    "quote": "A journey of ten thousand miles starts from beneath your feet.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "Take the one small first step today that you've been quietly overthinking.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "万里之行，起于足下"
+  },
+  {
+    "id": 181,
+    "quote": "If you meet a hundred-year-old turtle on the road, you have still only walked one step at a time.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Let today's one step be enough, even if you can't see the whole road yet.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "路逢百岁龟，仍一步行"
+  },
+  {
+    "id": 182,
+    "quote": "The quieter you become, the more you are able to hear the birds sing under your own noise.",
+    "sourceNote": "Inspired by classical Zen teaching",
+    "microAction": "Sit somewhere quiet for a minute and notice how much sound was hiding under your own noise.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "心静下来，鸟声自现"
+  },
+  {
+    "id": 183,
+    "quote": "Do not seek to follow in the footsteps of the wise; seek what they sought.",
+    "sourceNote": "Inspired by a classical Zen saying",
+    "microAction": "Notice what you're actually seeking today, underneath the thing you think you want.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "莫逐贤迹，当求其求"
+  },
+  {
+    "id": 184,
+    "quote": "A jug fills drop by drop.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Let one small drop of effort today count, without needing the whole jug filled at once.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "一滴一滴，终满一壶"
+  },
+  {
+    "id": 185,
+    "quote": "I kept looking for something outside myself to finally make me feel okay. Tonight I just sat still and found some of it was already here.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Look inward for a moment before looking for peace anywhere outside yourself.",
+    "tags": [
+      "calm",
+      "anxious"
+    ],
+    "quoteZh": "向外寻久，静坐即得"
+  },
+  {
+    "id": 186,
+    "quote": "You only lose what you cling to.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Notice one thing you're clinging to today, and feel what happens when you loosen your hand.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "所执之物，才会失去"
+  },
+  {
+    "id": 187,
+    "quote": "Better than a thousand hollow words is one word that brings peace.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Let one calm, true word today matter more than a thousand hurried ones.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "一句安言，胜千空语"
+  },
+  {
+    "id": 188,
+    "quote": "I did one thing today that fed something in me besides my to-do list. I felt more like myself by dinner.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Tend to the part of you that needs more than just getting things done today.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "清单之外，也要养心"
+  },
+  {
+    "id": 189,
+    "quote": "Three things cannot be long hidden: the sun, the moon, and the truth.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Let one small truth surface today, gently, instead of staying hidden.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "日月真相，久藏不住"
+  },
+  {
+    "id": 190,
+    "quote": "I caught myself calling myself lazy today and swapped it for tired. Tired I can work with. Lazy was just a way to be cruel to myself.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Notice the tone of your own thoughts today, and soften it, like you would for a friend.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "莫责己懒，或只是累"
+  },
+  {
+    "id": 191,
+    "quote": "Holding onto anger is like drinking poison and expecting the other person to die.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Set down one piece of anger today before it costs you more than the person who caused it.",
+    "tags": [
+      "stress"
+    ],
+    "quoteZh": "抱怒如饮毒，伤先在己"
+  },
+  {
+    "id": 192,
+    "quote": "A disciplined mind brings happiness.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Choose one small, steady habit today, and let it be quietly enough.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "心有戒尺，乐自生"
+  },
+  {
+    "id": 193,
+    "quote": "There is no path to happiness; happiness is the path.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Let this very moment today be the point, not a means to some later happiness.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "幸福无路，路即幸福"
+  },
+  {
+    "id": 194,
+    "quote": "The tongue like a sharp knife, kills without drawing blood.",
+    "sourceNote": "Inspired by classical Buddhist teaching",
+    "microAction": "Choose one gentler word today, in a sentence where a sharp one would've come first.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "舌如利刃，不见血伤"
+  },
+  {
+    "id": 195,
+    "quote": "I stopped micromanaging the thing that was already working fine on its own. Some days the kindest move is to leave it alone.",
+    "sourceNote": "Inspired by the Tao Te Ding",
+    "microAction": "Let one thing today go unmanaged, and see that it still turns out fine.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "事已自顺，便莫多扰"
+  },
+  {
+    "id": 196,
+    "quote": "He who knows he has enough is rich.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Notice one thing today that already feels like plenty.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "知足之人，即是富人"
+  },
+  {
+    "id": 197,
+    "quote": "This ending hurt more than I expected. I'm choosing to believe, for now, that it's also quietly the start of something.",
+    "sourceNote": "Inspired by Taoist philosophy",
+    "microAction": "Let one painful ending today be looked at gently, as a beginning in disguise.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "痛的终点，亦藏新始"
+  },
+  {
+    "id": 198,
+    "quote": "To the mind that is still, the whole universe surrenders.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Sit still for a moment and let the whole noisy world settle around you.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "心若安定，万象归顺"
+  },
+  {
+    "id": 199,
+    "quote": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Let yourself be loved a little today, out loud, by someone or by yourself.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "被爱生力，爱人生勇"
+  },
+  {
+    "id": 200,
+    "quote": "When I let go of what I am, I become what I might be.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Let go of one fixed idea of yourself today, and see what wants to take its place.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "放下旧我，方见可能"
+  },
+  {
+    "id": 201,
+    "quote": "Silence is a source of great strength.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Let one silence today go unfilled, and notice its own kind of strength.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "沉默深处，自有大力"
+  },
+  {
+    "id": 202,
+    "quote": "I stopped trying to be useful to everyone today and just let myself be. The parts of me that don't 'perform' turned out to be the ones still standing at the end of the day.",
+    "sourceNote": "Inspired by Zhuangzi",
+    "microAction": "Let one 'unproductive' part of you rest today, unjustified and unquestioned.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "不必有用，存在亦真"
+  },
+  {
+    "id": 203,
+    "quote": "Flow with whatever may happen, and let your mind be free.",
+    "sourceNote": "Inspired by Zhuangzi",
+    "microAction": "Let your mind loosen today around whatever's trying to happen anyway.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "随缘而流，心自逍遥"
+  },
+  {
+    "id": 204,
+    "quote": "Great acts are made up of small deeds.",
+    "sourceNote": "Inspired by Lao Tzu",
+    "microAction": "Do one small, quiet good deed today, and let it be enough on its own.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "大事皆由小行成"
+  },
+  {
+    "id": 205,
+    "quote": "Someone was short with me today. I chose not to match their tone, and somehow I still felt like the one who won something.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Stay steady in one interaction today that would normally pull you off balance.",
+    "tags": [
+      "stress"
+    ],
+    "quoteZh": "不接恶声，便是赢回心"
+  },
+  {
+    "id": 206,
+    "quote": "He who does not trust enough will not be trusted.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Offer someone a little trust today that they've earned but haven't yet been given.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "信人不足，人亦难信"
+  },
+  {
+    "id": 207,
+    "quote": "Those who flow as life flows know they need no other force.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Notice one place today where you're fighting the current, and ease up slightly.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "顺生命流，无须外力"
+  },
+  {
+    "id": 208,
+    "quote": "Chuang Tzu dreamed he was a butterfly; on waking he wondered — was he a man dreaming of being a butterfly, or a butterfly dreaming of being a man?",
+    "sourceNote": "Inspired by Zhuangzi",
+    "microAction": "Let one certainty about yourself today soften into a gentler question.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "庄周梦蝶，物我两忘"
+  },
+  {
+    "id": 209,
+    "quote": "The usefulness of the pot comes from its emptiness.",
+    "sourceNote": "Inspired by the Tao Te Ching",
+    "microAction": "Let go of one thing today, and notice the room it leaves behind.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "器因中空，方能成用"
+  },
+  {
+    "id": 210,
+    "quote": "A tree that fills a man's arms grew from a tiny sprout.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Look at one big thing in your life today and remember the tiny seed it grew from.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "合抱之木，生于毫末"
+  },
+  {
+    "id": 211,
+    "quote": "To lead people, walk beside them.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Walk beside someone today instead of ahead of or behind them.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "欲引人行，先并肩走"
+  },
+  {
+    "id": 212,
+    "quote": "I stopped trying to escape the feeling and just stayed in the room with it. That's when it finally loosened its grip.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Let one unanswered question today sit with you, unchased.",
+    "tags": [
+      "anxious",
+      "calm"
+    ],
+    "quoteZh": "与情绪同坐，它便松手"
+  },
+  {
+    "id": 213,
+    "quote": "The day didn't go how I planned it, again. I let the plan change instead of grieving it, and the day got easier immediately.",
+    "sourceNote": "Inspired by Laozi",
+    "microAction": "Let one change today move through you without needing to be fought.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "计划可改，日子即轻"
+  },
+  {
+    "id": 214,
+    "quote": "An ant on the move does more than a dozing ox.",
+    "sourceNote": "Inspired by Lao Tzu",
+    "microAction": "Take one small, moving step today instead of waiting until you feel fully ready.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "蚁行胜过牛眠"
+  },
+  {
+    "id": 215,
+    "quote": "I told someone about the worst thing that happened to me this year. They didn't flinch. That crack is the part of me people actually connect with.",
+    "sourceNote": "Inspired by the art of kintsugi",
+    "microAction": "Look at one flaw from today and notice what it made stronger, not weaker.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "裂痕之处，最易相连"
+  },
+  {
+    "id": 216,
+    "quote": "Nothing lasts, nothing is finished, and nothing is perfect.",
+    "sourceNote": "Inspired by wabi-sabi philosophy",
+    "microAction": "Let one unfinished thing today stay unfinished, without needing it to be resolved.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "无常未竟，亦不须完"
+  },
+  {
+    "id": 217,
+    "quote": "I showed up messy and unfinished today, and nothing bad happened. I'm starting to believe that's allowed.",
+    "sourceNote": "Inspired by wabi-sabi philosophy",
+    "microAction": "Let one imperfect thing today stay exactly as it is, without needing to fix it.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "未完之身，也可出现"
+  },
+  {
+    "id": 218,
+    "quote": "The only reason I got up today was coffee and my dog. I'm counting it as a good enough reason.",
+    "sourceNote": "Inspired by the concept of ikigai",
+    "microAction": "Notice the one small reason you got up today, and let it be enough.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "微小理由，也够起身"
+  },
+  {
+    "id": 219,
+    "quote": "In the beginner's mind there are many possibilities; in the expert's mind there are few.",
+    "sourceNote": "Inspired by Zen Buddhism (shoshin)",
+    "microAction": "Approach one familiar task today as if you'd never done it before.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "初心多门，熟心少路"
+  },
+  {
+    "id": 220,
+    "quote": "The space between things is not empty — it is where meaning happens.",
+    "sourceNote": "Inspired by the concept of ma",
+    "microAction": "Leave a pause today, unfilled, in a conversation or in your schedule.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "空隙不空，意义生焉"
+  },
+  {
+    "id": 221,
+    "quote": "A broken bowl mended with gold is more valuable for having been broken.",
+    "sourceNote": "Inspired by the art of kintsugi",
+    "microAction": "Name one 'broken' chapter of your life that ended up making you more, not less.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "金缮破碗，因裂更贵"
+  },
+  {
+    "id": 222,
+    "quote": "Fall down seven times, stand up eight.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Let yourself get back up today on one small thing, gently, without self-judgment.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "七跌八起，仍向前"
+  },
+  {
+    "id": 223,
+    "quote": "The bamboo that bends in the wind is stronger than the oak that resists it.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Bend a little on one thing today instead of holding your ground out of habit.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "风中弯竹，更胜硬木"
+  },
+  {
+    "id": 224,
+    "quote": "I messed up something I'm usually good at today. I let myself laugh about it instead of spiraling. Even the people who are good at this fall sometimes.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Forgive yourself today for one mistake, the way you'd forgive someone you love.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "偶有失手，一笑再行"
+  },
+  {
+    "id": 225,
+    "quote": "One kind word can warm three winter months.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Say one warm, specific thing to someone today, and watch it land.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "一语温良，可暖三冬"
+  },
+  {
+    "id": 226,
+    "quote": "Vision without action is a daydream. Action without vision is a nightmare.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Pair one dream today with a single, concrete, doable step toward it.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "愿无行动是梦，行无愿是魇"
+  },
+  {
+    "id": 227,
+    "quote": "I said the unpopular thing in the meeting today. My hands were sweaty the whole time. I'd rather be the one who spoke up than the one nobody noticed.",
+    "sourceNote": "Inspired by a Japanese proverb, reframed",
+    "microAction": "Let one part of you stand out today instead of shrinking to fit in.",
+    "tags": [
+      "growth",
+      "anxious"
+    ],
+    "quoteZh": "手心有汗，也要发声"
+  },
+  {
+    "id": 228,
+    "quote": "Cherry blossoms are beautiful because they fall.",
+    "sourceNote": "Inspired by Japanese aesthetic philosophy",
+    "microAction": "Notice one temporary, passing thing today, and appreciate it precisely because it won't stay.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "樱花因落，方显其美"
+  },
+  {
+    "id": 229,
+    "quote": "A single moment can be complete in itself, needing nothing before or after it.",
+    "sourceNote": "Inspired by Japanese tea ceremony philosophy (ichigo ichie)",
+    "microAction": "Let one ordinary meeting or meal today feel complete, needing nothing before or after it.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "一念圆满，不借前后"
+  },
+  {
+    "id": 230,
+    "quote": "The quiet moment of pouring tea deserves the same care as anything else you'll do today.",
+    "sourceNote": "Inspired by Japanese tea ceremony philosophy",
+    "microAction": "Do one small task today slower than necessary, with your full, warm attention.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "倒茶一刻，也值得用心"
+  },
+  {
+    "id": 231,
+    "quote": "Wisdom comes from experience, and experience comes from mistakes.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Let one recent mistake today teach you something, gently, instead of just stinging.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "智慧从错处开花"
+  },
+  {
+    "id": 232,
+    "quote": "A frog in a well does not know the great sea.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Ask one person today about a life very different from your own, and really listen.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "井蛙未见沧海"
+  },
+  {
+    "id": 233,
+    "quote": "Continue what you started, even slowly — that is the whole secret.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Do ten unhurried minutes today of the thing you keep meaning to finish.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "慢也继续，秘诀尽在此"
+  },
+  {
+    "id": 234,
+    "quote": "The reverse side also has a reverse side.",
+    "sourceNote": "Inspired by a Japanese proverb",
+    "microAction": "Look for one more layer in today's problem before deciding you understand it.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "反面背后，仍有反面"
+  },
+  {
+    "id": 235,
+    "quote": "I let the sadness sit at my table for an hour today instead of kicking it out the door. It left on its own once it felt welcome.",
+    "sourceNote": "Inspired by modern mindfulness practice",
+    "microAction": "Name one feeling today out loud, then let it pass through without needing to act on it.",
+    "tags": [
+      "anxious",
+      "low"
+    ],
+    "quoteZh": "悲来同坐，坐够自去"
+  },
+  {
+    "id": 236,
+    "quote": "I said no to something today that would've cost me more than it helped anyone else. Nobody needs me burned out to feel okay.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Say no to one small thing today that would cost you more than it helps anyone else.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "不耗尽己，也是一善"
+  },
+  {
+    "id": 237,
+    "quote": "My heart was racing over a meeting that hadn't even started. I told my body: there's no tiger in this room, just a calendar invite.",
+    "sourceNote": "Inspired by modern anxiety research",
+    "microAction": "Notice one physical sign of anxiety today, and remind your body: this isn't the danger, this is just the alarm.",
+    "tags": [
+      "anxious"
+    ],
+    "quoteZh": "心跳如鼓，其实无险"
+  },
+  {
+    "id": 238,
+    "quote": "I did nothing productive this afternoon on purpose. I'm calling it an investment, not a failure.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Let yourself rest today before you're empty, not just after.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "无用半日，也在养命"
+  },
+  {
+    "id": 239,
+    "quote": "I slipped back into an old habit today after weeks of doing better. I didn't call it starting over. I called it one bad day in a longer story.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Look back gently at one setback, and notice it wasn't actually the end of anything.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "旧习回潮，只是一页"
+  },
+  {
+    "id": 240,
+    "quote": "I tried to logic my way out of how I was feeling all morning. It didn't work until I just let myself feel it instead.",
+    "sourceNote": "Inspired by modern therapy practice",
+    "microAction": "Sit with one feeling today for sixty seconds before trying to fix or explain it.",
+    "tags": [
+      "anxious",
+      "low"
+    ],
+    "quoteZh": "道理难解，感受可容"
+  },
+  {
+    "id": 241,
+    "quote": "The story you tell about your day changes how it felt to live it.",
+    "sourceNote": "Inspired by modern narrative psychology",
+    "microAction": "Retell one hard moment from today, gently, focusing on what you handled well.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "怎么讲述，便怎么度过"
+  },
+  {
+    "id": 242,
+    "quote": "I was gentle with myself after a hard mistake today, instead of tearing myself apart. Turns out that's the version of me that actually gets back up faster.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Speak to yourself today the way you'd speak to a good friend having a hard day.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "错后温柔，起身更快"
+  },
+  {
+    "id": 243,
+    "quote": "My thoughts were spinning until I put three of them into actual words. The spinning stopped the second they had somewhere to land.",
+    "sourceNote": "Inspired by modern mindfulness practice",
+    "microAction": "Let one racing thought today land somewhere soft instead of circling.",
+    "tags": [
+      "anxious",
+      "stress"
+    ],
+    "quoteZh": "念有落处，旋即安停"
+  },
+  {
+    "id": 244,
+    "quote": "Boundaries are not walls; they're the shape that lets love stay sustainable.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Set one small, kind boundary today instead of quietly carrying the resentment.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "边界非墙，是爱之形"
+  },
+  {
+    "id": 245,
+    "quote": "My body reacted like it was in danger today, but it was just an old memory wearing a new face. I told it: that was then.",
+    "sourceNote": "Inspired by modern trauma-informed psychology",
+    "microAction": "Notice one moment today when you're reacting to an old memory, not what's actually here.",
+    "tags": [
+      "anxious"
+    ],
+    "quoteZh": "旧痛换面，今已非昔"
+  },
+  {
+    "id": 246,
+    "quote": "You are allowed to outgrow people, habits, and versions of yourself.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Let go of one small habit today that belonged to an older version of you.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "人会长过旧人旧习"
+  },
+  {
+    "id": 247,
+    "quote": "I finished the thing at 80% instead of chasing 100% today. The fear wearing a productive mask lost, for once.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Let one task today be 'good enough,' and feel the fear underneath the urge for perfect.",
+    "tags": [
+      "anxious",
+      "stress"
+    ],
+    "quoteZh": "八分完成，胜惧求全"
+  },
+  {
+    "id": 248,
+    "quote": "I said out loud, 'I think I'm anxious,' and it immediately took up less room than it had a minute before.",
+    "sourceNote": "Inspired by modern emotional regulation research",
+    "microAction": "The next hard feeling that shows up today, just say its name out loud, gently.",
+    "tags": [
+      "anxious",
+      "low"
+    ],
+    "quoteZh": "焦虑出口，便少一寸"
+  },
+  {
+    "id": 249,
+    "quote": "I made myself the good breakfast today instead of skipping it. Small thing. I'm still counting it as proof I'm on my own side.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Do one small kind thing for yourself today, on purpose, not as a reward for anything.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "一餐好饭，是站向自己"
+  },
+  {
+    "id": 250,
+    "quote": "I rested today before I hit empty, not after. I'm learning I don't have to collapse to deserve a break.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Rest today before you're depleted, not only after.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "未空先歇，亦配休息"
+  },
+  {
+    "id": 251,
+    "quote": "I almost let someone else's win shrink mine today. I caught it in time and let my own good news stay good.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Mute one thing today that makes you compare your life to someone else's highlight reel.",
+    "tags": [
+      "anxious",
+      "gratitude"
+    ],
+    "quoteZh": "他人花开，不减我春"
+  },
+  {
+    "id": 252,
+    "quote": "I had an unproductive day and still let myself matter at the end of it. Nobody's handing out grades for this.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Do one thing today purely because it matters to you, with no one watching.",
+    "tags": [
+      "low"
+    ],
+    "quoteZh": "低效一日，我仍有分量"
+  },
+  {
+    "id": 253,
+    "quote": "I said I was fine all day while my shoulders lived up near my ears. Tonight I finally listened to the part of me that was actually keeping score.",
+    "sourceNote": "Inspired by modern somatic psychology",
+    "microAction": "Check in with your shoulders, your jaw, your hands, right now — and let them unclench.",
+    "tags": [
+      "stress",
+      "anxious"
+    ],
+    "quoteZh": "嘴说无事，身已记账"
+  },
+  {
+    "id": 254,
+    "quote": "I was sad and still got everything done today. I stopped acting like those two things couldn't both be true.",
+    "sourceNote": "Inspired by modern grief research",
+    "microAction": "Let yourself feel one true, sad thing today without needing to snap out of it.",
+    "tags": [
+      "low"
+    ],
+    "quoteZh": "心有悲，也能把事做完"
+  },
+  {
+    "id": 255,
+    "quote": "The same scary thought came back for the tenth time today. Repetition isn't evidence. I stopped treating it like a verdict.",
+    "sourceNote": "Inspired by cognitive behavioral therapy",
+    "microAction": "Ask, gently, for the actual evidence behind one repeating thought today.",
+    "tags": [
+      "anxious"
+    ],
+    "quoteZh": "念头反复，不是真判"
+  },
+  {
+    "id": 256,
+    "quote": "Motivation follows action more often than it leads it.",
+    "sourceNote": "Inspired by behavioral psychology",
+    "microAction": "Start the task today before you feel ready, and let the motivation catch up to you.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "先动一步，心力随后"
+  },
+  {
+    "id": 257,
+    "quote": "What gets scheduled gets done; what's left to willpower usually doesn't.",
+    "sourceNote": "Inspired by behavioral psychology",
+    "microAction": "Put one thing you keep meaning to do onto today's actual calendar, gently, not as a demand.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "入日程者，方易成事"
+  },
+  {
+    "id": 258,
+    "quote": "I felt completely alone today, so I texted someone instead of believing the feeling's story about why. Ten minutes later I felt like a person again.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Reach out to one person today, even with something small, and let it be received.",
+    "tags": [
+      "low",
+      "anxious"
+    ],
+    "quoteZh": "孤时发信，便回人间"
+  },
+  {
+    "id": 259,
+    "quote": "Habits are just decisions you've already made in advance.",
+    "sourceNote": "Inspired by behavioral psychology",
+    "microAction": "Decide now, in advance, what kindness you'll offer yourself the next time today gets hard.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "习惯，是预先立愿"
+  },
+  {
+    "id": 260,
+    "quote": "I thought about how I've shown up for every single one of my own days so far. Nobody else has that streak. That has to count for something.",
+    "sourceNote": "Inspired by modern psychology",
+    "microAction": "Thank yourself today for one thing you got through, quietly, just between you and you.",
+    "tags": [
+      "gratitude",
+      "low"
+    ],
+    "quoteZh": "日日相伴，自己最久"
+  },
+  {
+    "id": 261,
+    "quote": "Today just wasn't fair, and I stopped waiting for an explanation. I let it be weather instead of a message aimed at me.",
+    "sourceNote": "Original reflection",
+    "microAction": "Let one inconvenience today just be weather, not a personal insult.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "不公如雨，不必解读"
+  },
+  {
+    "id": 262,
+    "quote": "I don't know how this year ends. I just found the next small right move and made it. That turned out to be enough for today.",
+    "sourceNote": "Original reflection",
+    "microAction": "Focus on the next small patch of ground today instead of the whole distance ahead.",
+    "tags": [
+      "anxious",
+      "growth"
+    ],
+    "quoteZh": "不问年终，只走小步"
+  },
+  {
+    "id": 263,
+    "quote": "Nothing visible went right today, but something underneath it kept me upright anyway. I said thank you to whatever that was.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Name one unseen thing supporting you right now — a habit, a person, a memory.",
+    "tags": [
+      "gratitude",
+      "low"
+    ],
+    "quoteZh": "明处不顺，暗处仍托"
+  },
+  {
+    "id": 264,
+    "quote": "The motivation felt completely gone this week. I trusted it was just out, not over, and kept doing the small things until it came back in.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Trust that one thing feeling distant today will come back around, the way tides do.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "心力暂离，细事迎回"
+  },
+  {
+    "id": 265,
+    "quote": "I gave myself a slow month without apologizing for it. Not every season is for growing loudly.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let this slower season be exactly that — a season, not a failure.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "缓月无歉，静长亦长"
+  },
+  {
+    "id": 266,
+    "quote": "The forest floor is thick with what the trees no longer need.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let go of one thing today that already served its purpose, and let it become soil.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "落叶满地，皆树所舍"
+  },
+  {
+    "id": 267,
+    "quote": "One plan died this week. I stopped grieving it like it was the whole harvest — it was never going to make it, and that's okay.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one plan that isn't working end today, without treating it as a personal defeat.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "一计夭折，非全季荒"
+  },
+  {
+    "id": 268,
+    "quote": "The problem looked impossible from a distance. I got closer and found it was just a pile of small, moveable things.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Look closer today at one problem that seemed too big to touch.",
+    "tags": [
+      "anxious",
+      "growth"
+    ],
+    "quoteZh": "远看无解，近看可移"
+  },
+  {
+    "id": 269,
+    "quote": "I did the hopeful thing today before I felt ready for it. Not because I was confident — because I could feel something better was coming.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Do one hopeful thing today before you feel fully ready to.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "未备先行，因信将好"
+  },
+  {
+    "id": 270,
+    "quote": "This heaviness has been here for days. I reminded myself, again, that no cloud in the history of weather has ever actually stayed forever.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Remind yourself once today: this mood is weather, not climate.",
+    "tags": [
+      "low",
+      "anxious"
+    ],
+    "quoteZh": "再重的云，也不久住"
+  },
+  {
+    "id": 271,
+    "quote": "Nothing looks different on the outside yet. I trusted that something's still cracking open underneath, where nobody can see it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Trust one invisible, unfinished thing in your life to be doing more than it looks like.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "外未显变，内已开裂"
+  },
+  {
+    "id": 272,
+    "quote": "Even a stopped clock catches the right moment twice a day — timing is not the same as worth.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Give yourself credit today for showing up, even where the results aren't visible yet.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "钟停两准，时机非价值"
+  },
+  {
+    "id": 273,
+    "quote": "The desert blooms after rain it waited years for, without ever giving up on rain.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Water one hope today that hasn't bloomed yet, gently, without demanding it hurry.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "沙漠等雨，终会开花"
+  },
+  {
+    "id": 274,
+    "quote": "A path worn smooth by many feet is still each person's first time walking it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Treat one 'ordinary' task today like it's new, because for you today, it actually is.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "万人走过，仍是初行"
+  },
+  {
+    "id": 275,
+    "quote": "The tallest trees have the deepest roots, not the fewest storms.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Look at one hard season in your past as the roots holding up what came after.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "树高因根深，非少风"
+  },
+  {
+    "id": 276,
+    "quote": "Rivers don't remember the rocks they've already passed.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let go of one old grudge today, the way water lets go of the stone behind it.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "河过石后，不再回记"
+  },
+  {
+    "id": 277,
+    "quote": "A lighthouse doesn't chase the ships; it just keeps its light on.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Be steady and present in one relationship today, instead of chasing it.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "灯塔不追船，只守其光"
+  },
+  {
+    "id": 278,
+    "quote": "Weeds and flowers grow from the same rain; what you tend decides what you get.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Spend five extra minutes today on the one thing you actually want to grow.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "同一场雨，看你养何"
+  },
+  {
+    "id": 279,
+    "quote": "Even the strongest wind eventually has to rest.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let today's intensity, good or bad, move through you without needing to hold onto it.",
+    "tags": [
+      "stress",
+      "calm"
+    ],
+    "quoteZh": "再烈的风，也有歇时"
+  },
+  {
+    "id": 280,
+    "quote": "A single ember, cared for, can outlast the fire that made it.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Protect one small hope today instead of letting it go out from neglect.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "一星余烬，护之长明"
+  },
+  {
+    "id": 281,
+    "quote": "The moon doesn't disappear at dawn; it just steps back to let the sun through.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let someone else have the spotlight today, without it making you feel smaller.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "月不消失，只让朝阳"
+  },
+  {
+    "id": 282,
+    "quote": "A shoreline is reshaped by every single wave, and still it holds its shape.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one way today's small changes are shaping you without erasing who you are.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "浪浪重塑，岸仍成岸"
+  },
+  {
+    "id": 283,
+    "quote": "I asked for what I needed today instead of waiting to be offered it. Turns out I never actually needed permission.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Ask for one thing you need today, instead of waiting to be offered it.",
+    "tags": [
+      "anxious",
+      "growth"
+    ],
+    "quoteZh": "所需开口，无须许可"
+  },
+  {
+    "id": 284,
+    "quote": "Someone younger than me passed a milestone I still haven't hit. I let myself be glad for them without making it mean something about me.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let go of one comparison today between your pace and someone else's.",
+    "tags": [
+      "anxious",
+      "gratitude"
+    ],
+    "quoteZh": "他人早达，不损我程"
+  },
+  {
+    "id": 285,
+    "quote": "The quietest stream can still carve the deepest canyon, given enough time.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Trust one slow, quiet effort today to be doing more than it feels like.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "静溪经年，亦刻深谷"
+  },
+  {
+    "id": 286,
+    "quote": "A field of wildflowers was never planted in straight rows.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one part of your life stay a little messy and alive today, instead of tidy and controlled.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "野花成野，不排直行"
+  },
+  {
+    "id": 287,
+    "quote": "The stars don't dim to make the moon look brighter; there's room for both.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Celebrate someone else's win today, and notice it costs you nothing.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "星不让月，天容万光"
+  },
+  {
+    "id": 288,
+    "quote": "I took one step today toward something I can't fully picture yet. I don't need to see it to trust it's there.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Take one step today toward something you can't fully picture the end of yet.",
+    "tags": [
+      "growth",
+      "anxious"
+    ],
+    "quoteZh": "未见全貌，仍可前行"
+  },
+  {
+    "id": 289,
+    "quote": "I let someone carry a little of this for me today instead of insisting I could hold it all. Turns out I'm allowed to be the valley sometimes, not just the mountain.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let yourself receive a little help today, instead of insisting on carrying it alone.",
+    "tags": [
+      "stress",
+      "low"
+    ],
+    "quoteZh": "偶作山谷，也可承载"
+  },
+  {
+    "id": 290,
+    "quote": "Even a cracked riverbed remembers how to hold water once the rain returns.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Trust one dried-out part of you today to still remember how to come back to life.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "裂床逢雨，仍记盛水"
+  },
+  {
+    "id": 291,
+    "quote": "One bad moment happened today and my brain tried to make it mean everything. I caught it. One leaf. Not the whole tree.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Let one bad moment today stay one moment, not a verdict on the whole day.",
+    "tags": [
+      "low",
+      "anxious"
+    ],
+    "quoteZh": "一叶失色，不是整树"
+  },
+  {
+    "id": 292,
+    "quote": "The horizon moves the moment you think you've reached it, and that's the whole point of walking.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Enjoy one small piece of progress today instead of only measuring what's left.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "地平线远，行走有味"
+  },
+  {
+    "id": 293,
+    "quote": "Snowflakes only look identical from far away.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Notice one way today looked different from every day that came before it.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "远看相同，近看各异"
+  },
+  {
+    "id": 294,
+    "quote": "A garden untended doesn't disappear; it just grows into something you didn't plan.",
+    "sourceNote": "Proverb, reframed",
+    "microAction": "Make peace today with one part of your life that grew differently than planned.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "园不照料，也会自成"
+  },
+  {
+    "id": 295,
+    "quote": "Not too little, not too much — just enough is its own kind of wisdom.",
+    "sourceNote": "Inspired by the Swedish concept of lagom",
+    "microAction": "Choose 'enough' over 'more' in one small decision today.",
+    "tags": [
+      "calm",
+      "gratitude"
+    ],
+    "quoteZh": "刚刚好，自有智慧"
+  },
+  {
+    "id": 296,
+    "quote": "A warm light, a slow moment, good company — happiness rarely asks for more than that.",
+    "sourceNote": "Inspired by the Danish concept of hygge",
+    "microAction": "Create one small, cozy moment today, on purpose, for no productive reason at all.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "暖灯慢时，良伴已足"
+  },
+  {
+    "id": 297,
+    "quote": "Balance isn't about doing everything a little; it's about knowing what enough looks like.",
+    "sourceNote": "Inspired by the Swedish concept of lagom",
+    "microAction": "Trim one commitment today down to a size that actually fits your life.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "平衡在知足，不在平均"
+  },
+  {
+    "id": 298,
+    "quote": "There is no direct English word for the comfort of simply being present with people you trust — but you know it when you feel it.",
+    "sourceNote": "Inspired by the Danish concept of hygge",
+    "microAction": "Spend twenty unhurried minutes today with someone you trust, doing nothing in particular.",
+    "tags": [
+      "gratitude",
+      "low"
+    ],
+    "quoteZh": "与信者同在，便是安"
+  },
+  {
+    "id": 299,
+    "quote": "Contentment doesn't require more; often it just requires noticing what's already here.",
+    "sourceNote": "Inspired by Nordic wellbeing philosophy",
+    "microAction": "Name three ordinary comforts today you've been quietly taking for granted.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "知足不求多，只见已有"
+  },
+  {
+    "id": 300,
+    "quote": "A short walk in bad weather, properly dressed, is still a good walk.",
+    "sourceNote": "Inspired by a Scandinavian saying",
+    "microAction": "Go outside today, even briefly, even if the weather isn't ideal.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "衣衫合宜，雨中亦好"
+  },
+  {
+    "id": 301,
+    "quote": "Simplicity chosen on purpose feels nothing like simplicity forced by lack.",
+    "sourceNote": "Inspired by Nordic minimalist philosophy",
+    "microAction": "Remove one unnecessary thing from today, by choice, and feel the lightness.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "自择清简，非贫所迫"
+  },
+  {
+    "id": 302,
+    "quote": "Rest is not the reward at the end of effort; it is part of the effort.",
+    "sourceNote": "Inspired by Nordic wellbeing philosophy",
+    "microAction": "Let rest be part of today's effort, not a reward waiting at the end of it.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "休息不是赏，是修行"
+  },
+  {
+    "id": 303,
+    "quote": "A candle lit in the darkest month means more than the same candle lit in summer.",
+    "sourceNote": "Inspired by the Danish concept of hygge",
+    "microAction": "Do one small comforting ritual today, especially if today has been a hard one.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "暗月一灯，分外有光"
+  },
+  {
+    "id": 304,
+    "quote": "The middle path isn't a compromise; sometimes it's the whole answer.",
+    "sourceNote": "Inspired by the Swedish concept of lagom",
+    "microAction": "Look for the moderate, middle option today, instead of the all-or-nothing one.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "中道非妥协，亦是答案"
+  },
+  {
+    "id": 305,
+    "quote": "A reed only sings once it's been cut from the reed bed; the ache and the music come from the same place.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Let one difficult feeling today become the ache that also makes something beautiful.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "芦笛之痛，即是其歌"
+  },
+  {
+    "id": 306,
+    "quote": "I stayed open in a conversation today even though it would've been safer to shut down. It cost me something. It was still worth it.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Stay open in one moment today, even though it feels riskier than guarding yourself.",
+    "tags": [
+      "growth",
+      "anxious"
+    ],
+    "quoteZh": "敞心有代价，仍值得"
+  },
+  {
+    "id": 307,
+    "quote": "What you keep chasing outward is often just asking to be noticed within.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Sit for a moment with one thing you're chasing, and notice what it's really asking for.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "向外所追，心内待见"
+  },
+  {
+    "id": 308,
+    "quote": "The dance is not the point; the turning is what empties you out enough to be filled again.",
+    "sourceNote": "Inspired by Sufi whirling tradition",
+    "microAction": "Do one repetitive, physical thing today — walking, stretching, cleaning — and let your mind go quiet inside it.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "旋转倒空，方能再满"
+  },
+  {
+    "id": 309,
+    "quote": "This situation felt like it was trapping me today, until I remembered I was the one who could still choose one thing inside it.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Notice one situation that feels stuck today, and find the one choice still yours.",
+    "tags": [
+      "anxious",
+      "growth"
+    ],
+    "quoteZh": "困境之中，仍有一择"
+  },
+  {
+    "id": 310,
+    "quote": "Certainty makes a small, tidy house; not-knowing makes room enough for wonder.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Let one question today stay open, and let the not-knowing feel like room instead of a gap.",
+    "tags": [
+      "growth",
+      "calm"
+    ],
+    "quoteZh": "未知留白，惊奇可住"
+  },
+  {
+    "id": 311,
+    "quote": "Loss doesn't empty a life; it just rearranges where the fullness sits.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Notice where an old loss quietly turned into something else you now carry.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "失去非空，只换丰盈"
+  },
+  {
+    "id": 312,
+    "quote": "The quietest hour of the night still belongs to the same day as the noisiest one.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Give yourself five still minutes today before the noise of it takes over.",
+    "tags": [
+      "calm"
+    ],
+    "quoteZh": "静夜喧时，同属一日"
+  },
+  {
+    "id": 313,
+    "quote": "What burns away in a hard season was rarely the part of you worth keeping.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Let go today of one thing a hard season already finished burning away.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "苦季烧去，多非真我"
+  },
+  {
+    "id": 314,
+    "quote": "A cup poured out isn't empty for long if you keep it under the right sky.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Do one small thing today that tends to your own refilling, not just your giving.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "杯空向天，自会再满"
+  },
+  {
+    "id": 315,
+    "quote": "I let myself want something today without rushing to go get it. The wanting itself turned out to be its own kind of company.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Let one unmet longing today just exist, without rushing to fix or fulfill it.",
+    "tags": [
+      "low",
+      "anxious"
+    ],
+    "quoteZh": "欲望不急，也可相陪"
+  },
+  {
+    "id": 316,
+    "quote": "A single true friend can undo the work of a hundred careless words.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Spend a few minutes today with the one person who makes you feel steady.",
+    "tags": [
+      "gratitude",
+      "low"
+    ],
+    "quoteZh": "一真友，抵百句轻言"
+  },
+  {
+    "id": 317,
+    "quote": "I looked up from my worry for a second today and actually saw where I was standing. It was better than I'd been picturing.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Look up from one worry today, and notice where you actually are.",
+    "tags": [
+      "anxious",
+      "calm"
+    ],
+    "quoteZh": "忧中抬眼，脚下已好"
+  },
+  {
+    "id": 318,
+    "quote": "Even the driest field remembers, somewhere under the surface, what rain feels like.",
+    "sourceNote": "Inspired by Sufi poetic tradition",
+    "microAction": "Trust one dry, tired part of your life today to still remember how to come back to life.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "旱田深处，仍记雨声"
+  },
+  {
+    "id": 319,
+    "quote": "Not what we have, but what we enjoy, constitutes our abundance.",
+    "sourceNote": "Inspired by Epicurus",
+    "microAction": "Enjoy one thing you already have today, instead of chasing something new.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "富足不在有，在能享"
+  },
+  {
+    "id": 320,
+    "quote": "I noticed the wanting-more feeling creeping in today, and just sat with what I already have instead. It filled the same hole faster.",
+    "sourceNote": "Inspired by Epicurus",
+    "microAction": "Notice one desire today that isn't really about lack.",
+    "tags": [
+      "gratitude",
+      "anxious"
+    ],
+    "quoteZh": "坐拥已有，欲壑渐平"
+  },
+  {
+    "id": 321,
+    "quote": "Character is fate.",
+    "sourceNote": "Inspired by Heraclitus",
+    "microAction": "Make one decision today that matches the person you're quietly trying to become.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "性情所至，命运所归"
+  },
+  {
+    "id": 322,
+    "quote": "Big things and small things need the same amount of care.",
+    "sourceNote": "Inspired by Heraclitus",
+    "microAction": "Give one small task today the same care you'd give a big one.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "大事小事，同样用心"
+  },
+  {
+    "id": 323,
+    "quote": "The soul is dyed the color of its thoughts.",
+    "sourceNote": "Inspired by classical Greek philosophy",
+    "microAction": "Choose your thoughts today the way you'd choose your clothes — gently, on purpose.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "念染灵魂，久成其色"
+  },
+  {
+    "id": 324,
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "sourceNote": "Inspired by Aristotle",
+    "microAction": "Repeat one small good habit today, even if it feels too small to matter.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "反复所行，塑成卓越"
+  },
+  {
+    "id": 325,
+    "quote": "Knowing yourself is the beginning of all wisdom.",
+    "sourceNote": "Inspired by Socratic philosophy",
+    "microAction": "Ask yourself one honest question today, and let the answer come slowly.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "识得自己，智慧初开"
+  },
+  {
+    "id": 326,
+    "quote": "The unexamined life is not worth living, but the over-examined one isn't much fun either.",
+    "sourceNote": "Inspired by Socratic philosophy, reframed",
+    "microAction": "Balance one moment of reflection today with one moment of just living, unexamined.",
+    "tags": [
+      "calm",
+      "growth"
+    ],
+    "quoteZh": "省察有度，人生有趣"
+  },
+  {
+    "id": 327,
+    "quote": "Pleasure in the job puts perfection in the work.",
+    "sourceNote": "Inspired by Aristotle",
+    "microAction": "Find one small part of today's work you can actually enjoy.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "乐在其中，工自趋美"
+  },
+  {
+    "id": 328,
+    "quote": "Happiness depends upon ourselves.",
+    "sourceNote": "Inspired by Aristotle",
+    "microAction": "Do one thing today that depends only on you, not on anyone else's response.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "幸福之钥，在己手中"
+  },
+  {
+    "id": 329,
+    "quote": "Friendship is a single soul dwelling in two bodies.",
+    "sourceNote": "Inspired by Aristotle",
+    "microAction": "Reach out to one old friend today, just to say you were thinking of them.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "友谊一魂，安住两身"
+  },
+  {
+    "id": 330,
+    "quote": "No man ever steps in the same river twice, for it's not the same river and he's not the same man.",
+    "sourceNote": "Inspired by Heraclitus",
+    "microAction": "Notice one way you've changed since the last time you faced something like today's challenge.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "河非旧河，人非旧人"
+  },
+  {
+    "id": 331,
+    "quote": "I am because we are.",
+    "sourceNote": "Inspired by the philosophy of Ubuntu",
+    "microAction": "Do one thing today that helps someone else's day go a little easier.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "因有我们，方有我"
+  },
+  {
+    "id": 332,
+    "quote": "A person is a person through other people.",
+    "sourceNote": "Inspired by the philosophy of Ubuntu",
+    "microAction": "Reach out to one person today instead of carrying something alone.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "人因众人，成为其人"
+  },
+  {
+    "id": 333,
+    "quote": "If you want to go fast, go alone. If you want to go far, go together.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Ask for help on one thing today, instead of insisting on doing it solo.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "独行可快，同行可远"
+  },
+  {
+    "id": 334,
+    "quote": "Tonight feels long. I'm holding onto the fact that it always has, eventually, turned into morning.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Hold onto one small hope today, even if tonight feels long.",
+    "tags": [
+      "low",
+      "anxious"
+    ],
+    "quoteZh": "长夜终会，转作清晨"
+  },
+  {
+    "id": 335,
+    "quote": "It takes a village.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Let one person help carry something today, big or small.",
+    "tags": [
+      "stress",
+      "gratitude"
+    ],
+    "quoteZh": "养成一人，需众人托"
+  },
+  {
+    "id": 336,
+    "quote": "Smooth seas do not make skillful sailors.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Look at one rough patch today as training, not just trouble.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "平海无浪，难成良舵"
+  },
+  {
+    "id": 337,
+    "quote": "The child who is not embraced by the village will burn it down to feel its warmth.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Offer one small bit of belonging today to someone who seems on the outside.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "缺爱之心，易以毁求暖"
+  },
+  {
+    "id": 338,
+    "quote": "Do not look where you fell, but where you slipped.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Look gently today at where something slipped, not just where it landed.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "莫只看跌，且看何处滑"
+  },
+  {
+    "id": 339,
+    "quote": "Sticks in a bundle are unbreakable.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Lean on one relationship today instead of standing entirely alone.",
+    "tags": [
+      "stress",
+      "low"
+    ],
+    "quoteZh": "众木成束，便难折断"
+  },
+  {
+    "id": 340,
+    "quote": "However far a stream flows, it never forgets its source.",
+    "sourceNote": "Inspired by an African proverb",
+    "microAction": "Thank one person today who helped shape who you've become.",
+    "tags": [
+      "gratitude"
+    ],
+    "quoteZh": "溪远千里，不忘来处"
+  },
+  {
+    "id": 341,
+    "quote": "The version of you that gets through today doesn't have to be the version that has it all figured out.",
+    "sourceNote": "Original reflection",
+    "microAction": "Give yourself permission today to just get through, not to have it all figured out.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "撑过今日，不必全懂"
+  },
+  {
+    "id": 342,
+    "quote": "Some days the practice is discipline. Some days the practice is rest. Both count.",
+    "sourceNote": "Original reflection",
+    "microAction": "Notice which kind of day today is — discipline or rest — and honor it either way.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "自律是修，休息亦修"
+  },
+  {
+    "id": 343,
+    "quote": "I let someone see me not okay today instead of performing fine. Nobody ran away.",
+    "sourceNote": "Original reflection",
+    "microAction": "Let one person today see how you're actually doing, without the polished version.",
+    "tags": [
+      "low",
+      "anxious"
+    ],
+    "quoteZh": "不演安好，也有人留"
+  },
+  {
+    "id": 344,
+    "quote": "Small and steady beats big and abandoned, every time.",
+    "sourceNote": "Original reflection",
+    "microAction": "Choose the small version of today's task — the one you'll actually finish.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "小而稳，胜大而弃"
+  },
+  {
+    "id": 345,
+    "quote": "Being tired is not the same as being weak.",
+    "sourceNote": "Original reflection",
+    "microAction": "Rest today without narrating it as a failure.",
+    "tags": [
+      "low",
+      "stress"
+    ],
+    "quoteZh": "疲惫不是软弱"
+  },
+  {
+    "id": 346,
+    "quote": "Today was hard and I didn't fall apart. I stopped expecting the hard part to go away and just got better at carrying it.",
+    "sourceNote": "Original reflection",
+    "microAction": "Notice one hard feeling today and let it be held, gently, instead of fixed.",
+    "tags": [
+      "anxious",
+      "low"
+    ],
+    "quoteZh": "难未消，我已更会承"
+  },
+  {
+    "id": 347,
+    "quote": "A quiet Tuesday can hold as much meaning as a big Saturday, if you let it.",
+    "sourceNote": "Original reflection",
+    "microAction": "Find one meaningful moment inside today's most ordinary hour.",
+    "tags": [
+      "gratitude",
+      "calm"
+    ],
+    "quoteZh": "静日平常，亦有深意"
+  },
+  {
+    "id": 348,
+    "quote": "You are allowed to change your mind about what you want.",
+    "sourceNote": "Original reflection",
+    "microAction": "Let go of one old goal today that no longer fits who you're becoming.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "心愿可改，你也可新"
+  },
+  {
+    "id": 349,
+    "quote": "The plan can change. The person following it is still worth trusting.",
+    "sourceNote": "Original reflection",
+    "microAction": "Trust yourself today through one plan that didn't go as expected.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "计划会变，人仍可托"
+  },
+  {
+    "id": 350,
+    "quote": "Not every day needs a lesson. Some days just need to end.",
+    "sourceNote": "Original reflection",
+    "microAction": "Let today be enough, without needing to extract a lesson from it.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "有些日子，只需过去"
+  },
+  {
+    "id": 351,
+    "quote": "The bravest thing some days is just showing up exactly as tired as you are.",
+    "sourceNote": "Original reflection",
+    "microAction": "Show up for one thing today without pretending to have more energy than you do.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "带着疲惫出现，也是勇"
+  },
+  {
+    "id": 352,
+    "quote": "You can be proud of yourself and still have more to do. Those aren't opposites.",
+    "sourceNote": "Original reflection",
+    "microAction": "Name one thing today you're proud of, unrelated to what's still unfinished.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "可自豪，也可继续"
+  },
+  {
+    "id": 353,
+    "quote": "A single honest sentence can do more than a week of avoiding the conversation.",
+    "sourceNote": "Original reflection",
+    "microAction": "Say the honest sentence you've been avoiding, to one person, gently, today.",
+    "tags": [
+      "growth",
+      "stress"
+    ],
+    "quoteZh": "一句真话，胜一周回避"
+  },
+  {
+    "id": 354,
+    "quote": "I shrank today's scary task down to the actual next five minutes of it. Turns out that was the whole trick.",
+    "sourceNote": "Original reflection",
+    "microAction": "Shrink today's biggest task down to its next smallest actual step.",
+    "tags": [
+      "anxious",
+      "growth"
+    ],
+    "quoteZh": "大事缩小，先做五分"
+  },
+  {
+    "id": 355,
+    "quote": "I let go of the imaginary finish line everyone else seemed to be running toward. There wasn't actually a race. I just made it up to feel bad.",
+    "sourceNote": "Original reflection",
+    "microAction": "Let go of one comparison today about where you 'should' be by now.",
+    "tags": [
+      "anxious",
+      "low"
+    ],
+    "quoteZh": "本无赛程，何必落后"
+  },
+  {
+    "id": 356,
+    "quote": "Curiosity is kinder to you than judgment, and usually more accurate too.",
+    "sourceNote": "Original reflection",
+    "microAction": "Replace one self-critical thought today with a curious question instead.",
+    "tags": [
+      "low",
+      "growth"
+    ],
+    "quoteZh": "好奇胜责，且更近真"
+  },
+  {
+    "id": 357,
+    "quote": "Some seasons are for building. Some are for healing. Both are progress.",
+    "sourceNote": "Original reflection",
+    "microAction": "Name, honestly, which season you're actually in right now.",
+    "tags": [
+      "growth",
+      "low"
+    ],
+    "quoteZh": "建造是进，疗愈亦进"
+  },
+  {
+    "id": 358,
+    "quote": "I didn't fully understand why I felt this way today. I let myself feel it anyway, unexplained.",
+    "sourceNote": "Original reflection",
+    "microAction": "Let one unexplained feeling today exist, without needing to justify it.",
+    "tags": [
+      "anxious",
+      "low"
+    ],
+    "quoteZh": "不解其由，也可感受"
+  },
+  {
+    "id": 359,
+    "quote": "A single good decision today doesn't erase yesterday, and it doesn't need to.",
+    "sourceNote": "Original reflection",
+    "microAction": "Make one good choice today, just for today, without keeping score against the past.",
+    "tags": [
+      "growth"
+    ],
+    "quoteZh": "今日善择，不必抹昨"
+  },
+  {
+    "id": 360,
+    "quote": "The quiet effort no one sees is often the effort that matters most.",
+    "sourceNote": "Original reflection",
+    "microAction": "Do one thing well today that nobody else will ever notice, and let that be its own reward.",
+    "tags": [
+      "growth",
+      "gratitude"
+    ],
+    "quoteZh": "无人见处，最见功夫"
+  },
+  {
+    "id": 361,
+    "quote": "Peace isn't the absence of problems; it's the presence of steadiness inside them.",
+    "sourceNote": "Original reflection",
+    "microAction": "Practice staying steady today through one small problem, instead of rushing to solve it.",
+    "tags": [
+      "calm",
+      "stress"
+    ],
+    "quoteZh": "平静非无事，是事中稳"
+  },
+  {
+    "id": 362,
+    "quote": "You get to define what a good day looks like for you, not the calendar.",
+    "sourceNote": "Original reflection",
+    "microAction": "Decide, right now, what would make today feel good, on your own terms.",
+    "tags": [
+      "gratitude",
+      "growth"
+    ],
+    "quoteZh": "好日何样，由心自定"
+  },
+  {
+    "id": 363,
+    "quote": "Asking for help is not the opposite of strength; sometimes it's the clearest proof of it.",
+    "sourceNote": "Original reflection",
+    "microAction": "Ask for one piece of help today that you'd normally carry alone.",
+    "tags": [
+      "stress",
+      "growth"
+    ],
+    "quoteZh": "求助非弱，正是清强"
+  },
+  {
+    "id": 364,
+    "quote": "The days that feel like nothing happened are still adding up to something.",
+    "sourceNote": "Original reflection",
+    "microAction": "Trust that one quiet, uneventful day today is still adding up to something.",
+    "tags": [
+      "low",
+      "gratitude"
+    ],
+    "quoteZh": "无事之日，也在成事"
+  },
+  {
+    "id": 365,
+    "quote": "You can love where you're going and still be allowed to rest where you are.",
+    "sourceNote": "Original reflection",
+    "microAction": "Pause today, guilt-free, exactly where you are in your own timeline.",
+    "tags": [
+      "low",
+      "calm"
+    ],
+    "quoteZh": "向往前路，也可此刻歇"
   }
 ]

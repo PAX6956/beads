@@ -1,5 +1,6 @@
 import SwiftUI
 import PhotosUI
+import Photos
 
 struct ShareCardSheet: View {
     let text: String
@@ -12,10 +13,15 @@ struct ShareCardSheet: View {
     @State private var photoPickerItem: PhotosPickerItem?
     @State private var showPhotoPicker = false
     @State private var showPaywall = false
-    @State private var shareURL: URL?
+    @State private var renderedImage: UIImage?
     @State private var previewImage: Image?
+    @State private var saveState: SaveState = .idle
     @State private var showGrowthPulse = false
     @State private var leveledUp = false
+
+    private enum SaveState {
+        case idle, saving, success, failure
+    }
 
     private var cycleProgress: Int { store.beadCount % BeadRingView.ringCapacity }
 
@@ -40,12 +46,13 @@ struct ShareCardSheet: View {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close") { dismiss() }
                 }
-                ToolbarItem(placement: .confirmationAction) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    saveButton
                     shareButton
                 }
             }
             .task {
-                renderToTempFile()
+                renderPreview()
             }
             .onChange(of: photoPickerItem) { newItem in
                 Task { await loadPickedPhoto(newItem) }
@@ -58,10 +65,54 @@ struct ShareCardSheet: View {
         }
     }
 
+    // Writes straight to the system Photos library (Camera Roll) via
+    // PHPhotoLibrary — independent of whatever "save" behavior a
+    // third-party app's own share extension happens to offer, and not a
+    // Shared Album (a separate, opt-in iCloud feature).
+    @ViewBuilder
+    private var saveButton: some View {
+        Button {
+            Task { await saveToPhotos() }
+        } label: {
+            Image(systemName: saveIconName)
+        }
+        .accessibilityLabel("Save to Photos")
+        .disabled(renderedImage == nil || saveState == .saving)
+    }
+
+    private var saveIconName: String {
+        switch saveState {
+        case .idle, .saving: return "square.and.arrow.down"
+        case .success: return "checkmark"
+        case .failure: return "exclamationmark.triangle"
+        }
+    }
+
+    private func saveToPhotos() async {
+        guard let renderedImage else { return }
+        saveState = .saving
+        do {
+            try await PHPhotoLibrary.shared().performChanges {
+                PHAssetChangeRequest.creationRequestForAsset(from: renderedImage)
+            }
+            saveState = .success
+            Haptics.success()
+        } catch {
+            saveState = .failure
+            Haptics.warning()
+        }
+        try? await Task.sleep(nanoseconds: 1_500_000_000)
+        saveState = .idle
+    }
+
     @ViewBuilder
     private var shareButton: some View {
-        if let shareURL {
-            ShareLink(item: shareURL, preview: SharePreview(text, image: previewImage ?? Image(systemName: "photo"))) {
+        if let previewImage {
+            // Sharing the rendered `Image` directly (not a file URL) is what
+            // makes "Save to Photos" show up and hands other apps — X's
+            // compose sheet included — real image data instead of a file
+            // reference that not every share extension knows how to unpack.
+            ShareLink(item: previewImage, preview: SharePreview(text, image: previewImage)) {
                 Image(systemName: "square.and.arrow.up")
             }
             .accessibilityLabel("Share")
@@ -95,7 +146,7 @@ struct ShareCardSheet: View {
                         }
                         selectedTemplate = template
                         customImage = nil
-                        renderToTempFile()
+                        renderPreview()
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
@@ -152,23 +203,13 @@ struct ShareCardSheet: View {
         guard let item else { return }
         guard let data = try? await item.loadTransferable(type: Data.self), let image = UIImage(data: data) else { return }
         customImage = image
-        renderToTempFile()
+        renderPreview()
     }
 
-    private func renderToTempFile() {
-        shareURL = nil
+    private func renderPreview() {
         guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, customBackground: customImage, growthValue: store.growthValue, cycleProgress: cycleProgress) else { return }
+        renderedImage = image
         previewImage = Image(uiImage: image)
-        guard let data = image.pngData() else { return }
-        let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent(UUID().uuidString)
-            .appendingPathExtension("png")
-        do {
-            try data.write(to: url)
-            shareURL = url
-        } catch {
-            shareURL = nil
-        }
     }
 }
 

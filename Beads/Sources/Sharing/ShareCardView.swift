@@ -38,7 +38,7 @@ struct ShareCardView: View {
                     BeadMaterialView(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, reached: true, size: size * 0.36)
 
                     VStack(spacing: size * 0.01) {
-                        Text(tierInfo.tier.name)
+                        Text(tierInfo.tier.localizedName)
                             .font(.system(size: size * 0.032, design: .serif).weight(.semibold))
                             .foregroundStyle(textColor.opacity(0.85))
                         Text("\(Int(growthValue)) growth days")

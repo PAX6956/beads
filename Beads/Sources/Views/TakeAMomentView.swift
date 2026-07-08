@@ -19,7 +19,7 @@ struct TakeAMomentView: View {
     private let calmQuote: String = {
         let library = ContentLibrary.loadSeed()
         let calmItems = library.filter { $0.tags.contains("calm") }
-        return (calmItems.randomElement() ?? library.randomElement())?.quote ?? "Take a quiet breath."
+        return (calmItems.randomElement() ?? library.randomElement())?.localizedQuote ?? "Take a quiet breath."
     }()
 
     var body: some View {
@@ -43,7 +43,7 @@ struct TakeAMomentView: View {
                             .transition(.opacity.combined(with: .scale(scale: 0.92)))
                     } else {
                         breathingOrb(scale: phase.scale, elapsed: elapsed)
-                        Text(displayedLabel)
+                        Text(LocalizedStringKey(displayedLabel))
                             .font(.system(.title2, design: .serif).weight(.light))
                             .foregroundStyle(.white.opacity(0.85))
                             .tracking(3)

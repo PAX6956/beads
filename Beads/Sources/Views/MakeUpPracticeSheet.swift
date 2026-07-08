@@ -12,7 +12,7 @@ struct MakeUpPracticeSheet: View {
     @State private var leveledUp = false
 
     private var quoteForDate: String? {
-        ContentLibrary.todayItem(from: ContentLibrary.loadSeed(), date: date)?.quote
+        ContentLibrary.todayItem(from: ContentLibrary.loadSeed(), date: date)?.localizedQuote
     }
 
     var body: some View {

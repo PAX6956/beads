@@ -1,11 +1,12 @@
 {
-  "images" : [
+  "images": [
     {
-      "idiom" : "universal"
+      "idiom": "universal",
+      "filename": "BeadTier9.png"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   }
 }

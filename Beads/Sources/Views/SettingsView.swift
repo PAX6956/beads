@@ -6,10 +6,25 @@ struct SettingsView: View {
     @State private var isShowingDeleteConfirmation = false
     @State private var isDeleting = false
     @State private var didDelete = false
+    @AppStorage(QuoteLanguagePreference.storageKey) private var quoteLanguagePreference: QuoteLanguagePreference = .system
 
     var body: some View {
         NavigationStack {
             List {
+                Section {
+                    Picker("Quote Language", selection: $quoteLanguagePreference) {
+                        ForEach(QuoteLanguagePreference.allCases) { option in
+                            // `Text(String)` never consults the String Catalog —
+                            // only literal/LocalizedStringKey initializers do —
+                            // so a dynamic `displayName` needs this explicit
+                            // wrap or it silently stays English forever.
+                            Text(LocalizedStringKey(option.displayName)).tag(option)
+                        }
+                    }
+                } footer: {
+                    Text("Controls the language of daily quotes and micro-actions, independent of your device's system language.")
+                }
+
                 Section {
                     if let exportURL {
                         ShareLink(item: exportURL) {

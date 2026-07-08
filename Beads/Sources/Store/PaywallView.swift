@@ -55,7 +55,7 @@ struct PaywallView: View {
                 .font(.footnote)
 
                 if let errorMessage {
-                    Text(errorMessage)
+                    Text(LocalizedStringKey(errorMessage))
                         .font(.footnote)
                         .foregroundStyle(.red)
                 }
