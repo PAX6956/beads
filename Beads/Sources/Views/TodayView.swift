@@ -6,6 +6,14 @@ import UserNotifications
 struct TodayView: View {
     @EnvironmentObject private var store: PracticeStore
     @State private var library: [ContentItem] = ContentLibrary.loadSeed()
+    // Its only job is forcing this view to re-render when the Quote Language
+    // setting changes elsewhere: `.localizedQuote` reads UserDefaults through
+    // a plain static property, which isn't a SwiftUI-tracked dependency on
+    // its own. Fed into `.id()` below rather than just declared — SwiftUI
+    // only seems to register an @AppStorage/@State dependency for properties
+    // actually *read* during body, and declaring-but-never-reading one
+    // wasn't enough to trigger a re-render in testing.
+    @AppStorage(QuoteLanguagePreference.storageKey) private var quoteLanguageTrigger: String = QuoteLanguagePreference.system.rawValue
     @State private var journalText: String = ""
     @State private var selectedMoods: Set<Mood> = []
     @State private var isShowingShareCard = false
@@ -39,6 +47,7 @@ struct TodayView: View {
                         .task { pendingNotificationsSummary = await Self.debugNotificationSummary() }
                     #endif
                 }
+                .id(quoteLanguageTrigger)
                 .padding()
             }
             .scrollDismissesKeyboard(.interactively)

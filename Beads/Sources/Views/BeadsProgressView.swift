@@ -4,6 +4,15 @@ struct BeadsProgressView: View {
     @EnvironmentObject private var store: PracticeStore
     @State private var library: [ContentItem] = ContentLibrary.loadSeed()
     @State private var spinDistance: Double = 0
+    // Fed into `.id()` on the bits of the layout that show localized text
+    // below, to force them to re-render when Quote Language changes in
+    // Settings — `.localizedQuote`/`.localizedName` read UserDefaults through
+    // a plain static property, which isn't a SwiftUI-tracked dependency on
+    // its own, and declaring-but-never-reading an @AppStorage property alone
+    // wasn't enough to trigger a re-render in testing. Applied narrowly
+    // (not to the whole VStack) so it doesn't also reset BeadCarouselView's
+    // own spin state every time the language changes.
+    @AppStorage(QuoteLanguagePreference.storageKey) private var quoteLanguageTrigger: String = QuoteLanguagePreference.system.rawValue
 
     private var tierInfo: (tier: BeadTier, beyondIntensity: Double)? {
         store.currentTierInfo
@@ -50,6 +59,7 @@ struct BeadsProgressView: View {
                                 .font(.caption2)
                                 .foregroundStyle(.secondary)
                         }
+                        .id(quoteLanguageTrigger)
                     }
 
                     Text("\(store.currentStreak) day streak")

@@ -19,6 +19,11 @@ struct QuoteTickerView: View {
     }
 
     @State private var singleWidth: CGFloat = 0
+    // Fed into `.id()` below to force a full reset (including re-measuring
+    // singleWidth, which genuinely changes width between languages) when
+    // Quote Language changes in Settings — see TodayView for why a plain
+    // declared-but-unread @AppStorage property wasn't enough on its own.
+    @AppStorage(QuoteLanguagePreference.storageKey) private var quoteLanguageTrigger: String = QuoteLanguagePreference.system.rawValue
 
     var body: some View {
         GeometryReader { geo in
@@ -56,6 +61,7 @@ struct QuoteTickerView: View {
                 startPoint: .leading, endPoint: .trailing
             )
         )
+        .id(quoteLanguageTrigger)
     }
 
     private var widthReader: some View {

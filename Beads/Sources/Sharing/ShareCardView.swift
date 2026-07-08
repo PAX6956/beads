@@ -20,6 +20,11 @@ struct ShareCardView: View {
     // the single biggest lever for how far a quote card actually travels.
     var size: CGFloat = 360
 
+    // Fed into `.id()` below to force a re-render when Quote Language
+    // changes in Settings while this card is on screen; see TodayView for
+    // why a declared-but-unread @AppStorage property alone wasn't enough.
+    @AppStorage(QuoteLanguagePreference.storageKey) private var quoteLanguageTrigger: String = QuoteLanguagePreference.system.rawValue
+
     private var height: CGFloat { size * 16.0 / 9.0 }
 
     private var textColor: Color {
@@ -65,12 +70,17 @@ struct ShareCardView: View {
 
                 Spacer(minLength: size * 0.16)
 
-                HStack(spacing: 6) {
+                // Reverted the vector "BeadsMark" + Pro-purple experiment
+                // after user testing found it visually unconvincing — back
+                // to the plain dot + wordmark, sized up 150% (9pt dot,
+                // 0.033 vs. the original 0.022 font scale) per follow-up.
+                // Spacing pulled in 20% (9 -> 7.2) per further feedback.
+                HStack(spacing: 7.2) {
                     Circle()
                         .fill(textColor.opacity(0.6))
-                        .frame(width: 6, height: 6)
+                        .frame(width: 9, height: 9)
                     Text("Beads")
-                        .font(.system(size: size * 0.022).weight(.semibold))
+                        .font(.system(size: size * 0.033).weight(.semibold))
                         .foregroundStyle(textColor.opacity(0.7))
                 }
                 .padding(.bottom, size * 0.08)
@@ -78,6 +88,7 @@ struct ShareCardView: View {
         }
         .frame(width: size, height: height)
         .clipShape(RoundedRectangle(cornerRadius: size * 0.06))
+        .id(quoteLanguageTrigger)
     }
 
     @ViewBuilder
