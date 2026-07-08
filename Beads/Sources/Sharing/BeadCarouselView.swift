@@ -13,6 +13,11 @@ struct BeadCarouselView: View {
     let tier: BeadTier
     let beyondIntensity: Double
     let cycleProgress: Int
+    // Reports cumulative |rotation| after every change, so a parent (the
+    // reveal-as-you-spin quote text on the Beads tab) can drive off the same
+    // number the "N spins" label already uses, without owning any of this
+    // view's drag/rotation state itself.
+    var onDistanceChange: ((Double) -> Void)? = nil
 
     @EnvironmentObject private var store: PracticeStore
 
@@ -34,10 +39,11 @@ struct BeadCarouselView: View {
     @State private var totalDistanceTraveled: Double = 0
     @State private var lastRotationForDistance: Double
 
-    init(tier: BeadTier, beyondIntensity: Double, cycleProgress: Int) {
+    init(tier: BeadTier, beyondIntensity: Double, cycleProgress: Int, onDistanceChange: ((Double) -> Void)? = nil) {
         self.tier = tier
         self.beyondIntensity = beyondIntensity
         self.cycleProgress = cycleProgress
+        self.onDistanceChange = onDistanceChange
         // Land the most recently reached bead at the bottom (nearest) position
         // on first appearance, matching what the old scroll-to-current did.
         let ringCapacity = BeadRingView.ringCapacity
@@ -153,6 +159,7 @@ struct BeadCarouselView: View {
         totalDistanceTraveled += abs(rotationDegrees - lastRotationForDistance)
         lastRotationForDistance = rotationDegrees
         completedSpins = Int(totalDistanceTraveled / 360)
+        onDistanceChange?(totalDistanceTraveled)
     }
 }
 

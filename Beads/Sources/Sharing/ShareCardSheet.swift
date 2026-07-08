@@ -10,6 +10,7 @@ struct ShareCardSheet: View {
     @Environment(\.dismiss) private var dismiss
     @State private var selectedTemplate: ShareCardTemplate = .inkWash
     @State private var customImage: UIImage?
+    @State private var customImageOpacities: ImageContrast.RegionOpacities?
     @State private var photoPickerItem: PhotosPickerItem?
     @State private var showPhotoPicker = false
     @State private var showPaywall = false
@@ -32,7 +33,7 @@ struct ShareCardSheet: View {
             // the picker on most phones and looked out of place next to it.
             ScrollView {
                 VStack(spacing: 20) {
-                    ShareCardView(text: text, template: selectedTemplate, customBackground: customImage, growthValue: store.growthValue, cycleProgress: cycleProgress, size: 300)
+                    ShareCardView(text: text, template: selectedTemplate, customBackground: customImage, customBackgroundOpacities: customImageOpacities, growthValue: store.growthValue, cycleProgress: cycleProgress, size: 300)
                         .shadow(radius: 12, y: 6)
                         .padding(.top, 16)
 
@@ -146,6 +147,7 @@ struct ShareCardSheet: View {
                         }
                         selectedTemplate = template
                         customImage = nil
+                        customImageOpacities = nil
                         renderPreview()
                     } label: {
                         ZStack {
@@ -203,11 +205,13 @@ struct ShareCardSheet: View {
         guard let item else { return }
         guard let data = try? await item.loadTransferable(type: Data.self), let image = UIImage(data: data) else { return }
         customImage = image
+        // Measured from the actual photo, not guessed — see ImageContrast.
+        customImageOpacities = ImageContrast.regionOpacities(for: image)
         renderPreview()
     }
 
     private func renderPreview() {
-        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, customBackground: customImage, growthValue: store.growthValue, cycleProgress: cycleProgress) else { return }
+        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, customBackground: customImage, customBackgroundOpacities: customImageOpacities, growthValue: store.growthValue, cycleProgress: cycleProgress) else { return }
         renderedImage = image
         previewImage = Image(uiImage: image)
     }
