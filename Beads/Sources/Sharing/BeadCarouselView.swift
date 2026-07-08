@@ -17,13 +17,22 @@ struct BeadCarouselView: View {
     @EnvironmentObject private var store: PracticeStore
 
     private let ringCapacity = BeadRingView.ringCapacity
-    private let maxItemSize: CGFloat = 132
+    private let maxItemSize: CGFloat = 106 // 80% of the original 132
     private let minItemSize: CGFloat = 46
+    // The ellipse's own footprint is kept at the original 132 baseline —
+    // only the beads themselves shrank to 106; the loop they sit on should
+    // stay the size it was before that change.
+    private let ellipseBaseSize: CGFloat = 132
 
     @State private var rotationDegrees: Double
     @State private var dragStartRotation: Double = 0
     @State private var completedSpins: Int = 0
     @State private var lastBeadStep: Int
+    // Tracks cumulative |rotation| traveled, not signed rotationDegrees, so
+    // reversing direction never makes the visible spin count tick backward —
+    // both directions of handling the beads should only ever add.
+    @State private var totalDistanceTraveled: Double = 0
+    @State private var lastRotationForDistance: Double
 
     init(tier: BeadTier, beyondIntensity: Double, cycleProgress: Int) {
         self.tier = tier
@@ -37,14 +46,15 @@ struct BeadCarouselView: View {
         let initialRotation = 90 - baseAngle
         _rotationDegrees = State(initialValue: initialRotation)
         _lastBeadStep = State(initialValue: Self.beadStep(for: initialRotation, ringCapacity: ringCapacity))
+        _lastRotationForDistance = State(initialValue: initialRotation)
     }
 
     var body: some View {
         VStack(spacing: 6) {
             GeometryReader { geo in
                 let center = CGPoint(x: geo.size.width / 2, y: geo.size.height / 2)
-                let ellipseRadiusX = min(geo.size.width * 0.38, maxItemSize * 1.15)
-                let ellipseRadiusY = maxItemSize * 0.4
+                let ellipseRadiusX = min(geo.size.width * 0.38, ellipseBaseSize * 1.15)
+                let ellipseRadiusY = ellipseBaseSize * 0.4
 
                 ZStack {
                     ForEach(0..<ringCapacity, id: \.self) { index in
@@ -55,7 +65,12 @@ struct BeadCarouselView: View {
                 .gesture(
                     DragGesture()
                         .onChanged { value in
-                            rotationDegrees = dragStartRotation + Double(value.translation.width) * 0.7
+                            // Negated: at the bottom (nearest) position, increasing
+                            // rotationDegrees moves that bead toward the left on
+                            // screen, which felt backwards against a rightward drag.
+                            // Flipping the sign makes the nearest bead follow the
+                            // finger's direction instead of mirroring it.
+                            rotationDegrees = dragStartRotation - Double(value.translation.width) * 0.7
                             handleRotationChange()
                         }
                         .onEnded { _ in
@@ -63,9 +78,9 @@ struct BeadCarouselView: View {
                         }
                 )
             }
-            .frame(height: maxItemSize + maxItemSize * 0.4 * 2 + 12)
+            .frame(height: ellipseBaseSize + ellipseBaseSize * 0.4 * 2 + 12)
 
-            Text("\(abs(completedSpins)) spins")
+            Text("\(completedSpins) spins")
                 .font(.caption2)
                 .foregroundStyle(.secondary)
         }
@@ -86,8 +101,26 @@ struct BeadCarouselView: View {
         let size = minItemSize + (maxItemSize - minItemSize) * nearness
         let blur = (1 - nearness) * 4.5
 
-        let x = center.x + cos(radians) * radiusX
-        let y = center.y + depth * radiusY
+        // Far beads share the same angular spacing as near ones but render
+        // much smaller, so a fixed horizontal radius left them looking
+        // sparse/adrift near the top. Narrowing the ellipse as nearness drops
+        // pulls the far beads inward — like railway tracks converging toward
+        // a vanishing point — so they cluster instead of spreading thin. The
+        // far-end floor (0.55) is unchanged from the original fix; the near
+        // end is raised to 1.10 (10% wider than the original 1.0) since the
+        // front row read as too cramped once the far end tightened.
+        let effectiveRadiusX = radiusX * (0.55 + 0.55 * nearness)
+
+        // Vertical travel was still using the full fixed radiusY for every
+        // bead regardless of depth, so the far arc swept just as high/low as
+        // the near one — a real perspective view would have the distant loop
+        // shrink toward the vanishing point in *both* directions, not just
+        // horizontally. Compressing radiusY the same way flattens the far
+        // arc into a smaller, tighter curve near the top.
+        let effectiveRadiusY = radiusY * (0.55 + 0.55 * nearness)
+
+        let x = center.x + cos(radians) * effectiveRadiusX
+        let y = center.y + depth * effectiveRadiusY
 
         // Depth is conveyed by size + blur only — fading opacity too caused
         // overlapping near beads to show a translucent "ghosting" double-
@@ -114,10 +147,12 @@ struct BeadCarouselView: View {
             store.recordSpinTick()
         }
 
-        let spins = Int(rotationDegrees / 360)
-        if spins != completedSpins {
-            completedSpins = spins
-        }
+        // Accumulate |Δrotation| rather than reading rotationDegrees directly —
+        // a signed reading would tick the "spins" count back down whenever a
+        // reversed drag crosses back over a multiple-of-360 boundary.
+        totalDistanceTraveled += abs(rotationDegrees - lastRotationForDistance)
+        lastRotationForDistance = rotationDegrees
+        completedSpins = Int(totalDistanceTraveled / 360)
     }
 }
 

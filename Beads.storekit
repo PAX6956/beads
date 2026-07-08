@@ -1,0 +1,49 @@
+{
+  "identifier" : "5A1F2B3C-0000-4A11-9C2D-BEADS00STORE",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21000000",
+      "localizations" : [],
+      "name" : "Beads Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1000000001",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Custom photo Ripple Card backgrounds, extra card styles, and more.",
+              "displayName" : "Beads Pro (Monthly)",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.beadsapp.beads.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Beads Pro Monthly",
+          "subscriptionGroupID" : "21000000",
+          "type" : "RecurringSubscription",
+          "winBackOffers" : []
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

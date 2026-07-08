@@ -20,17 +20,29 @@ struct BeadMaterialView: View {
                     .scaledToFill()
                     .frame(width: size, height: size)
                     .clipShape(Circle())
-                    // Draft photo/render assets are reading darker on-device
-                    // than intended — a small lift keeps the material legible
-                    // without washing it out the way the earlier procedural
-                    // gloss overlay did.
-                    .brightness(reached ? 0.12 : 0.04)
+                    // .brightness() adds a flat lift to every RGB channel,
+                    // which pulls a low-saturation wood tone toward white
+                    // rather than just brightening it — the earlier +0.12
+                    // lift (added when the images looked too dark) was
+                    // overshooting into "washed out." Pulled back down.
+                    .brightness(reached ? 0.03 : 0.02)
                     .contrast(1.05)
-                    .opacity(reached ? 1 : 0.35)
             } else {
                 placeholder
             }
         }
+        // Dimming unreached beads via saturation/brightness instead of opacity
+        // keeps every bead fully opaque, so it still cleanly occludes whatever
+        // sits behind it on the ellipse. Opacity here would make each unreached
+        // bead a translucent layer — exactly the "see-through overlap" ghosting
+        // the carousel already fixed once for depth; overlapping beads (now
+        // more of them, since far-bead spacing was tightened) re-triggered it
+        // through this separate opacity value instead. Kept mild (0.55, not
+        // the original 0.15) — most of a fresh bracelet's 12 positions are
+        // unreached, and dropping saturation that hard on all of them made
+        // the whole strand read as gray, losing the wood's actual color.
+        .saturation(reached ? 1 : 0.55)
+        .brightness(reached ? 0 : -0.06)
         .shadow(color: reached ? glowColor.opacity(0.45 + beyondIntensity * 0.3) : .clear,
                 radius: reached ? size * (0.3 + sparkle * 0.5) : 0)
     }
@@ -41,7 +53,7 @@ struct BeadMaterialView: View {
 
     private var placeholder: some View {
         Circle()
-            .fill(reached ? baseColor : baseColor.opacity(0.22))
+            .fill(baseColor)
             .overlay(
                 Circle()
                     .fill(

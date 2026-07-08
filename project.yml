@@ -19,6 +19,8 @@ targets:
       - path: Beads/Sources
       - path: Beads/Content
         buildPhase: resources
+    scheme:
+      storeKitConfiguration: Beads.storekit
     info:
       path: Generated/Beads-Info.plist
       properties:
