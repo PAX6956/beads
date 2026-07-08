@@ -1,6 +1,24 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
+    "%lld day streak" : {
+
+    },
+    "%lld days to your next bead" : {
+
+    },
+    "%lld growth days" : {
+
+    },
+    "%lld spins" : {
+
+    },
+    "%lldd streak" : {
+
+    },
     "A short reflection" : {
 
     },
@@ -10,31 +28,28 @@
     "All your data has been deleted." : {
 
     },
-    "Anxious" : {
-
-    },
     "Beads" : {
 
     },
-    "Breathe in…" : {
-
-    },
-    "Breathe out…" : {
+    "Beads Pro" : {
 
     },
     "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card." : {
 
     },
-    "Calm" : {
+    "Cancel" : {
 
     },
-    "Cancel" : {
+    "Choose your own photo" : {
 
     },
     "Close" : {
 
     },
     "Complete" : {
+
+    },
+    "days" : {
 
     },
     "Delete" : {
@@ -58,19 +73,10 @@
     "Done for today" : {
 
     },
-    "Export my data" : {
-
-    },
     "Entries you save from Today will show up here — visible only to you." : {
 
     },
-    "Grateful" : {
-
-    },
-    "Growing" : {
-
-    },
-    "Hold…" : {
+    "Export my data" : {
 
     },
     "How are you feeling?" : {
@@ -79,28 +85,34 @@
     "Journal" : {
 
     },
-    "Low" : {
+    "Make Up Practice" : {
 
     },
-    "Make Up Practice" : {
+    "Mark Practice" : {
+
+    },
+    "Marks today's practice as complete." : {
+
+    },
+    "Nice — today's practice is marked complete." : {
 
     },
     "No reflections yet" : {
 
     },
+    "OK" : {
+
+    },
     "Practice" : {
 
     },
-    "Restless" : {
+    "Restore Purchases" : {
 
     },
     "Ringed days are within the last 3 days — tap to make up a missed practice." : {
 
     },
     "Ripple Card" : {
-
-    },
-    "OK" : {
 
     },
     "Save" : {
@@ -118,22 +130,37 @@
     "Share Exported File" : {
 
     },
-    "Take a moment" : {
+    "Subscribe — %@/month" : {
 
     },
-    "Take a quiet breath." : {
+    "Take a moment" : {
 
     },
     "Today" : {
 
     },
-    "Today's Practice" : {
-
-    },
     "Today's practice" : {
 
     },
+    "Today's Practice" : {
+
+    },
+    "Unlock custom photo backgrounds" : {
+
+    },
+    "Use your own photos as Ripple Card backgrounds, plus extra card styles." : {
+
+    },
+    "What's one thing that felt calm, even briefly, on %@?" : {
+
+    },
+    "You've already practiced today." : {
+
+    },
     "Your string just changed a little." : {
+
+    },
+    "Your string reached a new tier — %@." : {
 
     }
   },

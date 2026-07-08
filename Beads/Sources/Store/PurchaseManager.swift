@@ -51,15 +51,6 @@ final class PurchaseManager: ObservableObject {
     }
 
     private func updateEntitlement() async {
-        #if DEBUG
-        // TEMPORARY: local StoreKit testing only activates when Xcode itself
-        // launches the app via its scheme; our devicectl install/launch loop
-        // bypasses that, so a real sandbox purchase can't complete through
-        // it. This override exists purely so the Pro-gated custom-photo flow
-        // can be exercised on-device right now — remove before shipping.
-        isPro = true
-        return
-        #endif
         var hasPro = false
         for await result in Transaction.currentEntitlements {
             if case .verified(let transaction) = result, transaction.productID == Self.proMonthlyProductID {
