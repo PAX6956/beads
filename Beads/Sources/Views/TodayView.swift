@@ -37,6 +37,7 @@ struct TodayView: View {
                         quoteCard(item)
                     }
                     practiceButton
+                    takeAMomentRow
                     Divider()
                     quickJournalSection
                     #if DEBUG
@@ -62,6 +63,13 @@ struct TodayView: View {
                         Haptics.lightTap()
                         isShowingMoment = true
                     } label: {
+                        // `.labelStyle(.titleAndIcon)` does not reliably show
+                        // the title text here — .topBarTrailing collapses to
+                        // icon-only regardless of that hint (confirmed on
+                        // device, not just a theoretical iOS quirk). The
+                        // real fix for "no guidance" is takeAMomentRow below,
+                        // in the main content where a real label fits; this
+                        // stays icon-only as a fast repeat-access shortcut.
                         Label("Take a moment", systemImage: "wind")
                     }
                 }
@@ -126,6 +134,36 @@ struct TodayView: View {
         }
         .buttonStyle(.borderedProminent)
         .disabled(store.hasCompletedToday())
+    }
+
+    // The toolbar icon alone couldn't show its own label (see the comment on
+    // that ToolbarItem) — this is the actual "what is this and why" entry
+    // point, living in the main content where a real title + subtitle fit.
+    private var takeAMomentRow: some View {
+        Button {
+            Haptics.lightTap()
+            isShowingMoment = true
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "wind")
+                    .font(.title3)
+                    .foregroundStyle(Color.accentColor)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Take a moment")
+                        .font(.subheadline.weight(.semibold))
+                    Text("A one-minute breathing pause, any time you need it")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.caption)
+                    .foregroundStyle(.tertiary)
+            }
+            .padding()
+            .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 16))
+        }
+        .buttonStyle(.plain)
     }
 
     private var quickJournalSection: some View {

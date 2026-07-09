@@ -71,6 +71,16 @@
         }
       }
     },
+    "A one-minute breathing pause, any time you need it": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一分钟的呼吸练习，随时都能用"
+          }
+        }
+      }
+    },
     "A short reflection": {
       "localizations": {
         "zh-Hans": {
@@ -127,6 +137,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Beads 只会把你的练习记录和日记保存在你自己的 iCloud 账户里——除非你主动分享心语卡片，否则不会有任何人看到。"
+          }
+        }
+      }
+    },
+    "Begin": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始"
           }
         }
       }
@@ -411,6 +431,16 @@
         }
       }
     },
+    "Not now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "现在不用"
+          }
+        }
+      }
+    },
     "Notifications": {
       "localizations": {
         "zh-Hans": {
@@ -667,6 +697,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ 那天，有什么事让你感到过片刻的平静？"
+          }
+        }
+      }
+    },
+    "When things feel like too much, come here for a minute. Nothing to figure out — just follow the circle's breath.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "感觉喘不过气的时候，来这里歇一分钟。什么都不用想，跟着圆环一起呼吸就好。"
           }
         }
       }

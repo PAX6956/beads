@@ -7,6 +7,10 @@ import SwiftUI
 /// the ritual feeling is doing real work here, not just decoration.
 struct TakeAMomentView: View {
     @Environment(\.dismiss) private var dismiss
+    // Used to jump straight into the breathing cycle with no explanation of
+    // what it is or why to do it — user feedback was that both the entry
+    // icon and this screen needed some actual guidance, not just motion.
+    @State private var hasStarted = false
     @State private var startDate = Date()
     @State private var displayedLabel = "Breathe in…"
     @State private var labelOpacity: Double = 1
@@ -23,6 +27,65 @@ struct TakeAMomentView: View {
     }()
 
     var body: some View {
+        ZStack {
+            if hasStarted {
+                breathingContent
+            } else {
+                introContent
+            }
+        }
+        .preferredColorScheme(.dark)
+    }
+
+    // Previously this view dropped straight into "Breathe in…" the instant
+    // it opened — no explanation of what it is or why you'd want to, just
+    // motion. This screen answers both before the cycle starts.
+    private var introContent: some View {
+        ZStack {
+            backgroundGradient
+
+            VStack(spacing: 28) {
+                Spacer()
+                Image(systemName: "wind")
+                    .font(.system(size: 34))
+                    .foregroundStyle(.white.opacity(0.85))
+                VStack(spacing: 12) {
+                    Text("Take a moment")
+                        .font(.system(.title2, design: .serif).weight(.medium))
+                        .foregroundStyle(.white)
+                    Text("When things feel like too much, come here for a minute. Nothing to figure out — just follow the circle's breath.")
+                        .font(.subheadline)
+                        .foregroundStyle(.white.opacity(0.75))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 36)
+                }
+                Spacer()
+                VStack(spacing: 14) {
+                    Button {
+                        Haptics.lightTap()
+                        startDate = Date()
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            hasStarted = true
+                        }
+                    } label: {
+                        Text("Begin")
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 4)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.white)
+                    .foregroundStyle(.black)
+
+                    Button("Not now") { dismiss() }
+                        .foregroundStyle(.white.opacity(0.65))
+                }
+                .padding(.horizontal, 40)
+                .padding(.bottom, 24)
+            }
+        }
+    }
+
+    private var breathingContent: some View {
         TimelineView(.animation) { context in
             let elapsed = context.date.timeIntervalSince(startDate)
             let isFinished = elapsed >= Self.totalDuration
@@ -61,7 +124,6 @@ struct TakeAMomentView: View {
                 .animation(.easeInOut(duration: 1.2), value: isFinished)
             }
         }
-        .preferredColorScheme(.dark)
     }
 
     /// Fades the label fully out, swaps the text while invisible, then fades
