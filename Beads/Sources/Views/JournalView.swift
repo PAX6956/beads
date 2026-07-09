@@ -84,8 +84,17 @@ struct JournalView: View {
                 Button {
                     entryToShare = entry
                 } label: {
-                    Label("Share", systemImage: "square.and.arrow.up")
-                        .font(.caption.weight(.semibold))
+                    // A plain HStack instead of Label — Label's built-in
+                    // icon/text layout doesn't expose spacing control, and
+                    // read as visually mismatched (icon and text looked
+                    // like different sizes with an awkward gap). The same
+                    // .font() on both keeps the SF Symbol and the text at
+                    // matching scale and baseline.
+                    HStack(alignment: .bottom, spacing: 4) {
+                        Image(systemName: "square.and.arrow.up")
+                        Text("Share")
+                    }
+                    .font(.subheadline.weight(.semibold))
                 }
             }
         }

@@ -6,11 +6,37 @@ import UserNotifications
 /// reminders keep firing even if the user doesn't reopen the app daily. Content
 /// per day is deterministic (see ContentLibrary.todayItem), so there's nothing
 /// to fetch at schedule time.
+///
+/// Enabled/disabled state and times are user-configurable (Settings), stored
+/// in plain UserDefaults rather than @AppStorage — this isn't a View, so it
+/// just needs to read the current value each time it runs, not track changes.
 enum NotificationScheduler {
-    static let dailyQuoteHour = 8
-    static let reminderHour = 20
+    static let quoteEnabledKey = "notificationsQuoteEnabled"
+    static let reminderEnabledKey = "notificationsReminderEnabled"
+    static let quoteMinutesKey = "notificationsQuoteMinutes"
+    static let reminderMinutesKey = "notificationsReminderMinutes"
+
+    static let defaultQuoteHour = 8
+    static let defaultReminderHour = 20
+
     private static let daysAhead = 14
     private static let center = UNUserNotificationCenter.current()
+
+    private static var isQuoteEnabled: Bool {
+        UserDefaults.standard.object(forKey: quoteEnabledKey) as? Bool ?? true
+    }
+
+    private static var isReminderEnabled: Bool {
+        UserDefaults.standard.object(forKey: reminderEnabledKey) as? Bool ?? true
+    }
+
+    private static var quoteMinutesSinceMidnight: Int {
+        UserDefaults.standard.object(forKey: quoteMinutesKey) as? Int ?? defaultQuoteHour * 60
+    }
+
+    private static var reminderMinutesSinceMidnight: Int {
+        UserDefaults.standard.object(forKey: reminderMinutesKey) as? Int ?? defaultReminderHour * 60
+    }
 
     static func requestAuthorizationIfNeeded() async {
         let settings = await center.notificationSettings()
@@ -18,8 +44,10 @@ enum NotificationScheduler {
         _ = try? await center.requestAuthorization(options: [.alert, .sound, .badge])
     }
 
-    /// Call whenever the app becomes active: refreshes the rolling window of
-    /// scheduled notifications so it always covers "today" through +14 days.
+    /// Call whenever the app becomes active, or a notification setting
+    /// changes: refreshes the rolling window of scheduled notifications so
+    /// it always covers "today" through +14 days, respecting current
+    /// enabled/disabled and time preferences.
     static func rescheduleUpcoming(calendar: Calendar = .current, today: Date = Date()) {
         let library = ContentLibrary.loadSeed()
         guard !library.isEmpty else { return }
@@ -29,11 +57,19 @@ enum NotificationScheduler {
             return [quoteIdentifier(for: date), reminderIdentifier(for: date)]
         })
 
+        let quoteEnabled = isQuoteEnabled
+        let reminderEnabled = isReminderEnabled
+        guard quoteEnabled || reminderEnabled else { return }
+
         for offset in 0..<daysAhead {
             guard let date = calendar.date(byAdding: .day, value: offset, to: today),
                   let item = ContentLibrary.todayItem(from: library, calendar: calendar, date: date) else { continue }
-            scheduleQuoteNotification(for: date, item: item, calendar: calendar)
-            scheduleReminderNotification(for: date, calendar: calendar)
+            if quoteEnabled {
+                scheduleQuoteNotification(for: date, item: item, calendar: calendar)
+            }
+            if reminderEnabled {
+                scheduleReminderNotification(for: date, calendar: calendar)
+            }
         }
     }
 
@@ -55,8 +91,9 @@ enum NotificationScheduler {
         content.sound = .default
 
         var components = calendar.dateComponents([.year, .month, .day], from: date)
-        components.hour = dailyQuoteHour
-        components.minute = 0
+        let minutes = quoteMinutesSinceMidnight
+        components.hour = minutes / 60
+        components.minute = minutes % 60
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         let request = UNNotificationRequest(identifier: quoteIdentifier(for: date), content: content, trigger: trigger)
         center.add(request)
@@ -69,8 +106,9 @@ enum NotificationScheduler {
         content.sound = .default
 
         var components = calendar.dateComponents([.year, .month, .day], from: date)
-        components.hour = reminderHour
-        components.minute = 0
+        let minutes = reminderMinutesSinceMidnight
+        components.hour = minutes / 60
+        components.minute = minutes % 60
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         let request = UNNotificationRequest(identifier: reminderIdentifier(for: date), content: content, trigger: trigger)
         center.add(request)

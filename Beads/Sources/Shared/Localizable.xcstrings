@@ -86,7 +86,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "简短的感悟（可选）"
+            "value": "频繁记录能让自己变的更好！"
           }
         }
       }
@@ -201,6 +201,16 @@
         }
       }
     },
+    "Daily quote": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每日语录"
+          }
+        }
+      }
+    },
     "Delete": {
       "localizations": {
         "zh-Hans": {
@@ -291,6 +301,16 @@
         }
       }
     },
+    "Evening reminder": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "晚间提醒"
+          }
+        }
+      }
+    },
     "Export my data": {
       "localizations": {
         "zh-Hans": {
@@ -316,7 +336,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "你现在感觉怎么样？"
+            "value": "当下感知"
           }
         }
       }
@@ -326,7 +346,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "日记"
+            "value": "心迹"
           }
         }
       }
@@ -391,6 +411,26 @@
         }
       }
     },
+    "Notifications": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        }
+      }
+    },
+    "Notifications are off in iOS Settings — tap to enable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知目前在 iOS 系统设置里被关闭了——点击前往开启"
+          }
+        }
+      }
+    },
     "OK": {
       "localizations": {
         "zh-Hans": {
@@ -406,7 +446,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "练习"
+            "value": "每日打卡"
           }
         }
       }
@@ -417,6 +457,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "语录语言"
+          }
+        }
+      }
+    },
+    "Quote time": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语录推送时间"
+          }
+        }
+      }
+    },
+    "Reminder time": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提醒时间"
           }
         }
       }
@@ -537,6 +597,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "此刻"
+          }
+        }
+      }
+    },
+    "The evening reminder never fires on a day you've already practiced.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果当天已经完成练习，晚间提醒就不会再推送。"
           }
         }
       }

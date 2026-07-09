@@ -99,8 +99,11 @@ struct TodayView: View {
             Button {
                 isShowingShareCard = true
             } label: {
-                Label("Share", systemImage: "square.and.arrow.up")
-                    .font(.caption.weight(.semibold))
+                HStack(alignment: .bottom, spacing: 4) {
+                    Image(systemName: "square.and.arrow.up")
+                    Text("Share")
+                }
+                .font(.caption.weight(.semibold))
             }
             .padding(.top, 4)
         }
@@ -152,17 +155,27 @@ struct TodayView: View {
     }
 
     private var moodPicker: some View {
-        HStack {
-            ForEach(Mood.allCases) { mood in
-                Button {
-                    toggle(mood)
-                } label: {
-                    Text(mood.emoji)
-                        .font(.title2)
-                        .padding(8)
-                        .background(selectedMoods.contains(mood) ? Color.accentColor.opacity(0.2) : .clear, in: Circle())
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                ForEach(Mood.allCases) { mood in
+                    Button {
+                        toggle(mood)
+                    } label: {
+                        Text(mood.emoji)
+                            .font(.title2)
+                            .padding(8)
+                            .background(selectedMoods.contains(mood) ? Color.accentColor.opacity(0.2) : .clear, in: Circle())
+                    }
+                    .accessibilityLabel(mood.label)
                 }
-                .accessibilityLabel(mood.label)
+            }
+            // What an emoji "means" isn't always obvious at a glance (🔥
+            // reading as "excited" rather than "Anxious," say) — spelling
+            // it out for whatever's currently selected removes the guesswork.
+            if !selectedMoods.isEmpty {
+                Text(Mood.allCases.filter(selectedMoods.contains).map(\.localizedLabel).joined(separator: " · "))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
         }
     }
@@ -184,10 +197,26 @@ struct TodayView: View {
     private func toggle(_ mood: Mood) {
         if selectedMoods.contains(mood) {
             selectedMoods.remove(mood)
+            removeEmojiPrefix(mood.emoji)
         } else if selectedMoods.count < JournalEntry.maxMoods {
             selectedMoods.insert(mood)
+            addEmojiPrefix(mood.emoji)
         }
         Haptics.lightTap()
+    }
+
+    // Selecting a mood drops its emoji into the reflection field automatically
+    // — no need to separately type out how you're feeling after you've
+    // already tapped it. Prefixed (not appended) so it reads "😌 <reflection>"
+    // the way a quick mood-tagged note naturally would.
+    private func addEmojiPrefix(_ emoji: String) {
+        guard !journalText.contains(emoji) else { return }
+        journalText = journalText.isEmpty ? emoji : "\(emoji) \(journalText)"
+    }
+
+    private func removeEmojiPrefix(_ emoji: String) {
+        journalText = journalText.replacingOccurrences(of: "\(emoji) ", with: "")
+        journalText = journalText.replacingOccurrences(of: emoji, with: "")
     }
 }
 

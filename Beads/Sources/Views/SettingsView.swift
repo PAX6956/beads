@@ -1,4 +1,5 @@
 import SwiftUI
+import UserNotifications
 
 struct SettingsView: View {
     @EnvironmentObject private var store: PracticeStore
@@ -7,6 +8,12 @@ struct SettingsView: View {
     @State private var isDeleting = false
     @State private var didDelete = false
     @AppStorage(QuoteLanguagePreference.storageKey) private var quoteLanguagePreference: QuoteLanguagePreference = .system
+
+    @AppStorage(NotificationScheduler.quoteEnabledKey) private var quoteNotificationsEnabled = true
+    @AppStorage(NotificationScheduler.reminderEnabledKey) private var reminderNotificationsEnabled = true
+    @AppStorage(NotificationScheduler.quoteMinutesKey) private var quoteMinutesSinceMidnight = NotificationScheduler.defaultQuoteHour * 60
+    @AppStorage(NotificationScheduler.reminderMinutesKey) private var reminderMinutesSinceMidnight = NotificationScheduler.defaultReminderHour * 60
+    @State private var systemNotificationsDenied = false
 
     var body: some View {
         NavigationStack {
@@ -24,6 +31,36 @@ struct SettingsView: View {
                 } footer: {
                     Text("Controls the language of daily quotes and micro-actions, independent of your device's system language.")
                 }
+
+                Section {
+                    if systemNotificationsDenied {
+                        Button {
+                            if let url = URL(string: UIApplication.openSettingsURLString) {
+                                UIApplication.shared.open(url)
+                            }
+                        } label: {
+                            Label("Notifications are off in iOS Settings — tap to enable", systemImage: "bell.slash")
+                        }
+                    }
+
+                    Toggle("Daily quote", isOn: $quoteNotificationsEnabled)
+                    if quoteNotificationsEnabled {
+                        DatePicker("Quote time", selection: quoteTimeBinding, displayedComponents: .hourAndMinute)
+                    }
+
+                    Toggle("Evening reminder", isOn: $reminderNotificationsEnabled)
+                    if reminderNotificationsEnabled {
+                        DatePicker("Reminder time", selection: reminderTimeBinding, displayedComponents: .hourAndMinute)
+                    }
+                } header: {
+                    Text("Notifications")
+                } footer: {
+                    Text("The evening reminder never fires on a day you've already practiced.")
+                }
+                .onChange(of: quoteNotificationsEnabled) { _ in NotificationScheduler.rescheduleUpcoming() }
+                .onChange(of: reminderNotificationsEnabled) { _ in NotificationScheduler.rescheduleUpcoming() }
+                .onChange(of: quoteMinutesSinceMidnight) { _ in NotificationScheduler.rescheduleUpcoming() }
+                .onChange(of: reminderMinutesSinceMidnight) { _ in NotificationScheduler.rescheduleUpcoming() }
 
                 Section {
                     if let exportURL {
@@ -84,7 +121,40 @@ struct SettingsView: View {
             .alert("All your data has been deleted.", isPresented: $didDelete) {
                 Button("OK", role: .cancel) {}
             }
+            .task {
+                let settings = await UNUserNotificationCenter.current().notificationSettings()
+                systemNotificationsDenied = settings.authorizationStatus == .denied
+            }
         }
+    }
+
+    // DatePicker needs a Date binding, but @AppStorage doesn't support Date
+    // natively — stored as minutes-since-midnight Int instead, converted
+    // here in both directions.
+    private var quoteTimeBinding: Binding<Date> {
+        Binding(
+            get: { Self.date(fromMinutesSinceMidnight: quoteMinutesSinceMidnight) },
+            set: { quoteMinutesSinceMidnight = Self.minutesSinceMidnight(from: $0) }
+        )
+    }
+
+    private var reminderTimeBinding: Binding<Date> {
+        Binding(
+            get: { Self.date(fromMinutesSinceMidnight: reminderMinutesSinceMidnight) },
+            set: { reminderMinutesSinceMidnight = Self.minutesSinceMidnight(from: $0) }
+        )
+    }
+
+    private static func date(fromMinutesSinceMidnight minutes: Int) -> Date {
+        var components = DateComponents()
+        components.hour = minutes / 60
+        components.minute = minutes % 60
+        return Calendar.current.date(from: components) ?? Date()
+    }
+
+    private static func minutesSinceMidnight(from date: Date) -> Int {
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        return (components.hour ?? 0) * 60 + (components.minute ?? 0)
     }
 }
 
