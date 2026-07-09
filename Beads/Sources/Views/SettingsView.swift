@@ -99,6 +99,19 @@ struct SettingsView: View {
                     }
                 }
                 #endif
+
+                // A quiet brand signature at the bottom of Settings — not a
+                // tappable-looking row, just a line found on scrolling all
+                // the way down. Same slogan as the Ripple Card footer, for
+                // one consistent voice across the app.
+                Section {
+                    Text("Hold on to it — Beads holds on to you.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity)
+                        .multilineTextAlignment(.center)
+                        .listRowBackground(Color.clear)
+                }
             }
             .navigationTitle("Settings")
             .confirmationDialog(

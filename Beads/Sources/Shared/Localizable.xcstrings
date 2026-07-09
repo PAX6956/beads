@@ -341,6 +341,16 @@
         }
       }
     },
+    "Hold on to it — Beads holds on to you.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "念念不忘，beads有回响。"
+          }
+        }
+      }
+    },
     "Hold…": {
       "localizations": {
         "zh-Hans": {

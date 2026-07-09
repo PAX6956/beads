@@ -75,13 +75,21 @@ struct ShareCardView: View {
                 // to the plain dot + wordmark, sized up 150% (9pt dot,
                 // 0.033 vs. the original 0.022 font scale) per follow-up.
                 // Spacing pulled in 20% (9 -> 7.2) per further feedback.
-                HStack(spacing: 7.2) {
-                    Circle()
-                        .fill(textColor.opacity(0.6))
-                        .frame(width: 9, height: 9)
-                    Text("Beads")
-                        .font(.system(size: size * 0.033).weight(.semibold))
-                        .foregroundStyle(textColor.opacity(0.7))
+                VStack(spacing: size * 0.012) {
+                    HStack(spacing: 7.2) {
+                        Circle()
+                            .fill(textColor.opacity(0.6))
+                            .frame(width: 9, height: 9)
+                        Text("Beads")
+                            .font(.system(size: size * 0.033).weight(.semibold))
+                            .foregroundStyle(textColor.opacity(0.7))
+                    }
+                    // The slogan travels with every shared card, so this is
+                    // the highest-leverage place for it — kept subtler than
+                    // the wordmark itself, a signature rather than a headline.
+                    Text("Hold on to it — Beads holds on to you.")
+                        .font(.system(size: size * 0.02))
+                        .foregroundStyle(textColor.opacity(0.55))
                 }
                 .padding(.bottom, size * 0.08)
             }
