@@ -76,6 +76,17 @@ struct PaywallView: View {
                         .foregroundStyle(.red)
                 }
 
+                // Required on any subscription purchase screen (App Review
+                // Guideline 3.1.2) — auto-renewal terms live in Terms of Use,
+                // full data handling in Privacy Policy.
+                HStack(spacing: 6) {
+                    Link("Terms of Use", destination: URL(string: "https://pax6956.github.io/beads-legal/terms-of-use.html")!)
+                    Text("·")
+                    Link("Privacy Policy", destination: URL(string: "https://pax6956.github.io/beads-legal/privacy-policy.html")!)
+                }
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
                 Spacer()
             }
             .navigationBarTitleDisplayMode(.inline)
