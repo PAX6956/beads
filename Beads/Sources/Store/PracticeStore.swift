@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import CloudKit
+import WidgetKit
 
 /// The shared App Group storage (see SharedStorage) is the source of truth for
 /// the UI (instant, works offline, and is the same file the widget's tap-to-
@@ -123,6 +124,7 @@ final class PracticeStore: ObservableObject {
         practiceEntries.append(entry)
         pushToCloud(entry)
         NotificationScheduler.cancelReminder()
+        WidgetCenter.shared.reloadTimelines(ofKind: WidgetKind.beadsWidget)
     }
 
     func makeUp(date: Date) {
@@ -133,6 +135,7 @@ final class PracticeStore: ObservableObject {
         practiceEntries.append(entry)
         SharedStorage.savePracticeEntries(practiceEntries)
         pushToCloud(entry)
+        WidgetCenter.shared.reloadTimelines(ofKind: WidgetKind.beadsWidget)
     }
 
     func addJournalEntry(text: String, moods: [Mood], associatedQuote: String? = nil, date: Date = Date()) {
@@ -162,6 +165,7 @@ final class PracticeStore: ObservableObject {
         SharedStorage.savePracticeEntries([])
         SharedStorage.saveJournalEntries([])
         NotificationScheduler.cancelAll()
+        WidgetCenter.shared.reloadTimelines(ofKind: WidgetKind.beadsWidget)
 
         if await cloudSync.accountStatus() == .available {
             try? await cloudSync.deleteAllPracticeEntries()

@@ -11,6 +11,11 @@ final class PurchaseManager: ObservableObject {
 
     @Published private(set) var isPro = false
     @Published private(set) var products: [Product] = []
+    // Distinguishes "still loading" (both false) from "loaded nothing" —
+    // StoreKit silently returns an empty array both when offline and when
+    // the product ID is misconfigured, so PaywallView needs an explicit
+    // signal to show a retry affordance instead of spinning forever.
+    @Published private(set) var productsLoadFailed = false
 
     private var updatesTask: Task<Void, Never>?
 
@@ -29,6 +34,7 @@ final class PurchaseManager: ObservableObject {
 
     func refresh() async {
         products = (try? await Product.products(for: [Self.proMonthlyProductID])) ?? []
+        productsLoadFailed = products.isEmpty
         await updateEntitlement()
     }
 

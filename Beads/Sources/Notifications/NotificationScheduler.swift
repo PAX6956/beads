@@ -86,7 +86,7 @@ enum NotificationScheduler {
 
     private static func scheduleQuoteNotification(for date: Date, item: ContentItem, calendar: Calendar) {
         let content = UNMutableNotificationContent()
-        content.title = "Today's practice"
+        content.title = String(localized: "Today's practice")
         content.body = item.localizedQuote
         content.sound = .default
 
@@ -101,8 +101,8 @@ enum NotificationScheduler {
 
     private static func scheduleReminderNotification(for date: Date, calendar: Calendar) {
         let content = UNMutableNotificationContent()
-        content.title = "Beads"
-        content.body = "Your beads are still waiting for today."
+        content.title = String(localized: "Beads")
+        content.body = String(localized: "Your beads are still waiting for today.")
         content.sound = .default
 
         var components = calendar.dateComponents([.year, .month, .day], from: date)

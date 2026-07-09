@@ -45,6 +45,22 @@ struct PaywallView: View {
                     .buttonStyle(.borderedProminent)
                     .padding(.horizontal)
                     .disabled(isPurchasing)
+                } else if purchases.productsLoadFailed {
+                    // Offline or a genuine StoreKit misconfiguration both
+                    // leave `products` empty with no thrown error to catch —
+                    // without this, the paywall spun forever with no way
+                    // out but "Close".
+                    VStack(spacing: 10) {
+                        Text("Couldn't load subscription details. Check your connection and try again.")
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 32)
+                        Button("Try Again") {
+                            Task { await purchases.refresh() }
+                        }
+                        .buttonStyle(.bordered)
+                    }
                 } else {
                     ProgressView()
                 }

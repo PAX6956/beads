@@ -221,6 +221,16 @@
         }
       }
     },
+    "Couldn't load subscription details. Check your connection and try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "订阅信息加载失败，请检查网络后重试。"
+          }
+        }
+      }
+    },
     "Daily quote": {
       "localizations": {
         "zh-Hans": {
@@ -681,6 +691,16 @@
         }
       }
     },
+    "Try Again": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重试"
+          }
+        }
+      }
+    },
     "Unlock custom photo backgrounds": {
       "localizations": {
         "zh-Hans": {
@@ -727,6 +747,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "你今天已经练习过了。"
+          }
+        }
+      }
+    },
+    "Your beads are still waiting for today.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天的珠子，还在等你。"
           }
         }
       }
