@@ -21,12 +21,12 @@
         }
       }
     },
-    "%lld days to your next bead": {
+    "%lld days to your next milestone": {
       "localizations": {
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "距离下一颗珠子还有 %lld 天"
+            "value": "距离下一个节点还有 %lld 天"
           }
         }
       }
@@ -311,6 +311,16 @@
         }
       }
     },
+    "Each day you show up, this string quietly changes — texture, color, the way it catches light. Not a grade, just a record of being here.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每一次你出现，这串珠子都会悄悄改变——纹理、色泽、光影的样子。不是打分，只是一份「你在场」的记录。"
+          }
+        }
+      }
+    },
     "English": {
       "localizations": {
         "zh-Hans": {
@@ -347,6 +357,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "导出我的数据"
+          }
+        }
+      }
+    },
+    "Get Started": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始"
           }
         }
       }
@@ -717,6 +737,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "使用你自己的照片作为心语卡片背景，还能解锁更多卡片风格。"
+          }
+        }
+      }
+    },
+    "We'll also ask if you'd like a daily reminder — you can always change this later in Settings.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接下来会问你是否需要每日提醒——之后随时可以在设置中修改。"
+          }
+        }
+      }
+    },
+    "Welcome to Beads": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "欢迎来到 Beads"
           }
         }
       }

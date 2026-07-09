@@ -14,10 +14,14 @@ struct BeadsApp: App {
                 .onChange(of: scenePhase) { newPhase in
                     if newPhase == .active {
                         store.refreshFromDisk()
-                        Task {
-                            await NotificationScheduler.requestAuthorizationIfNeeded()
-                            NotificationScheduler.rescheduleUpcoming()
-                        }
+                        // Permission itself is only ever requested from
+                        // WelcomeView's "Get Started" tap, with context —
+                        // asking blind on first launch (before the user has
+                        // seen a single screen of the app) reads as a cold
+                        // system dialog with no explanation. Rescheduling
+                        // here is safe either way: it silently no-ops for
+                        // anyone who hasn't granted permission yet.
+                        NotificationScheduler.rescheduleUpcoming()
                     }
                 }
         }

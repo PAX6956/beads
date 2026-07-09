@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct RootView: View {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+
     var body: some View {
         TabView {
             TodayView()
@@ -14,6 +16,9 @@ struct RootView: View {
 
             SettingsView()
                 .tabItem { Label("Settings", systemImage: "gearshape") }
+        }
+        .fullScreenCover(isPresented: Binding(get: { !hasCompletedOnboarding }, set: { hasCompletedOnboarding = !$0 })) {
+            WelcomeView()
         }
     }
 }
