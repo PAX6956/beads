@@ -1,846 +1,853 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "%lld": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
           }
         }
       }
     },
-    "%lld day streak": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "连续 %lld 天"
+    "%lld day streak" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连续 %lld 天"
           }
         }
       }
     },
-    "%lld days to your next milestone": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "距离下一个节点还有 %lld 天"
+    "%lld days to your next milestone" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "距离下一个节点还有 %lld 天"
           }
         }
       }
     },
-    "%lld growth days": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld 个成长日"
+    "%lld growth days" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个成长日"
           }
         }
       }
     },
-    "%lld growth days · %lld to %@": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld 个成长日 · 还差 %lld 天到 %@"
+    "%lld growth days · %lld to %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个成长日 · 还差 %lld 天到 %@"
           }
         }
       }
     },
-    "%lld spins": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "转动 %lld 圈"
+    "%lld spins" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "转动 %lld 圈"
           }
         }
       }
     },
-    "%lldd streak": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "连续%lld天"
+    "%lldd streak" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连续%lld天"
           }
         }
       }
     },
-    "A one-minute breathing pause, any time you need it": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "一分钟的呼吸练习，随时都能用"
+    "A one-minute breathing pause, any time you need it" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一分钟的呼吸练习，随时都能用"
           }
         }
       }
     },
-    "A short reflection": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "简短的感悟"
+    "A short reflection" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "简短的感悟"
           }
         }
       }
     },
-    "A short reflection (optional)": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "频繁记录能让自己变的更好！"
+    "A short reflection (optional)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "频繁记录能让自己变的更好！"
           }
         }
       }
     },
-    "All your data has been deleted.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你的所有数据已被删除。"
+    "All your data has been deleted." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的所有数据已被删除。"
           }
         }
       }
     },
-    "Beads": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beads"
+    "Beads" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beads"
           }
         }
       }
     },
-    "Beads Pro": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beads Pro"
+    "Beads Pro" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beads Pro"
           }
         }
       }
     },
-    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beads 只会把你的练习记录和日记保存在你自己的 iCloud 账户里——除非你主动分享心语卡片，否则不会有任何人看到。"
+    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beads 只会把你的练习记录和日记保存在你自己的 iCloud 账户里——除非你主动分享心语卡片，否则不会有任何人看到。"
           }
         }
       }
     },
-    "Begin": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "开始"
+    "Begin" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始"
           }
         }
       }
     },
-    "Breathe in…": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "吸气…"
+    "Breathe in…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "吸气…"
           }
         }
       }
     },
-    "Breathe out…": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "呼气…"
+    "Breathe out…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "呼气…"
           }
         }
       }
     },
-    "Cancel": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "取消"
+    "Cancel" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
           }
         }
       }
     },
-    "Choose your own photo": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "选择你自己的照片"
+    "Choose your own photo" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择你自己的照片"
           }
         }
       }
     },
-    "Close": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "关闭"
+    "Close" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
           }
         }
       }
     },
-    "Complete": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "完成"
+    "Complete" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
           }
         }
       }
     },
-    "Controls the language of daily quotes and micro-actions, independent of your device's system language.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "控制每日语录和微行动建议的语言，与设备系统语言无关。"
+    "Controls the language of daily quotes and micro-actions, independent of your device's system language." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "控制每日语录和微行动建议的语言，与设备系统语言无关。"
           }
         }
       }
     },
-    "Couldn't load subscription details. Check your connection and try again.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "订阅信息加载失败，请检查网络后重试。"
+    "Couldn't load subscription details. Check your connection and try again." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅信息加载失败，请检查网络后重试。"
           }
         }
       }
     },
-    "Daily quote": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "每日语录"
+    "Daily quote" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日语录"
           }
         }
       }
     },
-    "Delete": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除"
+    "days" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "天"
           }
         }
       }
     },
-    "Delete Everything": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除全部"
+    "Delete" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
           }
         }
       }
     },
-    "Delete all my data": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除我的所有数据"
+    "Delete all my data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除我的所有数据"
           }
         }
       }
     },
-    "Delete all your data? This can't be undone.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除所有数据？此操作无法撤销。"
+    "Delete all your data? This can't be undone." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除所有数据？此操作无法撤销。"
           }
         }
       }
     },
-    "Deleting…": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除中…"
+    "Delete Everything" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除全部"
           }
         }
       }
     },
-    "Done": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "完成"
+    "Deleting…" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除中…"
           }
         }
       }
     },
-    "Done for today": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日已完成"
+    "Done" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
           }
         }
       }
     },
-    "Each day you show up, this string quietly changes — texture, color, the way it catches light. Not a grade, just a record of being here.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "每一次你出现，这串珠子都会悄悄改变——纹理、色泽、光影的样子。不是打分，只是一份「你在场」的记录。"
+    "Done for today" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日已完成"
           }
         }
       }
     },
-    "English": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "英文"
+    "Each day you show up, this string quietly changes — texture, color, the way it catches light. Not a grade, just a record of being here." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每一次你出现，这串珠子都会悄悄改变——纹理、色泽、光影的样子。不是打分，只是一份「你在场」的记录。"
           }
         }
       }
     },
-    "Entries you save from Today will show up here — visible only to you.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你在“今天”页面保存的记录会显示在这里——只有你自己能看到。"
+    "English" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "英文"
           }
         }
       }
     },
-    "Evening reminder": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "晚间提醒"
+    "Entries you save from Today will show up here — visible only to you." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你在“今天”页面保存的记录会显示在这里——只有你自己能看到。"
           }
         }
       }
     },
-    "Export my data": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "导出我的数据"
+    "Evening reminder" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "晚间提醒"
           }
         }
       }
     },
-    "Get Started": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "开始"
+    "Export my data" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "导出我的数据"
           }
         }
       }
     },
-    "Hold on to it — Beads holds on to you.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "念念不忘  Beads有回响"
+    "Get Started" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始"
           }
         }
       }
     },
-    "Hold…": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "屏息…"
+    "Hold on to it — Beads holds on to you." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "念念不忘  Beads有回响"
           }
         }
       }
     },
-    "How are you feeling?": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "当下感知"
+    "Hold…" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屏息…"
           }
         }
       }
     },
-    "Journal": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "心迹"
+    "How are you feeling?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当下感知"
           }
         }
       }
     },
-    "Make Up Practice": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "补做练习"
+    "Journal" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "心迹"
           }
         }
       }
     },
-    "Mark Practice": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "标记练习"
+    "Make Up Practice" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "补做练习"
           }
         }
       }
     },
-    "Marks today's practice as complete.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "将今天的练习标记为已完成。"
+    "Mark Practice" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标记练习"
           }
         }
       }
     },
-    "Match System": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "跟随系统"
+    "Marks today's practice as complete." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将今天的练习标记为已完成。"
           }
         }
       }
     },
-    "Nice — today's practice is marked complete.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "很好——今天的练习已标记完成。"
+    "Match System" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟随系统"
           }
         }
       }
     },
-    "No reflections yet": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "还没有感悟记录"
+    "Nice — today's practice is marked complete." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "很好——今天的练习已标记完成。"
           }
         }
       }
     },
-    "Not now": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "现在不用"
+    "No reflections yet" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有感悟记录"
           }
         }
       }
     },
-    "Notifications": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "通知"
+    "Not now" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "现在不用"
           }
         }
       }
     },
-    "Notifications are off in iOS Settings — tap to enable": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "通知目前在 iOS 系统设置里被关闭了——点击前往开启"
+    "Notifications" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
           }
         }
       }
     },
-    "OK": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "好的"
+    "Notifications are off in iOS Settings — tap to enable" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知目前在 iOS 系统设置里被关闭了——点击前往开启"
           }
         }
       }
     },
-    "Practice": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "每日打卡"
+    "OK" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的"
           }
         }
       }
     },
-    "Quote Language": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "语录语言"
+    "Practice" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每日打卡"
           }
         }
       }
     },
-    "Quote time": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "语录推送时间"
+    "Quote Language" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语录语言"
           }
         }
       }
     },
-    "Reminder time": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "提醒时间"
+    "Quote time" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语录推送时间"
           }
         }
       }
     },
-    "Restore Purchases": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "恢复购买"
+    "Reminder time" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒时间"
           }
         }
       }
     },
-    "Ringed days are within the last 3 days — tap to make up a missed practice.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "带圈的日期是最近 3 天内——点击可以补做错过的练习。"
+    "Restore Purchases" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复购买"
           }
         }
       }
     },
-    "Ripple Card": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "心语卡片"
+    "Ringed days are within the last 3 days — tap to make up a missed practice." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "带圈的日期是最近 3 天内——点击可以补做错过的练习。"
           }
         }
       }
     },
-    "Save": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保存"
+    "Ripple Card" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "心语卡片"
           }
         }
       }
     },
-    "Save to Photos": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "存储到相册"
+    "Save" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
           }
         }
       }
     },
-    "See today's quote and mark your practice without opening the app.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "无需打开 App，即可查看今日语录并标记练习。"
+    "Save to Photos" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "存储到相册"
           }
         }
       }
     },
-    "Settings": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "设置"
+    "See today's quote and mark your practice without opening the app." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无需打开 App，即可查看今日语录并标记练习。"
           }
         }
       }
     },
-    "Share": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享"
+    "Settings" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
           }
         }
       }
     },
-    "Share Exported File": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享导出的文件"
+    "Share" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
           }
         }
       }
     },
-    "Something went wrong. Please try again.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "出了点问题，请重试。"
+    "Share Exported File" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享导出的文件"
           }
         }
       }
     },
-    "Subscribe — %@/month": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "订阅 — 每月%@"
+    "Something went wrong. Please try again." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "出了点问题，请重试。"
           }
         }
       }
     },
-    "Take a moment": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "此刻"
+    "Subscribe — %@/month" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅 — 每月%@"
           }
         }
       }
     },
-    "The evening reminder never fires on a day you've already practiced.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "如果当天已经完成练习，晚间提醒就不会再推送。"
+    "Take a moment" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此刻"
           }
         }
       }
     },
-    "Today": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今天"
+    "The evening reminder never fires on a day you've already practiced." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果当天已经完成练习，晚间提醒就不会再推送。"
           }
         }
       }
     },
-    "Today's Practice": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日练习"
+    "Today" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天"
           }
         }
       }
     },
-    "Today's practice": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日练习"
+    "Today's practice" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日练习"
           }
         }
       }
     },
-    "Try Again": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "重试"
+    "Today's Practice" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今日练习"
           }
         }
       }
     },
-    "Unlock custom photo backgrounds": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "解锁自定义照片背景"
+    "Try Again" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重试"
           }
         }
       }
     },
-    "Use your own photos as Ripple Card backgrounds, plus extra card styles.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用你自己的照片作为心语卡片背景，还能解锁更多卡片风格。"
+    "Unlock custom photo backgrounds" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解锁自定义照片背景"
           }
         }
       }
     },
-    "We'll also ask if you'd like a daily reminder — you can always change this later in Settings.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "接下来会问你是否需要每日提醒——之后随时可以在设置中修改。"
+    "Use your own photos as Ripple Card backgrounds, plus extra card styles." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用你自己的照片作为心语卡片背景，还能解锁更多卡片风格。"
           }
         }
       }
     },
-    "Welcome to Beads": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "欢迎来到 Beads"
+    "We'll also ask if you'd like a daily reminder — you can always change this later in Settings." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接下来会问你是否需要每日提醒——之后随时可以在设置中修改。"
           }
         }
       }
     },
-    "What's one thing that felt calm, even briefly, on %@?": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ 那天，有什么事让你感到过片刻的平静？"
+    "Welcome to Beads" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎来到 Beads"
           }
         }
       }
     },
-    "When things feel like too much, come here for a minute. Nothing to figure out — just follow the circle's breath.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "感觉喘不过气的时候，来这里歇一分钟。什么都不用想，跟着圆环一起呼吸就好。"
+    "What's one thing that felt calm, even briefly, on %@?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 那天，有什么事让你感到过片刻的平静？"
           }
         }
       }
     },
-    "You've already practiced today.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你今天已经练习过了。"
+    "When things feel like too much, come here for a minute. Nothing to figure out — just follow the circle's breath." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "感觉喘不过气的时候，来这里歇一分钟。什么都不用想，跟着圆环一起呼吸就好。"
           }
         }
       }
     },
-    "Your beads are still waiting for today.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今天的珠子，还在等你。"
+    "You've already practiced today." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你今天已经练习过了。"
           }
         }
       }
     },
-    "Your string just changed a little.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你的珠串悄悄起了一点变化。"
+    "Your beads are still waiting for today." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天的珠子，还在等你。"
           }
         }
       }
     },
-    "Your string reached a new tier — %@.": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "你的珠串进阶到了新的等级——%@。"
+    "Your string just changed a little." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的珠串悄悄起了一点变化。"
           }
         }
       }
     },
-    "days": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "天"
+    "Your string reached a new tier — %@." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的珠串进阶到了新的等级——%@。"
           }
         }
       }
     },
-    "中文": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文"
+    "中文" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中文"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

@@ -1,0 +1,95 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "CE5851C6",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6789035107",
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "P472QJPHV5",
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 805279711.81690001,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "22219531",
+      "localizations" : [
+
+      ],
+      "name" : "Beads Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "billingPlans" : [
+            {
+              "billingPlanType" : "BILLED_UPFRONT",
+              "commitmentDisplayPrice" : "1.99",
+              "displayPrice" : "1.99",
+              "internalID" : "6789037675_BILLED_UPFRONT",
+              "isEnabled" : true
+            }
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6789037675",
+          "introductoryOffers" : [
+
+          ],
+          "localizations" : [
+            {
+              "description" : "Custom photo backgrounds & more card styles",
+              "displayName" : "Beads Pro",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "解锁自定义照片背景与更多分享卡片样式",
+              "displayName" : "Beads Pro",
+              "locale" : "zh_Hans"
+            }
+          ],
+          "productID" : "com.beadsapp.beads.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Beads Pro Monthly",
+          "subscriptionGroupID" : "22219531",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 5,
+    "minor" : 0
+  }
+}

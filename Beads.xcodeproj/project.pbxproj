@@ -99,6 +99,7 @@
 		16136AE475ECC978655CAEFB /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		16A8775173BE9EC95BF4223E /* PracticeEntry+CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PracticeEntry+CloudKit.swift"; sourceTree = "<group>"; };
 		185043DB4207ADFE1B004F2F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1B9EF3255D457BAD8B5DB1CC /* BeadsSubscriptions.storekit */ = {isa = PBXFileReference; path = BeadsSubscriptions.storekit; sourceTree = "<group>"; };
 		1C144B14F477F40800394608 /* DataExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExporter.swift; sourceTree = "<group>"; };
 		2FCCA6F5667EA92D1A97DF95 /* BeadsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeadsWidgetExtension.entitlements; sourceTree = "<group>"; };
 		303C38A4DEEA7C37140D33CB /* TakeAMomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAMomentView.swift; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 		5D6C80A3F8B61C4A5ED299EE = {
 			isa = PBXGroup;
 			children = (
+				1B9EF3255D457BAD8B5DB1CC /* BeadsSubscriptions.storekit */,
 				CFEF231829F9F46674AFA7A8 /* Beads */,
 				C7B27705FBCA0E4C344F8D70 /* Products */,
 			);

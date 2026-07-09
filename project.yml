@@ -1,4 +1,6 @@
 name: Beads
+fileGroups:
+  - BeadsSubscriptions.storekit
 options:
   bundleIdPrefix: com.beadsapp
   deploymentTarget:
@@ -20,7 +22,7 @@ targets:
       - path: Beads/Content
         buildPhase: resources
     scheme:
-      storeKitConfiguration: Beads.storekit
+      storeKitConfiguration: BeadsSubscriptions.storekit
     info:
       path: Generated/Beads-Info.plist
       properties:
