@@ -17,7 +17,7 @@ struct WelcomeView: View {
             Spacer()
 
             if let firstTier {
-                BeadMaterialView(tier: firstTier, beyondIntensity: 0, reached: true, size: 96)
+                BeadMaterialView(tier: firstTier, beyondIntensity: 0, size: 96)
             }
 
             VStack(spacing: 12) {

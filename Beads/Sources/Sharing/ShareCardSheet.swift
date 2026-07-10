@@ -24,8 +24,6 @@ struct ShareCardSheet: View {
         case idle, saving, success, failure
     }
 
-    private var cycleProgress: Int { store.beadCount % BeadRingView.ringCapacity }
-
     var body: some View {
         NavigationStack {
             // The share action now lives in the toolbar, next to Close —
@@ -33,7 +31,7 @@ struct ShareCardSheet: View {
             // the picker on most phones and looked out of place next to it.
             ScrollView {
                 VStack(spacing: 20) {
-                    ShareCardView(text: text, template: selectedTemplate, customBackground: customImage, customBackgroundOpacities: customImageOpacities, growthValue: store.growthValue, cycleProgress: cycleProgress, size: 300)
+                    ShareCardView(text: text, template: selectedTemplate, customBackground: customImage, customBackgroundOpacities: customImageOpacities, growthValue: store.growthValue, size: 300)
                         .shadow(radius: 12, y: 6)
                         .padding(.top, 16)
 
@@ -211,7 +209,7 @@ struct ShareCardSheet: View {
     }
 
     private func renderPreview() {
-        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, customBackground: customImage, customBackgroundOpacities: customImageOpacities, growthValue: store.growthValue, cycleProgress: cycleProgress) else { return }
+        guard let image = ShareCardRenderer.renderImage(text: text, template: selectedTemplate, customBackground: customImage, customBackgroundOpacities: customImageOpacities, growthValue: store.growthValue) else { return }
         renderedImage = image
         previewImage = Image(uiImage: image)
     }

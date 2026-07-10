@@ -21,16 +21,6 @@
         }
       }
     },
-    "%lld days to your next milestone": {
-      "localizations": {
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "距离下一个节点还有 %lld 天"
-          }
-        }
-      }
-    },
     "%lld growth days": {
       "localizations": {
         "zh-Hans": {

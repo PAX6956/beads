@@ -107,14 +107,6 @@ final class PracticeStore: ObservableObject {
         BeadsProgress.currentStreak(entries: practiceEntries)
     }
 
-    var beadCount: Int {
-        BeadsProgress.beadCount(forStreak: currentStreak)
-    }
-
-    var progressToNextBead: Double {
-        BeadsProgress.progressToNextBead(forStreak: currentStreak)
-    }
-
     func hasCompletedToday(calendar: Calendar = .current, today: Date = Date()) -> Bool {
         practiceEntries.contains { calendar.isDate($0.date, inSameDayAs: today) }
     }

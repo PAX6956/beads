@@ -22,10 +22,6 @@ struct BeadsProgressView: View {
         BeadTierLibrary.nextTier(after: store.growthValue, tiers: BeadTierLibrary.loadTiers())
     }
 
-    private var cycleProgress: Int {
-        store.beadCount % BeadRingView.ringCapacity
-    }
-
     private var todayItem: ContentItem? {
         ContentLibrary.todayItem(from: library)
     }
@@ -49,7 +45,6 @@ struct BeadsProgressView: View {
                         BeadCarouselView(
                             tier: tierInfo.tier,
                             beyondIntensity: tierInfo.beyondIntensity,
-                            cycleProgress: cycleProgress,
                             onDistanceChange: { spinDistance = $0 }
                         )
                         VStack(spacing: 2) {
@@ -64,19 +59,6 @@ struct BeadsProgressView: View {
 
                     Text("\(store.currentStreak) day streak")
                         .font(.largeTitle.weight(.bold))
-
-                    ProgressView(value: store.progressToNextBead)
-                        .padding(.horizontal)
-
-                    // "bead" is reserved for the single carousel bead whose
-                    // material/tier changes over months-to-years — this is a
-                    // different, faster-moving thing (one ring position per
-                    // 7-day streak within the current 12-week cycle), so it
-                    // gets its own word to avoid the two concepts colliding
-                    // in the same sentence.
-                    Text("\(7 - Int(store.progressToNextBead * 7)) days to your next milestone")
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
 
                     Divider()
 

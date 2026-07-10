@@ -12,7 +12,6 @@ import SwiftUI
 struct BeadCarouselView: View {
     let tier: BeadTier
     let beyondIntensity: Double
-    let cycleProgress: Int
     // Reports cumulative |rotation| after every change, so a parent (the
     // reveal-as-you-spin quote text on the Beads tab) can drive off the same
     // number the "N spins" label already uses, without owning any of this
@@ -21,7 +20,10 @@ struct BeadCarouselView: View {
 
     @EnvironmentObject private var store: PracticeStore
 
-    private let ringCapacity = BeadRingView.ringCapacity
+    // Purely a layout constant now (how many bead positions sit on the
+    // ellipse) — every position always renders the same tier material, so
+    // this no longer doubles as a progress capacity like it used to.
+    private let beadPositionCount = 12
     private let maxItemSize: CGFloat = 106 // 80% of the original 132
     private let minItemSize: CGFloat = 46
     // The ellipse's own footprint is kept at the original 132 baseline —
@@ -29,30 +31,21 @@ struct BeadCarouselView: View {
     // stay the size it was before that change.
     private let ellipseBaseSize: CGFloat = 132
 
-    @State private var rotationDegrees: Double
-    @State private var dragStartRotation: Double = 0
+    @State private var rotationDegrees: Double = 90
+    @State private var dragStartRotation: Double = 90
     @State private var completedSpins: Int = 0
     @State private var lastBeadStep: Int
     // Tracks cumulative |rotation| traveled, not signed rotationDegrees, so
     // reversing direction never makes the visible spin count tick backward —
     // both directions of handling the beads should only ever add.
     @State private var totalDistanceTraveled: Double = 0
-    @State private var lastRotationForDistance: Double
+    @State private var lastRotationForDistance: Double = 90
 
-    init(tier: BeadTier, beyondIntensity: Double, cycleProgress: Int, onDistanceChange: ((Double) -> Void)? = nil) {
+    init(tier: BeadTier, beyondIntensity: Double, onDistanceChange: ((Double) -> Void)? = nil) {
         self.tier = tier
         self.beyondIntensity = beyondIntensity
-        self.cycleProgress = cycleProgress
         self.onDistanceChange = onDistanceChange
-        // Land the most recently reached bead at the bottom (nearest) position
-        // on first appearance, matching what the old scroll-to-current did.
-        let ringCapacity = BeadRingView.ringCapacity
-        let targetIndex = max(0, min(cycleProgress, ringCapacity - 1))
-        let baseAngle = Double(targetIndex) / Double(ringCapacity) * 360
-        let initialRotation = 90 - baseAngle
-        _rotationDegrees = State(initialValue: initialRotation)
-        _lastBeadStep = State(initialValue: Self.beadStep(for: initialRotation, ringCapacity: ringCapacity))
-        _lastRotationForDistance = State(initialValue: initialRotation)
+        _lastBeadStep = State(initialValue: Self.beadStep(for: 90, beadPositionCount: 12))
     }
 
     var body: some View {
@@ -63,7 +56,7 @@ struct BeadCarouselView: View {
                 let ellipseRadiusY = ellipseBaseSize * 0.4
 
                 ZStack {
-                    ForEach(0..<ringCapacity, id: \.self) { index in
+                    ForEach(0..<beadPositionCount, id: \.self) { index in
                         beadView(index: index, center: center, radiusX: ellipseRadiusX, radiusY: ellipseRadiusY)
                     }
                 }
@@ -93,7 +86,7 @@ struct BeadCarouselView: View {
     }
 
     private func angleDegrees(for index: Int) -> Double {
-        let baseAngle = Double(index) / Double(ringCapacity) * 360
+        let baseAngle = Double(index) / Double(beadPositionCount) * 360
         return baseAngle + rotationDegrees
     }
 
@@ -133,20 +126,20 @@ struct BeadCarouselView: View {
         // image where their circles crossed, since none of them ever quite
         // hit fully opaque. Fully opaque + correct zIndex is enough for the
         // front bead to cleanly occlude the ones behind it.
-        return BeadMaterialView(tier: tier, beyondIntensity: beyondIntensity, reached: index < cycleProgress, size: size)
+        return BeadMaterialView(tier: tier, beyondIntensity: beyondIntensity, size: size)
             .rotationEffect(BeadStrandJitter.rotation(for: index))
             .blur(radius: blur)
             .position(x: x, y: y)
             .zIndex(depth)
     }
 
-    private static func beadStep(for rotation: Double, ringCapacity: Int) -> Int {
-        let degreesPerBead = 360.0 / Double(ringCapacity)
+    private static func beadStep(for rotation: Double, beadPositionCount: Int) -> Int {
+        let degreesPerBead = 360.0 / Double(beadPositionCount)
         return Int((rotation / degreesPerBead).rounded())
     }
 
     private func handleRotationChange() {
-        let step = Self.beadStep(for: rotationDegrees, ringCapacity: ringCapacity)
+        let step = Self.beadStep(for: rotationDegrees, beadPositionCount: beadPositionCount)
         if step != lastBeadStep {
             lastBeadStep = step
             Haptics.lightTap()
@@ -164,7 +157,7 @@ struct BeadCarouselView: View {
 }
 
 #Preview {
-    BeadCarouselView(tier: BeadTierLibrary.loadTiers()[3], beyondIntensity: 0, cycleProgress: 5)
+    BeadCarouselView(tier: BeadTierLibrary.loadTiers()[3], beyondIntensity: 0)
         .environmentObject(PracticeStore())
         .background(Color.black)
 }

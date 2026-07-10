@@ -13,7 +13,7 @@ struct PracticeEntry: Codable, Identifiable {
     }
 }
 
-/// Turns a set of practice dates into the "beads" visualization: one bead per 7-day streak.
+/// Turns a set of practice dates into a consecutive-day streak count.
 enum BeadsProgress {
     static func currentStreak(entries: [PracticeEntry], calendar: Calendar = .current, today: Date = Date()) -> Int {
         let days = Set(entries.map { calendar.startOfDay(for: $0.date) })
@@ -33,13 +33,5 @@ enum BeadsProgress {
             cursor = previous
         }
         return streak
-    }
-
-    static func beadCount(forStreak streak: Int) -> Int {
-        streak / 7
-    }
-
-    static func progressToNextBead(forStreak streak: Int) -> Double {
-        Double(streak % 7) / 7.0
     }
 }

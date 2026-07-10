@@ -6,10 +6,18 @@ import SwiftUI
 /// been added yet — so art can land one tier at a time with zero code changes,
 /// and every call site (carousel, share card hero) gets the upgrade for free
 /// the moment an asset exists.
+///
+/// Every bead in a strand always renders in the *same*, full-quality style —
+/// there used to be a dimmed "not yet reached" variant driven by a per-week
+/// progress counter, but on-device comparison across tiers showed it only
+/// read clearly on saturated materials (wood, turquoise); on pale ones
+/// (pearl, silver, diamond) the desaturation was barely visible, and a strand
+/// with some beads dimmed and some not just looked like a mismatched string,
+/// not "progress." Progression now lives entirely in which *tier* the whole
+/// strand is rendered in, not in per-bead state.
 struct BeadMaterialView: View {
     let tier: BeadTier
     let beyondIntensity: Double
-    let reached: Bool
     var size: CGFloat = 90
 
     var body: some View {
@@ -25,31 +33,18 @@ struct BeadMaterialView: View {
                     // rather than just brightening it — the earlier +0.12
                     // lift (added when the images looked too dark) was
                     // overshooting into "washed out." Pulled back down.
-                    .brightness(reached ? 0.03 : 0.02)
+                    .brightness(0.03)
                     .contrast(1.05)
             } else {
                 placeholder
             }
         }
-        // Dimming unreached beads via saturation/brightness instead of opacity
-        // keeps every bead fully opaque, so it still cleanly occludes whatever
-        // sits behind it on the ellipse. Opacity here would make each unreached
-        // bead a translucent layer — exactly the "see-through overlap" ghosting
-        // the carousel already fixed once for depth; overlapping beads (now
-        // more of them, since far-bead spacing was tightened) re-triggered it
-        // through this separate opacity value instead. Kept mild (0.55, not
-        // the original 0.15) — most of a fresh bracelet's 12 positions are
-        // unreached, and dropping saturation that hard on all of them made
-        // the whole strand read as gray, losing the wood's actual color.
-        .saturation(reached ? 1 : 0.55)
-        .brightness(reached ? 0 : -0.06)
-        .shadow(color: reached ? glowColor.opacity(0.45 + beyondIntensity * 0.3) : .clear,
-                radius: reached ? size * (0.3 + sparkle * 0.5) : 0)
+        .shadow(color: glowColor.opacity(0.45 + beyondIntensity * 0.3), radius: size * (0.3 + sparkle * 0.5))
     }
 
     private var baseColor: Color { Color(hex: tier.baseColorHex) }
     private var glowColor: Color { Color(hex: tier.glowColorHex) }
-    private var sparkle: Double { reached ? tier.sparkleIntensity + beyondIntensity * 0.3 : 0 }
+    private var sparkle: Double { tier.sparkleIntensity + beyondIntensity * 0.3 }
 
     private var placeholder: some View {
         Circle()
@@ -58,7 +53,7 @@ struct BeadMaterialView: View {
                 Circle()
                     .fill(
                         RadialGradient(
-                            colors: [.white.opacity(reached ? tier.glossiness * 0.95 : 0), .clear],
+                            colors: [.white.opacity(tier.glossiness * 0.95), .clear],
                             center: UnitPoint(x: 0.32, y: 0.26),
                             startRadius: 0,
                             endRadius: size * 0.32
@@ -76,9 +71,9 @@ struct BeadMaterialView: View {
 
 #Preview {
     HStack(spacing: 20) {
-        BeadMaterialView(tier: BeadTierLibrary.loadTiers()[0], beyondIntensity: 0, reached: true, size: 90)
-        BeadMaterialView(tier: BeadTierLibrary.loadTiers()[4], beyondIntensity: 0, reached: true, size: 90)
-        BeadMaterialView(tier: BeadTierLibrary.loadTiers()[10], beyondIntensity: 0, reached: true, size: 90)
+        BeadMaterialView(tier: BeadTierLibrary.loadTiers()[0], beyondIntensity: 0, size: 90)
+        BeadMaterialView(tier: BeadTierLibrary.loadTiers()[4], beyondIntensity: 0, size: 90)
+        BeadMaterialView(tier: BeadTierLibrary.loadTiers()[10], beyondIntensity: 0, size: 90)
     }
     .padding()
     .background(Color.black)

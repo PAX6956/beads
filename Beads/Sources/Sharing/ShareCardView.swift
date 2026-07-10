@@ -13,7 +13,6 @@ struct ShareCardView: View {
     // preview), and CIAreaAverage sampling isn't free.
     var customBackgroundOpacities: ImageContrast.RegionOpacities? = nil
     var growthValue: Double = 0
-    var cycleProgress: Int = 0
     // `size` is the card's width; height follows a 9:16 portrait ratio so the
     // exported image fills a Stories/Reels-style full-screen reshare instead
     // of getting letterboxed the way the original 1:1 square did — that's
@@ -43,7 +42,7 @@ struct ShareCardView: View {
                 Spacer(minLength: size * 0.16)
 
                 if let tierInfo {
-                    BeadMaterialView(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, reached: true, size: size * 0.36)
+                    BeadMaterialView(tier: tierInfo.tier, beyondIntensity: tierInfo.beyondIntensity, size: size * 0.36)
 
                     VStack(spacing: size * 0.01) {
                         Text(tierInfo.tier.localizedName)
@@ -133,8 +132,8 @@ struct ShareCardView: View {
 enum ShareCardRenderer {
     static let exportWidth: CGFloat = 1080
 
-    static func renderImage(text: String, template: ShareCardTemplate, customBackground: UIImage? = nil, customBackgroundOpacities: ImageContrast.RegionOpacities? = nil, growthValue: Double = 0, cycleProgress: Int = 0) -> UIImage? {
-        let view = ShareCardView(text: text, template: template, customBackground: customBackground, customBackgroundOpacities: customBackgroundOpacities, growthValue: growthValue, cycleProgress: cycleProgress, size: exportWidth)
+    static func renderImage(text: String, template: ShareCardTemplate, customBackground: UIImage? = nil, customBackgroundOpacities: ImageContrast.RegionOpacities? = nil, growthValue: Double = 0) -> UIImage? {
+        let view = ShareCardView(text: text, template: template, customBackground: customBackground, customBackgroundOpacities: customBackgroundOpacities, growthValue: growthValue, size: exportWidth)
         let renderer = ImageRenderer(content: view)
         renderer.scale = 1
         return renderer.uiImage
@@ -142,5 +141,5 @@ enum ShareCardRenderer {
 }
 
 #Preview {
-    ShareCardView(text: "Simplicity is the return to the root.", template: .sunsetGradient, growthValue: 120, cycleProgress: 6)
+    ShareCardView(text: "Simplicity is the return to the root.", template: .sunsetGradient, growthValue: 120)
 }

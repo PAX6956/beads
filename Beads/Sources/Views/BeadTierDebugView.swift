@@ -14,10 +14,7 @@ struct BeadTierDebugView: View {
     var body: some View {
         VStack(spacing: 16) {
             if let selectedTier {
-                // Full cycleProgress means every visible bead is "reached" —
-                // shown at full saturation, not the dimmed unreached look —
-                // since the point here is judging the material itself.
-                BeadCarouselView(tier: selectedTier, beyondIntensity: 0, cycleProgress: BeadRingView.ringCapacity)
+                BeadCarouselView(tier: selectedTier, beyondIntensity: 0)
                     .id(selectedTier.id)
 
                 VStack(spacing: 2) {
@@ -48,7 +45,7 @@ struct BeadTierDebugView: View {
                         selectedTier = tier
                     } label: {
                         VStack(spacing: 4) {
-                            BeadMaterialView(tier: tier, beyondIntensity: 0, reached: true, size: 44)
+                            BeadMaterialView(tier: tier, beyondIntensity: 0, size: 44)
                             Text("\(tier.order)")
                                 .font(.caption2.weight(.semibold))
                         }
