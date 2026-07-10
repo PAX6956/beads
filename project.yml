@@ -32,6 +32,7 @@ targets:
           - UIInterfaceOrientationPortrait
         ITSAppUsesNonExemptEncryption: false
         NSPhotoLibraryAddUsageDescription: Beads saves your Ripple Card to Photos when you tap Save.
+        NSFaceIDUsageDescription: Beads uses Face ID to keep your Journal private when you turn on the Journal lock.
     entitlements:
       path: Beads/Beads.entitlements
       properties:

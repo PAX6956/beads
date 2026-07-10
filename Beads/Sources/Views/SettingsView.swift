@@ -14,6 +14,7 @@ struct SettingsView: View {
     @AppStorage(NotificationScheduler.quoteMinutesKey) private var quoteMinutesSinceMidnight = NotificationScheduler.defaultQuoteHour * 60
     @AppStorage(NotificationScheduler.reminderMinutesKey) private var reminderMinutesSinceMidnight = NotificationScheduler.defaultReminderHour * 60
     @State private var systemNotificationsDenied = false
+    @AppStorage("journalLockEnabled") private var journalLockEnabled = false
 
     var body: some View {
         NavigationStack {
@@ -63,6 +64,12 @@ struct SettingsView: View {
                 .onChange(of: reminderMinutesSinceMidnight) { _ in NotificationScheduler.rescheduleUpcoming() }
 
                 Section {
+                    Toggle("Require Face ID for Journal", isOn: $journalLockEnabled)
+                } footer: {
+                    Text("Uses Face ID, Touch ID, or your device passcode — whichever your phone already has set up.")
+                }
+
+                Section {
                     if let exportURL {
                         ShareLink(item: exportURL) {
                             Label("Share Exported File", systemImage: "checkmark.circle.fill")
@@ -89,7 +96,7 @@ struct SettingsView: View {
                     }
                     .disabled(isDeleting)
                 } footer: {
-                    Text("Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card.")
+                    Text("Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card. If you ever delete the app or switch phones, reinstalling and signing into the same iCloud account brings everything back automatically.")
                 }
 
                 #if DEBUG

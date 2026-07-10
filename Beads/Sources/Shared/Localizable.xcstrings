@@ -131,12 +131,12 @@
         }
       }
     },
-    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card.": {
+    "Beads stores your practice and journal entries only in your own iCloud account — nothing is shared with anyone unless you choose to share a Ripple Card. If you ever delete the app or switch phones, reinstalling and signing into the same iCloud account brings everything back automatically.": {
       "localizations": {
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beads 只会把你的练习记录和日记保存在你自己的 iCloud 账户里——除非你主动分享心语卡片，否则不会有任何人看到。"
+            "value": "Beads 只会把你的练习记录和日记保存在你自己的 iCloud 账户里——除非你主动分享心语卡片，否则不会有任何人看到。如果你以后卸载了App或换了手机，重新安装后登录同一个iCloud账户，所有数据会自动找回来。"
           }
         }
       }
@@ -354,6 +354,16 @@
         }
       }
     },
+    "Export Journal as a document": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将心迹导出为文档"
+          }
+        }
+      }
+    },
     "Export my data": {
       "localizations": {
         "zh-Hans": {
@@ -411,6 +421,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "心迹"
+          }
+        }
+      }
+    },
+    "Journal is locked": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "心迹已锁定"
           }
         }
       }
@@ -562,6 +582,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "提醒时间"
+          }
+        }
+      }
+    },
+    "Require Face ID for Journal": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "心迹需要 Face ID"
           }
         }
       }
@@ -747,6 +777,16 @@
         }
       }
     },
+    "Unlock": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解锁"
+          }
+        }
+      }
+    },
     "Unlock custom photo backgrounds": {
       "localizations": {
         "zh-Hans": {
@@ -757,12 +797,32 @@
         }
       }
     },
+    "Unlock your Journal": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解锁心迹"
+          }
+        }
+      }
+    },
     "Use your own photos as Ripple Card backgrounds, plus extra card styles.": {
       "localizations": {
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
             "value": "使用你自己的照片作为心语卡片背景，还能解锁更多卡片风格。"
+          }
+        }
+      }
+    },
+    "Uses Face ID, Touch ID, or your device passcode — whichever your phone already has set up.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用 Face ID、Touch ID 或设备密码——取决于你手机上已经设置的方式。"
           }
         }
       }
